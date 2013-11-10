@@ -1,0 +1,24 @@
+Think to write comment when needed (when you start having trouble coding, consider it's needed)
+
+Everyone work on his branch.
+
+Think to commit everytime you finish something, it's easier to revert after.
+
+Try to push after every coding sessions.
+
+PUSH ONLY ON YOUR BRANCH.
+
+Once your feature is enough advanced, don't merge it on the master please.. If you want to be update with the master,
+use this (think to commit, ofc)
+
+%Go back to the master
+git checkout master
+%pull the master
+git pull
+%go back to your branch
+git checkout local_branch_name
+%update to have the master
+git rebase master
+
+
+Once your feature is finished, we'll see how to integrate it :D
