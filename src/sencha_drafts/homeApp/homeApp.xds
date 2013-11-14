@@ -1,0 +1,89 @@
+{
+    "name": "homeApp",
+    "settings": {
+        "urlPrefix": "http://localhost:8000/",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1044,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch23",
+    "topInstanceFileMap": {
+        "b729ca7a-214e-4d6b-acd6-c5c9c9f5bfbe": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "aa55eb96-de55-4df6-bde1-694037698fca": {
+            "paths": [
+                "metadata/controller/AuthView",
+                "app/controller/override/AuthView.js",
+                "app/controller/AuthView.js"
+            ],
+            "className": "AuthView"
+        },
+        "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec": {
+            "paths": [
+                "metadata/view/AuthView",
+                "app/view/override/AuthView.js",
+                "app/view/AuthView.js"
+            ],
+            "className": "AuthView"
+        },
+        "7adee5d3-0c8e-4d62-98e4-7f647830926a": {
+            "paths": [
+                "metadata/view/MainNav",
+                "app/view/override/MainNav.js",
+                "app/view/MainNav.js"
+            ],
+            "className": "MainNav"
+        },
+        "5f48e3bd-92b3-47e9-865d-19647adb0c12": {
+            "paths": [
+                "metadata/controller/MainNav",
+                "app/controller/override/MainNav.js",
+                "app/controller/MainNav.js"
+            ],
+            "className": "MainNav"
+        },
+        "936476b9-bd62-4c50-9708-6fd4eacf4a21": {
+            "paths": [
+                "metadata/view/MenuList",
+                "app/view/override/MenuList.js",
+                "app/view/MenuList.js"
+            ],
+            "className": "MenuList"
+        },
+        "115f355c-acbe-4587-a047-1fbdd9161b7f": {
+            "paths": [
+                "metadata/store/MenuStore",
+                "app/store/override/MenuStore.js",
+                "app/store/MenuStore.js"
+            ],
+            "className": "MenuStore"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec",
+            "7adee5d3-0c8e-4d62-98e4-7f647830926a",
+            "936476b9-bd62-4c50-9708-6fd4eacf4a21"
+        ],
+        "store": [
+            "115f355c-acbe-4587-a047-1fbdd9161b7f"
+        ],
+        "controller": [
+            "aa55eb96-de55-4df6-bde1-694037698fca",
+            "5f48e3bd-92b3-47e9-865d-19647adb0c12"
+        ],
+        "model": [],
+        "resource": [
+            "b729ca7a-214e-4d6b-acd6-c5c9c9f5bfbe"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

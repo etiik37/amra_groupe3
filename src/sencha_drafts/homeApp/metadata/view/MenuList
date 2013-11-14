@@ -1,0 +1,47 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": false,
+        "docked": null,
+        "height": "80%",
+        "hidden": false,
+        "id": "menulist",
+        "minHeight": null,
+        "minWidth": null,
+        "ui": "light",
+        "width": "50%",
+        "designer|userClassName": "MenuList",
+        "designer|userAlias": "menulist",
+        "autoDestroy": false,
+        "hideOnMaskTap": true,
+        "modal": true,
+        "store": "menustore",
+        "grouped": true,
+        "infinite": true,
+        "striped": true,
+        "variableHeights": true
+    },
+    "designerId": "936476b9-bd62-4c50-9708-6fd4eacf4a21",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div>{label}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "064def88-0320-41c5-bb65-e033a9c76b07"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "AuthView",
+            "MainNav"
+        ],
+        "designer|userClassName": "AuthView"
+    },
+    "designerId": "aa55eb96-de55-4df6-bde1-694037698fca",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "#mainnav"
+            },
+            "designerId": "6fc729de-4bae-4397-be41-bbe8a5bc7b63"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "authview",
+                "selector": "#authview"
+            },
+            "designerId": "4fc33d83-f52f-4a84-a2b4-ec2dba906b38"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeButton",
+                "selector": "#homeButton"
+            },
+            "designerId": "deb21bc1-c198-42e9-a027-c7b692882df1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "changeView",
+                "implHandler": [
+                    "var sample = Ext.create('MyApp.view.MainNav');",
+                    "Ext.Viewport.setActiveItem(sample);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#homeButton"
+            },
+            "designerId": "409f2354-763f-49ec-9499-d0d89481fe50"
+        }
+    ]
+}

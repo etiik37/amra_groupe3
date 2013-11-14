@@ -1,0 +1,24 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stores": [
+            "MyJsonStore"
+        ],
+        "views": [
+            "AuthView",
+            "MainNav",
+            "MenuList"
+        ],
+        "controllers": [
+            "AuthView",
+            "MainNav"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}
