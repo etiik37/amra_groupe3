@@ -36,7 +36,7 @@
             "codeClass": null,
             "userConfig": {
                 "centered": false,
-                "docked": "top",
+                "docked": null,
                 "id": "logInForm",
                 "width": null,
                 "title": "Log in"
@@ -87,7 +87,7 @@
                         "ui": "confirm",
                         "width": null,
                         "iconAlign": "center",
-                        "text": "Go !"
+                        "text": "OK"
                     },
                     "designerId": "311cd19c-70fb-45f0-97b3-7880c28d9589"
                 }

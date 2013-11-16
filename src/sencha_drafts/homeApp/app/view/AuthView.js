@@ -27,7 +27,6 @@ Ext.define('MyApp.view.AuthView', {
             {
                 xtype: 'fieldset',
                 centered: false,
-                docked: 'top',
                 id: 'logInForm',
                 title: 'Log in',
                 items: [
@@ -50,7 +49,7 @@ Ext.define('MyApp.view.AuthView', {
                         top: '',
                         ui: 'confirm',
                         iconAlign: 'center',
-                        text: 'Go !'
+                        text: 'OK'
                     }
                 ]
             },
