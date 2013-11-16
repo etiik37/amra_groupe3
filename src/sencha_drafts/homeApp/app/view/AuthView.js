@@ -26,25 +26,43 @@ Ext.define('MyApp.view.AuthView', {
             },
             {
                 xtype: 'fieldset',
+                centered: false,
+                docked: 'top',
+                id: 'logInForm',
                 title: 'Log in',
                 items: [
                     {
                         xtype: 'textfield',
                         id: 'loginField',
-                        label: 'Login'
+                        label: 'Login',
+                        required: true
                     },
                     {
                         xtype: 'passwordfield',
-                        id: 'password',
-                        label: 'Password'
+                        id: 'passwordField',
+                        label: 'Password',
+                        required: true
                     },
                     {
                         xtype: 'button',
-                        id: 'homeButton',
+                        centered: false,
+                        id: 'loginButton',
+                        top: '',
                         ui: 'confirm',
+                        iconAlign: 'center',
                         text: 'Go !'
                     }
                 ]
+            },
+            {
+                xtype: 'container',
+                centered: false,
+                height: 50,
+                hidden: true,
+                html: '<p style="color:red;"><b>Wrong login/password combination<br />Login : admin<br :>Password : adminadmin</b></p>',
+                id: 'errorAuthText',
+                styleHtmlContent: true,
+                width: '100%'
             }
         ]
     }

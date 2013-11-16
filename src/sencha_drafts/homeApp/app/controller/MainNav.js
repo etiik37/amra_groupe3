@@ -18,7 +18,7 @@ Ext.define('MyApp.controller.MainNav', {
 
     config: {
         stores: [
-            null
+            'MenuStore'
         ],
         views: [
             'MainNav',

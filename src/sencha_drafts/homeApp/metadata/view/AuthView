@@ -35,6 +35,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "centered": false,
+                "docked": "top",
+                "id": "logInForm",
+                "width": null,
                 "title": "Log in"
             },
             "designerId": "49eba2be-9df2-43aa-b3c2-27234fce7a1d",
@@ -48,7 +52,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "loginField",
-                        "label": "Login"
+                        "label": "Login",
+                        "required": true
                     },
                     "designerId": "a81d6950-cc95-4304-a87d-78b29bec3d0e"
                 },
@@ -60,8 +65,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "password",
-                        "label": "Password"
+                        "id": "passwordField",
+                        "label": "Password",
+                        "required": true
                     },
                     "designerId": "a943eedc-8b57-453e-9ec2-dd4a9d3e2f73"
                 },
@@ -73,13 +79,37 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "homeButton",
+                        "centered": false,
+                        "docked": null,
+                        "id": "loginButton",
+                        "left": null,
+                        "top": "",
                         "ui": "confirm",
+                        "width": null,
+                        "iconAlign": "center",
                         "text": "Go !"
                     },
                     "designerId": "311cd19c-70fb-45f0-97b3-7880c28d9589"
                 }
             ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "height": 50,
+                "hidden": true,
+                "html": "<p style=\"color:red;\"><b>Wrong login/password combination<br />Login : admin<br :>Password : adminadmin</b></p>",
+                "id": "errorAuthText",
+                "styleHtmlContent": true,
+                "width": "100%"
+            },
+            "designerId": "9e2358cd-2ccb-487d-8e65-905093e0ac0e"
         }
     ]
 }

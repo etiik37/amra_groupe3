@@ -25,19 +25,39 @@ Ext.define('MyApp.controller.AuthView', {
         refs: {
             mainnav: '#mainnav',
             authview: '#authview',
-            homeButton: '#homeButton'
+            loginButton: '#loginButton',
+            loginField: '#loginField',
+            passwordField: '#passwordField',
+            errorAuthText: '#errorAuthText'
         },
 
         control: {
-            "#homeButton": {
-                tap: 'changeView'
+            "#loginButton": {
+                tap: 'onLoginTapButton'
             }
         }
     },
 
-    changeView: function(button, e, eOpts) {
-        var sample = Ext.create('MyApp.view.MainNav');
-        Ext.Viewport.setActiveItem(sample);
+    onLoginTapButton: function(button, e, eOpts) {
+        var loginField = Ext.getCmp('loginField');
+        var passwordField = Ext.getCmp('passwordField');
+        var label = Ext.getCmp('errorAuthText');
+
+        label.hide();
+
+        var login = loginField.getValue();
+        var password = passwordField.getValue();
+
+        if (login != 'admin' || password != 'adminadmin') {
+            label.show();     
+        }
+        else {
+            var sample = Ext.create('MyApp.view.MainNav');
+            Ext.Viewport.setActiveItem(sample);
+        }
+
+        loginField.setValue('');
+        passwordField.setValue('');
     }
 
 });

@@ -18,15 +18,17 @@ Ext.define('MyApp.view.MenuList', {
     alias: 'widget.menulist',
 
     config: {
+        border: 3,
         centered: false,
         height: '80%',
         hidden: false,
         id: 'menulist',
-        ui: 'light',
+        style: 'border-color: black; border-style: solid; border-radius:10px;',
         width: '50%',
         autoDestroy: false,
         hideOnMaskTap: true,
         modal: true,
+        allowDeselect: true,
         store: 'menustore',
         grouped: true,
         infinite: true,
