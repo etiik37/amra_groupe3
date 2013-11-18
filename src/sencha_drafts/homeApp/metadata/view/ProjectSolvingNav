@@ -10,5 +10,36 @@
         "designer|userAlias": "mypanel",
         "modal": false
     },
-    "designerId": "59abf677-7df0-411a-a5de-19710f8e4d54"
+    "designerId": "59abf677-7df0-411a-a5de-19710f8e4d54",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "problemsolvingstore"
+            },
+            "designerId": "c24d908d-f04a-4d38-9b7f-42515feb671f",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>List Item {string}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "60af3a18-01c2-437d-823d-c308eb64e7b3"
+                }
+            ]
+        }
+    ]
 }

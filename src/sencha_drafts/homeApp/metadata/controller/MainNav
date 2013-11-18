@@ -11,7 +11,8 @@
         ],
         "views": [
             "MainNav",
-            "MenuList"
+            "MenuList",
+            "ProjectSolvingNav"
         ],
         "designer|userClassName": "MainNav"
     },
@@ -47,7 +48,7 @@
                     "    delegate: '#menuButton',",
                     "    tap: function(button) {",
                     "        // When you tap on a button, we want to show the overlay by the button we just tapped.",
-                    "        overlay.showBy(button);",
+                    "        overlay.showBy(button);       ",
                     "    }",
                     "});"
                 ]

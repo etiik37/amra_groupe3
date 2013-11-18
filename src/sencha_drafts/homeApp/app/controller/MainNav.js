@@ -22,7 +22,8 @@ Ext.define('MyApp.controller.MainNav', {
         ],
         views: [
             'MainNav',
-            'MenuList'
+            'MenuList',
+            'ProjectSolvingNav'
         ],
 
         refs: {
@@ -38,7 +39,7 @@ Ext.define('MyApp.controller.MainNav', {
             delegate: '#menuButton',
             tap: function(button) {
                 // When you tap on a button, we want to show the overlay by the button we just tapped.
-                overlay.showBy(button);
+                overlay.showBy(button);       
             }
         });
     }

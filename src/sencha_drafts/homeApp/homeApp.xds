@@ -80,13 +80,13 @@
             ],
             "className": "ProjectSolvingNav"
         },
-        "43742508-34f1-40fd-83f0-17c5610e2828": {
+        "a06633b3-5c0b-4d12-af75-7a02edca2996": {
             "paths": [
-                "metadata/view/MyToolbar3",
-                "app/view/override/MyToolbar3.js",
-                "app/view/MyToolbar3.js"
+                "metadata/store/ProblemSolvingStore",
+                "app/store/override/ProblemSolvingStore.js",
+                "app/store/ProblemSolvingStore.js"
             ],
-            "className": "MyToolbar3"
+            "className": "ProblemSolvingStore"
         }
     },
     "viewOrderMap": {
@@ -94,11 +94,11 @@
             "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec",
             "7adee5d3-0c8e-4d62-98e4-7f647830926a",
             "936476b9-bd62-4c50-9708-6fd4eacf4a21",
-            "59abf677-7df0-411a-a5de-19710f8e4d54",
-            "43742508-34f1-40fd-83f0-17c5610e2828"
+            "59abf677-7df0-411a-a5de-19710f8e4d54"
         ],
         "store": [
-            "115f355c-acbe-4587-a047-1fbdd9161b7f"
+            "115f355c-acbe-4587-a047-1fbdd9161b7f",
+            "a06633b3-5c0b-4d12-af75-7a02edca2996"
         ],
         "controller": [
             "aa55eb96-de55-4df6-bde1-694037698fca",

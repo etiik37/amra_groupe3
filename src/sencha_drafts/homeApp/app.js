@@ -23,14 +23,14 @@ Ext.application({
         'MyModel'
     ],
     stores: [
-        'MenuStore'
+        'MenuStore',
+        'ProblemSolvingStore'
     ],
     views: [
         'AuthView',
         'MainNav',
         'MenuList',
-        'ProjectSolvingNav',
-        'MyToolbar3'
+        'ProjectSolvingNav'
     ],
     controllers: [
         'AuthView',
