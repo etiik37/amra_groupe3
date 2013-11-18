@@ -16,6 +16,10 @@
 Ext.define('MyApp.view.MainNav', {
     extend: 'Ext.Panel',
 
+    requires: [
+        'MyApp.view.ProjectSolvingNav'
+    ],
+
     config: {
         id: 'mainnav',
         items: [
@@ -39,6 +43,9 @@ Ext.define('MyApp.view.MainNav', {
                         ui: 'plain',
                         iconAlign: 'right',
                         iconCls: 'info'
+                    },
+                    {
+                        xtype: 'mypanel'
                     }
                 ]
             }

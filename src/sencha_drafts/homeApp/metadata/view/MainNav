@@ -64,6 +64,16 @@
                         "text": null
                     },
                     "designerId": "ef52ff02-6124-4f61-a71c-515d29cf8365"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "a9138467-88a2-483f-8b91-e9452f7b9c06",
+                    "masterInstanceId": "59abf677-7df0-411a-a5de-19710f8e4d54"
                 }
             ]
         }

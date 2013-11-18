@@ -1,0 +1,14 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ProjectSolvingNav",
+        "designer|userAlias": "mypanel",
+        "modal": false
+    },
+    "designerId": "59abf677-7df0-411a-a5de-19710f8e4d54"
+}

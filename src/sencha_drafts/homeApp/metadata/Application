@@ -6,13 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "MyModel"
+        ],
         "stores": [
             "MenuStore"
         ],
         "views": [
             "AuthView",
             "MainNav",
-            "MenuList"
+            "MenuList",
+            "ProjectSolvingNav",
+            "MyToolbar3"
         ],
         "controllers": [
             "AuthView",
