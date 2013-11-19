@@ -7,8 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "storeId": "problemsolvingstore",
-        "designer|userClassName": "ProblemSolvingStore"
+        "designer|userClassName": "ProblemSolvingStore",
+        "storeId": "problemsolvingstore"
     },
     "designerId": "a06633b3-5c0b-4d12-af75-7a02edca2996",
     "cn": [

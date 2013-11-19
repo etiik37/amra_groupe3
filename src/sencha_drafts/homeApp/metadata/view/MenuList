@@ -6,27 +6,27 @@
     },
     "codeClass": null,
     "userConfig": {
+        "allowDeselect": true,
+        "autoDestroy": false,
         "border": 3,
         "centered": false,
+        "designer|userAlias": "menulist",
+        "designer|userClassName": "MenuList",
         "docked": null,
+        "grouped": true,
         "height": "80%",
         "hidden": false,
+        "hideOnMaskTap": true,
         "id": "menulist",
+        "infinite": true,
         "minHeight": null,
         "minWidth": null,
-        "style": "border-color: black; border-style: solid; border-radius:10px;",
-        "width": "50%",
-        "designer|userClassName": "MenuList",
-        "designer|userAlias": "menulist",
-        "autoDestroy": false,
-        "hideOnMaskTap": true,
         "modal": true,
-        "allowDeselect": true,
         "store": "menustore",
-        "grouped": true,
-        "infinite": true,
         "striped": true,
-        "variableHeights": true
+        "style": "border-color: black; border-style: solid; border-radius:10px;",
+        "variableHeights": true,
+        "width": "50%"
     },
     "designerId": "936476b9-bd62-4c50-9708-6fd4eacf4a21",
     "cn": [
@@ -38,10 +38,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|displayName": "itemTpl",
                 "implHandler": [
                     "<div>{label}</div>"
-                ],
-                "designer|displayName": "itemTpl"
+                ]
             },
             "designerId": "064def88-0320-41c5-bb65-e033a9c76b07"
         }

@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "ProjectSolvingNav",
         "designer|userAlias": "mypanel",
+        "designer|userClassName": "ProjectSolvingNav",
         "modal": false
     },
     "designerId": "59abf677-7df0-411a-a5de-19710f8e4d54",
@@ -32,10 +32,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|displayName": "itemTpl",
                         "implHandler": [
                             "<div>List Item {string}</div>"
-                        ],
-                        "designer|displayName": "itemTpl"
+                        ]
                     },
                     "designerId": "60af3a18-01c2-437d-823d-c308eb64e7b3"
                 }

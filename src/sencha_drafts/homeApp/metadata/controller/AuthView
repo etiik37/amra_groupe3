@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "AuthView",
         "views": [
             "AuthView",
             "MainNav"
-        ],
-        "designer|userClassName": "AuthView"
+        ]
     },
     "designerId": "aa55eb96-de55-4df6-bde1-694037698fca",
     "cn": [
@@ -61,6 +61,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|controlQuery": "#loginButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onLoginTapButton",
                 "implHandler": [
                     "var loginField = Ext.getCmp('loginField');",
@@ -83,9 +85,7 @@
                     "loginField.setValue('');",
                     "passwordField.setValue('');"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#loginButton"
+                "name": "tap"
             },
             "designerId": "b9d4a58d-4f06-46e6-895c-b4ca8cd79e6a"
         },

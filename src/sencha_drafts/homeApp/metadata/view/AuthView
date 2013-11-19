@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "authview",
-        "designer|userClassName": "AuthView",
+        "designer|initialView": true,
         "designer|userAlias": null,
-        "designer|initialView": true
+        "designer|userClassName": "AuthView",
+        "id": "authview"
     },
     "designerId": "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec",
     "cn": [
@@ -22,8 +22,8 @@
             "codeClass": null,
             "userConfig": {
                 "docked": "top",
-                "width": null,
-                "title": "Home"
+                "title": "Home",
+                "width": null
             },
             "designerId": "3c753b7c-4b47-4b67-8674-410bdb4b6e62"
         },
@@ -38,8 +38,8 @@
                 "centered": false,
                 "docked": null,
                 "id": "logInForm",
-                "width": null,
-                "title": "Log in"
+                "title": "Log in",
+                "width": null
             },
             "designerId": "49eba2be-9df2-43aa-b3c2-27234fce7a1d",
             "cn": [
@@ -81,13 +81,13 @@
                     "userConfig": {
                         "centered": false,
                         "docked": null,
+                        "iconAlign": "center",
                         "id": "loginButton",
                         "left": null,
+                        "text": "OK",
                         "top": "",
                         "ui": "confirm",
-                        "width": null,
-                        "iconAlign": "center",
-                        "text": "OK"
+                        "width": null
                     },
                     "designerId": "311cd19c-70fb-45f0-97b3-7880c28d9589"
                 }

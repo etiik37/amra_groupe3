@@ -7,8 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "storeId": "menustore",
-        "designer|userClassName": "MenuStore"
+        "designer|userClassName": "MenuStore",
+        "storeId": "menustore"
     },
     "designerId": "115f355c-acbe-4587-a047-1fbdd9161b7f",
     "cn": [
@@ -88,10 +88,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "groupFn",
                         "designer|params": [
                             "item"
                         ],
+                        "fn": "groupFn",
                         "implHandler": [
                             "return item.get('group');"
                         ]

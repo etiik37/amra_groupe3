@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "MainNav",
         "stores": [
             "MenuStore"
         ],
@@ -13,8 +14,7 @@
             "MainNav",
             "MenuList",
             "ProjectSolvingNav"
-        ],
-        "designer|userClassName": "MainNav"
+        ]
     },
     "designerId": "5f48e3bd-92b3-47e9-865d-19647adb0c12",
     "cn": [

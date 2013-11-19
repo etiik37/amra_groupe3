@@ -1,94 +1,24 @@
 {
     "name": "homeApp",
     "settings": {
+        "cmd": {},
         "urlPrefix": "http://localhost:8000/",
-        "exportPath": ""
-    },
-    "xdsVersion": "2.2.3",
-    "xdsBuild": 1044,
-    "schemaVersion": 1,
-    "upgradeVersion": 210000000503,
-    "framework": "touch23",
-    "topInstanceFileMap": {
-        "b729ca7a-214e-4d6b-acd6-c5c9c9f5bfbe": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        },
-        "aa55eb96-de55-4df6-bde1-694037698fca": {
-            "paths": [
-                "metadata/controller/AuthView",
-                "app/controller/override/AuthView.js",
-                "app/controller/AuthView.js"
-            ],
-            "className": "AuthView"
-        },
-        "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec": {
-            "paths": [
-                "metadata/view/AuthView",
-                "app/view/override/AuthView.js",
-                "app/view/AuthView.js"
-            ],
-            "className": "AuthView"
-        },
-        "7adee5d3-0c8e-4d62-98e4-7f647830926a": {
-            "paths": [
-                "metadata/view/MainNav",
-                "app/view/override/MainNav.js",
-                "app/view/MainNav.js"
-            ],
-            "className": "MainNav"
-        },
-        "5f48e3bd-92b3-47e9-865d-19647adb0c12": {
-            "paths": [
-                "metadata/controller/MainNav",
-                "app/controller/override/MainNav.js",
-                "app/controller/MainNav.js"
-            ],
-            "className": "MainNav"
-        },
-        "936476b9-bd62-4c50-9708-6fd4eacf4a21": {
-            "paths": [
-                "metadata/view/MenuList",
-                "app/view/override/MenuList.js",
-                "app/view/MenuList.js"
-            ],
-            "className": "MenuList"
-        },
-        "115f355c-acbe-4587-a047-1fbdd9161b7f": {
-            "paths": [
-                "metadata/store/MenuStore",
-                "app/store/override/MenuStore.js",
-                "app/store/MenuStore.js"
-            ],
-            "className": "MenuStore"
-        },
-        "0c8a7168-118e-4d1a-8fd5-b98bd8644140": {
-            "paths": [
-                "metadata/model/MyModel",
-                "app/model/override/MyModel.js",
-                "app/model/MyModel.js"
-            ],
-            "className": "MyModel"
-        },
-        "59abf677-7df0-411a-a5de-19710f8e4d54": {
-            "paths": [
-                "metadata/view/ProjectSolvingNav",
-                "app/view/override/ProjectSolvingNav.js",
-                "app/view/ProjectSolvingNav.js"
-            ],
-            "className": "ProjectSolvingNav"
-        },
-        "a06633b3-5c0b-4d12-af75-7a02edca2996": {
-            "paths": [
-                "metadata/store/ProblemSolvingStore",
-                "app/store/override/ProblemSolvingStore.js",
-                "app/store/ProblemSolvingStore.js"
-            ],
-            "className": "ProblemSolvingStore"
+        "exportPath": "",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
         }
     },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1337,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "touch23",
     "viewOrderMap": {
         "view": [
             "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec",
