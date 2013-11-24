@@ -1,18 +1,29 @@
 {
     "name": "homeApp",
     "settings": {
-        "cmd": {},
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
+        },
         "urlPrefix": "http://localhost:8000/",
         "exportPath": "",
         "canvasControls": {
             "viewportSize": {
-                "name": "iPhone",
+                "name": "iPad",
                 "builtIn": true,
-                "height": 480,
-                "width": 320
+                "height": 1024,
+                "width": 768
             },
             "viewportOrientation": "portrait"
-        }
+        },
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
     },
     "xdsVersion": "3.0.0",
     "xdsBuild": 1337,
@@ -24,11 +35,13 @@
             "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec",
             "7adee5d3-0c8e-4d62-98e4-7f647830926a",
             "936476b9-bd62-4c50-9708-6fd4eacf4a21",
-            "59abf677-7df0-411a-a5de-19710f8e4d54"
+            "59abf677-7df0-411a-a5de-19710f8e4d54",
+            "c9bb73bb-68b0-4cfd-98e5-17962882863a"
         ],
         "store": [
             "115f355c-acbe-4587-a047-1fbdd9161b7f",
-            "a06633b3-5c0b-4d12-af75-7a02edca2996"
+            "a06633b3-5c0b-4d12-af75-7a02edca2996",
+            "a083326d-819a-4383-ac21-42e80a6e1204"
         ],
         "controller": [
             "aa55eb96-de55-4df6-bde1-694037698fca",

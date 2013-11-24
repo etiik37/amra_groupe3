@@ -16,13 +16,15 @@
         "name": "MyApp",
         "stores": [
             "MenuStore",
-            "ProblemSolvingStore"
+            "ProblemSolvingStore",
+            "LogsStore"
         ],
         "views": [
             "AuthView",
             "MainNav",
             "MenuList",
-            "ProjectSolvingNav"
+            "ProjectSolvingNav",
+            "LogMainView"
         ]
     },
     "designerId": "application"

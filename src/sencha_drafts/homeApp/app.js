@@ -19,25 +19,24 @@ Ext.Loader.setConfig({
 });
 
 
+Ext.Loader.setPath('Ext.grid.column.Column','packages/sencha-touch-grid/src/grid/column/Column.js');
+Ext.Loader.setPath('Ext.grid.Grid','packages/sencha-touch-grid/src/grid/Grid.js');
+
 Ext.application({
     models: [
         'MyModel'
     ],
     stores: [
         'MenuStore',
-        'ProblemSolvingStore'/*,
+        'ProblemSolvingStore',
         'LogsStore'
-        */
     ],
     views: [
         'AuthView',
         'MainNav',
         'MenuList',
-        'ProjectSolvingNav'/*,
-        'LogMainView',
-	    'LogFilterView',
-	    'LogsView'
-	    */
+        'ProjectSolvingNav',
+        'LogMainView'
     ],
     controllers: [
         'AuthView',
