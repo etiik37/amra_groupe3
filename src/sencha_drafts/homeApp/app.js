@@ -25,13 +25,19 @@ Ext.application({
     ],
     stores: [
         'MenuStore',
-        'ProblemSolvingStore'
+        'ProblemSolvingStore'/*,
+        'LogsStore'
+        */
     ],
     views: [
         'AuthView',
         'MainNav',
         'MenuList',
-        'ProjectSolvingNav'
+        'ProjectSolvingNav'/*,
+        'LogMainView',
+	    'LogFilterView',
+	    'LogsView'
+	    */
     ],
     controllers: [
         'AuthView',
