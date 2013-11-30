@@ -674,14 +674,13 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.store.MenuStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.view.AuthView": [],
-  "MyApp.view.LogFilterView": [],
   "MyApp.view.LogMainView": [],
-  "MyApp.view.LogsView": [],
   "MyApp.view.Main": [],
   "MyApp.view.MainNav": [],
   "MyApp.view.MenuList": [],
   "MyApp.view.MyToolbar3": [],
-  "MyApp.view.ProjectSolvingNav": []
+  "MyApp.view.ProjectSolvingNav": [],
+  "MyApp.view.TMView": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1467,9 +1466,7 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.store.MenuStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.view.AuthView": [],
-  "MyApp.view.LogFilterView": [],
   "MyApp.view.LogMainView": [],
-  "MyApp.view.LogsView": [],
   "MyApp.view.Main": [
     "widget.main"
   ],
@@ -1480,6 +1477,7 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.MyToolbar3": [],
   "MyApp.view.ProjectSolvingNav": [
     "widget.mypanel"
-  ]
+  ],
+  "MyApp.view.TMView": []
 });
 Ext.setVersion("sencha-touch-grid", "2.3.0.2");

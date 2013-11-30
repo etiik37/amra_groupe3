@@ -1,0 +1,36 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TMView",
+        "views": [
+            "TMView",
+            "GraphicTM"
+        ]
+    },
+    "designerId": "9a161f49-a543-4c7c-b195-fb7b7b35e31c",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "okTM",
+                "designer|targetType": "Ext.Button",
+                "fn": "onButtonTapOKButton",
+                "implHandler": [
+                    "alert('ok');"
+                ],
+                "name": "tap"
+            },
+            "designerId": "d6398dd0-a9f0-46e3-8b1c-ebb9612819df"
+        }
+    ]
+}

@@ -8,7 +8,8 @@
     "userConfig": {
         "controllers": [
             "AuthView",
-            "MainNav"
+            "MainNav",
+            "TMView"
         ],
         "models": [
             "MyModel"
@@ -24,7 +25,9 @@
             "MainNav",
             "MenuList",
             "ProjectSolvingNav",
-            "LogMainView"
+            "LogMainView",
+            "TMView",
+            "GraphicTM"
         ]
     },
     "designerId": "application"

@@ -1,0 +1,233 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TMView"
+    },
+    "designerId": "34530bc5-d334-4702-80bf-ff4a06e6390d",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "selectbar"
+            },
+            "designerId": "5a1f2cec-03e7-49fa-a550-19cbe93b6d97",
+            "cn": [
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "satelliteselecte",
+                        "label": ""
+                    },
+                    "designerId": "8545e6da-fcae-4fe9-ba2e-c9dc633750d6"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "tmselect",
+                        "label": ""
+                    },
+                    "designerId": "98b7c001-cb00-4c8f-8056-712240310cc9"
+                },
+                {
+                    "type": "Ext.field.DatePicker",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "startdate",
+                        "label": "",
+                        "placeHolder": "mm/dd/yyyy"
+                    },
+                    "designerId": "cdf8bea3-46b3-4584-85d2-3ab2c4260d05",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "d72d5110-3e94-4119-acf9-487b68d1cb11",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "doneButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Done"
+                                    },
+                                    "designerId": "b5701124-ea9d-4531-b5b0-f351e6f5bea7"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "cancelButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Cancel"
+                                    },
+                                    "designerId": "0888a07e-d193-463d-a75e-ac5f732d7bfd"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.DatePicker",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "enddate",
+                        "label": "",
+                        "placeHolder": "mm/dd/yyyy"
+                    },
+                    "designerId": "4a40921e-3cd1-4f72-b6d6-f1f3b057885a",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "ad1619f4-aaa8-45f3-98f0-b0a06ab72daa",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "doneButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Done"
+                                    },
+                                    "designerId": "015b8666-e634-4114-b526-5b38ae1dd10a"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "cancelButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Cancel"
+                                    },
+                                    "designerId": "452540dd-ed53-4b06-a21e-4ac314109022"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action-round",
+                        "id": "okTM",
+                        "text": "OK",
+                        "ui": "action-round"
+                    },
+                    "designerId": "171fc4f1-8b9d-4b4d-89a3-392876e3128b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "optionsbar"
+            },
+            "designerId": "4c5ca8f2-1d48-4f23-828c-bd1a6a437744",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action-round",
+                        "iconCls": "add",
+                        "id": "addgraphic",
+                        "text": "",
+                        "ui": "action-round"
+                    },
+                    "designerId": "57c148bc-80a3-4e26-99d7-58826bfdf010"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action-round",
+                        "iconCls": "download",
+                        "id": "export",
+                        "text": "",
+                        "ui": "action-round"
+                    },
+                    "designerId": "811f51d1-c363-4d6b-9daf-1b337f8e94e0"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action-round",
+                        "iconCls": "more",
+                        "id": "custom",
+                        "text": "",
+                        "ui": "action-round"
+                    },
+                    "designerId": "d0d9f978-de3e-4467-9818-af3f0cf907e1"
+                }
+            ]
+        }
+    ]
+}

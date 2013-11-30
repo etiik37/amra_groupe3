@@ -1,0 +1,24 @@
+
+
+#selectbar, #optionsbar{
+width: 100%;
+float : left;
+}
+
+#satelliteselect, #tmselect, #startdate, #enddate, #okTM,  #addgraphic, #export ,#custom,#click{
+float : left;
+margin : 20px;
+}
+
+#satelliteselect, #tmselect, #startdate, #enddate{
+width: 150px;
+}
+
+#tmgraphic{
+width : 1000px;
+top : 150px;
+margin : auto;
+bottom :20px;
+border : 1px;
+
+}

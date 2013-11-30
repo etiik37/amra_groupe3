@@ -75,7 +75,7 @@
                     "var password = passwordField.getValue();",
                     "",
                     "if (login != 'admin' || password != 'adminadmin') {",
-                    "    label.show();     ",
+                    "    label.show();",
                     "}",
                     "else {",
                     "    var sample = Ext.create('MyApp.view.MainNav');",

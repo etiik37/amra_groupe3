@@ -36,11 +36,14 @@ Ext.application({
         'MainNav',
         'MenuList',
         'ProjectSolvingNav',
-        'LogMainView'
+        'LogMainView',
+        'TMView',
+        'GraphicTM'
     ],
     controllers: [
         'AuthView',
-        'MainNav'
+        'MainNav',
+        'TMView'
     ],
     name: 'MyApp',
 
