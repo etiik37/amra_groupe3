@@ -1,0 +1,14 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homeview",
+        "designer|userClassName": "HomeView",
+        "html": "Cliquez sur le menu pour changer de page..."
+    },
+    "designerId": "5b5736e8-6f91-49c4-91ad-563b41dadbf5"
+}

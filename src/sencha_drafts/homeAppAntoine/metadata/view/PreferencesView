@@ -1,0 +1,31 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "preferencesview",
+        "designer|userClassName": "PreferencesView"
+    },
+    "designerId": "c82cf8e6-ad7f-4298-95aa-cddda912446a",
+    "cn": [
+        {
+            "type": "Ext.field.Select",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayField": "name",
+                "label": "Time Zone",
+                "maxLength": null,
+                "name": "timeZoneField",
+                "store": "timezonestore"
+            },
+            "designerId": "0b42bbc8-15d2-47b0-8b1d-299186b7d487"
+        }
+    ]
+}

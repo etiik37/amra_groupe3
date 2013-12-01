@@ -1,0 +1,63 @@
+{
+    "name": "homeApp",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
+        },
+        "urlPrefix": "http://localhost:8000/",
+        "exportPath": "",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1337,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "63ae87cb-d7d4-4ac1-a032-02d9f5b606ec",
+            "936476b9-bd62-4c50-9708-6fd4eacf4a21",
+            "59abf677-7df0-411a-a5de-19710f8e4d54",
+            "c82cf8e6-ad7f-4298-95aa-cddda912446a",
+            "b2acb95f-cf34-4fea-a689-bbafade179db",
+            "5b5736e8-6f91-49c4-91ad-563b41dadbf5"
+        ],
+        "store": [
+            "115f355c-acbe-4587-a047-1fbdd9161b7f",
+            "a06633b3-5c0b-4d12-af75-7a02edca2996",
+            "ee778f64-f105-400c-bf38-ef1f111a505e"
+        ],
+        "controller": [
+            "aa55eb96-de55-4df6-bde1-694037698fca",
+            "5f48e3bd-92b3-47e9-865d-19647adb0c12"
+        ],
+        "model": [],
+        "resource": [
+            "b729ca7a-214e-4d6b-acd6-c5c9c9f5bfbe"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

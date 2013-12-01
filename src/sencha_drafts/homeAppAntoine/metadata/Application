@@ -1,0 +1,29 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "AuthView",
+            "MainNav"
+        ],
+        "name": "MyApp",
+        "stores": [
+            "MenuStore",
+            "ProblemSolvingStore",
+            "TimeZoneStore"
+        ],
+        "views": [
+            "AuthView",
+            "MenuList",
+            "ProjectSolvingNav",
+            "PreferencesView",
+            "MainNav",
+            "HomeView"
+        ]
+    },
+    "designerId": "application"
+}

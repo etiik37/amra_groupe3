@@ -1,0 +1,8 @@
+[
+	{ "group": "Operations", "label": "Projet GO-NO-GO", "id_view": "projectsolvingnav" },
+	{ "group": "Operations", "label": "Project Problem Solving", "id_view": "projectsolvingnav" },
+	{ "group": "Monitoring", "label": "Project Log Monitoring", "id_view": "projectsolvingnav" },
+	{ "group": "Monitoring", "label": "Project FOP Viewer", "id_view": "projectsolvingnav" },
+	{ "group": "Monitoring", "label": "Project TM Viewer", "id_view": "projectsolvingnav" },
+	{ "group": "Options", "label": "Preferences", "id_view": "preferencesview" }
+]

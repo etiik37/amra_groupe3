@@ -1,0 +1,127 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainNav",
+        "stores": [
+            "MenuStore",
+            "ProblemSolvingStore"
+        ],
+        "views": [
+            "MenuList",
+            "MainNav",
+            "ProjectSolvingNav"
+        ]
+    },
+    "designerId": "5f48e3bd-92b3-47e9-865d-19647adb0c12",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "menulist",
+                "selector": "#menulist"
+            },
+            "designerId": "16ec161a-3bd7-449d-9441-7e05b0302567"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var view = Ext.create('MyApp.view.MenuList');",
+                    "var overlay = Ext.Viewport.add(view);",
+                    "",
+                    "Ext.Viewport.on({",
+                    "    delegate: '#menuButton',",
+                    "    tap: function(button) {",
+                    "        // When you tap on a button, we want to show the overlay by the button we just tapped.",
+                    "        overlay.showBy(button);",
+                    "    }",
+                    "});"
+                ]
+            },
+            "designerId": "b300c14b-91bc-4513-8b53-166b3587a6cf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#menulist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "//On masque d'abord le menu",
+                    "var menuListOverlay = Ext.Viewport.getComponent('menulist');",
+                    "menuListOverlay.hide();",
+                    "",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "",
+                    "mainNavView.pop();",
+                    "",
+                    "mainNavView.push({",
+                    "    title : record.get('label'),",
+                    "    xtype : record.get('id_view')",
+                    "});",
+                    "",
+                    "/*this.up('mainnav').push({",
+                    "    title : 'OK',",
+                    "    html : 'Ca marche !'",
+                    "});*/",
+                    "",
+                    "//var navigationView = Ext.Viewport.getComponent('mainnav');",
+                    "/*this.getMainnav().push({",
+                    "    xtype : 'step1',",
+                    "    title : 'OK'",
+                    "});*/"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "74ca02a1-e635-41f3-971a-56f31dc9bd3b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "mainnav"
+            },
+            "designerId": "eabd0d8c-6eee-4cdf-b71f-28b30979ef0a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "projectsolvingnav",
+                "selector": "projectsolvingnav"
+            },
+            "designerId": "efdc038c-6c9d-407f-8c86-bfa59571b488"
+        }
+    ]
+}
