@@ -52,8 +52,7 @@ Ext.define('MyApp.view.MainNav', {
         items: [
             {
                 xtype: 'homeview',
-                title: 'SCC Portal',
-                autoDestroy: true
+                title: 'SCC Portal'
             }
         ]
     }

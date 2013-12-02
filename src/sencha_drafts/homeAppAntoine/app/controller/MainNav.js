@@ -30,12 +30,16 @@ Ext.define('MyApp.controller.MainNav', {
         refs: {
             menulist: '#menulist',
             mainnav: 'mainnav',
-            projectsolvingnav: 'projectsolvingnav'
+            projectsolvingnav: 'projectsolvingnav',
+            preferencesbutton: '#preferencesbutton'
         },
 
         control: {
             "#menulist": {
                 itemtap: 'onListItemTap'
+            },
+            "#preferencesbutton": {
+                tap: 'onPreferencesButtonTap'
             }
         }
     },
@@ -65,6 +69,21 @@ Ext.define('MyApp.controller.MainNav', {
             xtype : 'step1',
             title : 'OK'
         });*/
+    },
+
+    onPreferencesButtonTap: function(button, e, eOpts) {
+        //On masque d'abord le menu
+        var menuListOverlay = Ext.Viewport.getComponent('menulist');
+        menuListOverlay.hide();
+
+        var mainNavView = this.getMainnav();
+
+                mainNavView.pop();
+
+                mainNavView.push({
+                    title : 'Preferences',
+                    xtype : 'preferencesview'
+                });
     },
 
     launch: function() {

@@ -122,6 +122,48 @@
                 "selector": "projectsolvingnav"
             },
             "designerId": "efdc038c-6c9d-407f-8c86-bfa59571b488"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "preferencesbutton",
+                "selector": "#preferencesbutton"
+            },
+            "designerId": "d927bfa9-83c9-4d87-a7f5-cc2645b7e04c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#preferencesbutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onPreferencesButtonTap",
+                "implHandler": [
+                    "//On masque d'abord le menu",
+                    "var menuListOverlay = Ext.Viewport.getComponent('menulist');",
+                    "menuListOverlay.hide();",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "",
+                    "        mainNavView.pop();",
+                    "",
+                    "        mainNavView.push({",
+                    "            title : 'Preferences',",
+                    "            xtype : 'preferencesview'",
+                    "        });"
+                ],
+                "name": "tap"
+            },
+            "designerId": "24d6b780-ef3b-422b-b82d-c613ce5005ed"
         }
     ]
 }

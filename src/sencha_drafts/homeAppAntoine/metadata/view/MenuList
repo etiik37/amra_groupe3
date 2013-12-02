@@ -45,6 +45,40 @@
                 ]
             },
             "designerId": "064def88-0320-41c5-bb65-e033a9c76b07"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "designer|uiInterfaceName": "decline",
+                "docked": "bottom",
+                "iconCls": "user",
+                "id": "logoutbutton",
+                "text": "Log out",
+                "ui": "decline"
+            },
+            "designerId": "f3affe38-5ea7-4581-95ac-b7b08f851722"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "bottom",
+                "iconCls": "settings",
+                "id": "preferencesbutton",
+                "text": "Preferences"
+            },
+            "designerId": "10d3a0fc-0f65-4ce1-b889-95d56940bcb8"
         }
     ]
 }

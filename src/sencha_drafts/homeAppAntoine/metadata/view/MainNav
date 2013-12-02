@@ -77,7 +77,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "autoDestroy": true,
                 "title": "SCC Portal"
             },
             "designerId": "4390d0e8-eb01-45be-a372-64353322e305",

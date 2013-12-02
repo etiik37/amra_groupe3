@@ -41,6 +41,24 @@ Ext.define('MyApp.view.MenuList', {
         variableHeights: true,
         itemTpl: [
             '<div>{label}</div>'
+        ],
+        items: [
+            {
+                xtype: 'button',
+                docked: 'bottom',
+                id: 'logoutbutton',
+                ui: 'decline',
+                iconCls: 'user',
+                text: 'Log out'
+            },
+            {
+                xtype: 'button',
+                centered: false,
+                docked: 'bottom',
+                id: 'preferencesbutton',
+                iconCls: 'settings',
+                text: 'Preferences'
+            }
         ]
     }
 
