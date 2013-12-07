@@ -8,7 +8,8 @@
     "userConfig": {
         "controllers": [
             "AuthView",
-            "MainNav"
+            "MainNav",
+            "PreferencesView"
         ],
         "name": "MyApp",
         "stores": [
@@ -20,9 +21,9 @@
             "AuthView",
             "MenuList",
             "ProjectSolvingNav",
-            "PreferencesView",
             "MainNav",
-            "HomeView"
+            "HomeView",
+            "PreferencesView"
         ]
     },
     "designerId": "application"

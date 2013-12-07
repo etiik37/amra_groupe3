@@ -17,21 +17,11 @@ Ext.define('MyApp.controller.MainNav', {
     extend: 'Ext.app.Controller',
 
     config: {
-        stores: [
-            'MenuStore',
-            'ProblemSolvingStore'
-        ],
-        views: [
-            'MenuList',
-            'MainNav',
-            'ProjectSolvingNav'
-        ],
-
         refs: {
             menulist: '#menulist',
             mainnav: 'mainnav',
             projectsolvingnav: 'projectsolvingnav',
-            preferencesbutton: '#preferencesbutton'
+            authview: 'authview'
         },
 
         control: {
@@ -40,6 +30,9 @@ Ext.define('MyApp.controller.MainNav', {
             },
             "#preferencesbutton": {
                 tap: 'onPreferencesButtonTap'
+            },
+            "#logoutbutton": {
+                tap: 'onLogOutButtonTap'
             }
         }
     },
@@ -58,17 +51,6 @@ Ext.define('MyApp.controller.MainNav', {
             title : record.get('label'),
             xtype : record.get('id_view')
         });
-
-        /*this.up('mainnav').push({
-            title : 'OK',
-            html : 'Ca marche !'
-        });*/
-
-        //var navigationView = Ext.Viewport.getComponent('mainnav');
-        /*this.getMainnav().push({
-            xtype : 'step1',
-            title : 'OK'
-        });*/
     },
 
     onPreferencesButtonTap: function(button, e, eOpts) {
@@ -84,6 +66,23 @@ Ext.define('MyApp.controller.MainNav', {
                     title : 'Preferences',
                     xtype : 'preferencesview'
                 });
+    },
+
+    onLogOutButtonTap: function(button, e, eOpts) {
+        //Fonction appelée lors d'un clic sur le bouton "Log out"
+
+        //On masque d'abord le menu
+        var menuListOverlay = Ext.Viewport.getComponent('menulist');
+        menuListOverlay.hide();
+
+        //Suppression de la variable de session
+        localStorage.removeItem("authOK");
+
+        //Redirection vers la page d'authentification
+        Ext.Viewport.setActiveItem(0);
+
+        var mainNavView = this.getMainnav();
+        Ext.Viewport.remove(mainNavView);
     },
 
     launch: function() {

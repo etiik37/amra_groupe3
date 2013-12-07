@@ -29,7 +29,12 @@ Ext.define('MyApp.view.MainNav', {
             type: 'card'
         },
         navigationBar: {
+            centered: false,
             docked: 'top',
+            layout: {
+                pack: 'center',
+                type: 'hbox'
+            },
             items: [
                 {
                     xtype: 'button',

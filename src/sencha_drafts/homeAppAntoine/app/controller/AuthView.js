@@ -18,7 +18,6 @@ Ext.define('MyApp.controller.AuthView', {
 
     config: {
         views: [
-            'AuthView',
             'MainNav'
         ],
 
@@ -50,14 +49,27 @@ Ext.define('MyApp.controller.AuthView', {
 
         if (login != 'admin' || password != 'adminadmin') {
             label.show();
+            localStorage.setItem("authOK", "false");
         }
         else {
-            var sample = Ext.create('MyApp.view.MainNav');
-            Ext.Viewport.setActiveItem(sample);
+            var mainView = Ext.create('MyApp.view.MainNav');
+            Ext.Viewport.setActiveItem(mainView);
+            localStorage.setItem("authOK", "true");
         }
 
         loginField.setValue('');
         passwordField.setValue('');
+    },
+
+    init: function(application) {
+        //Récupération de la variable de session
+        var foo = localStorage.getItem("authOK");
+
+        //Si l'utilisateur est déjà authentifié, on redirige vers la page d'accueil
+        if (foo !== null && foo == "true") {
+            var mainView = Ext.create('MyApp.view.MainNav');
+            Ext.Viewport.setActiveItem(mainView);
+        }
     }
 
 });

@@ -8,7 +8,6 @@
     "userConfig": {
         "container|animation": "flip",
         "defaultBackButtonText": "Home",
-        "designer|initialView": true,
         "designer|userAlias": "mainnav",
         "designer|userClassName": "MainNav",
         "id": "mainnav",
@@ -24,9 +23,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "centered": false,
+                "container|align": null,
+                "container|pack": "center",
                 "designer|createAlias": "toolbartop",
                 "designer|displayName": "NavigationBar",
-                "docked": "top"
+                "docked": "top",
+                "tplWriteMode": null
             },
             "designerId": "8d95e0ef-45fd-410f-bec0-11984fbe3ab6",
             "cn": [

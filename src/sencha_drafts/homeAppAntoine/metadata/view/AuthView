@@ -6,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoDestroy": false,
+        "designer|initialView": true,
         "designer|userAlias": "authview",
         "designer|userClassName": "AuthView",
         "id": "authview"

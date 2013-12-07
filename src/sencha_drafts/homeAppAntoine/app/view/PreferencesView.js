@@ -18,13 +18,22 @@ Ext.define('MyApp.view.PreferencesView', {
     alias: 'widget.preferencesview',
 
     config: {
+        autoDestroy: false,
         items: [
             {
-                xtype: 'selectfield',
-                label: 'Time Zone',
-                name: 'timeZoneField',
-                displayField: 'name',
-                store: 'timezonestore'
+                xtype: 'formpanel',
+                height: '100%',
+                id: 'preferencesform',
+                items: [
+                    {
+                        xtype: 'selectfield',
+                        id: 'timezonefield',
+                        label: 'Time Zone',
+                        name: 'timeZoneField',
+                        displayField: 'name',
+                        store: 'timezonestore'
+                    }
+                ]
             }
         ]
     }

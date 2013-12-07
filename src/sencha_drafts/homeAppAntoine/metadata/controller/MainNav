@@ -6,16 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MainNav",
-        "stores": [
-            "MenuStore",
-            "ProblemSolvingStore"
-        ],
-        "views": [
-            "MenuList",
-            "MainNav",
-            "ProjectSolvingNav"
-        ]
+        "designer|userClassName": "MainNav"
     },
     "designerId": "5f48e3bd-92b3-47e9-865d-19647adb0c12",
     "cn": [
@@ -80,18 +71,7 @@
                     "mainNavView.push({",
                     "    title : record.get('label'),",
                     "    xtype : record.get('id_view')",
-                    "});",
-                    "",
-                    "/*this.up('mainnav').push({",
-                    "    title : 'OK',",
-                    "    html : 'Ca marche !'",
-                    "});*/",
-                    "",
-                    "//var navigationView = Ext.Viewport.getComponent('mainnav');",
-                    "/*this.getMainnav().push({",
-                    "    xtype : 'step1',",
-                    "    title : 'OK'",
-                    "});*/"
+                    "});"
                 ],
                 "name": "itemtap"
             },
@@ -124,19 +104,6 @@
             "designerId": "efdc038c-6c9d-407f-8c86-bfa59571b488"
         },
         {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "preferencesbutton",
-                "selector": "#preferencesbutton"
-            },
-            "designerId": "d927bfa9-83c9-4d87-a7f5-cc2645b7e04c"
-        },
-        {
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -164,6 +131,50 @@
                 "name": "tap"
             },
             "designerId": "24d6b780-ef3b-422b-b82d-c613ce5005ed"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#logoutbutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onLogOutButtonTap",
+                "implHandler": [
+                    "//Fonction appelée lors d'un clic sur le bouton \"Log out\"",
+                    "",
+                    "//On masque d'abord le menu",
+                    "var menuListOverlay = Ext.Viewport.getComponent('menulist');",
+                    "menuListOverlay.hide();",
+                    "",
+                    "//Suppression de la variable de session",
+                    "localStorage.removeItem(\"authOK\");",
+                    "",
+                    "//Redirection vers la page d'authentification",
+                    "Ext.Viewport.setActiveItem(0);",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "Ext.Viewport.remove(mainNavView);"
+                ],
+                "name": "tap"
+            },
+            "designerId": "d32617f7-5aa0-4c70-b4f2-ecd324f7febd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "authview",
+                "selector": "authview"
+            },
+            "designerId": "563468f3-922f-4cd4-9a29-54a0cf0f0ee2"
         }
     ]
 }

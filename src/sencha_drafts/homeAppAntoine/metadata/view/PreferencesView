@@ -6,26 +6,44 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoDestroy": false,
         "designer|userAlias": "preferencesview",
         "designer|userClassName": "PreferencesView"
     },
     "designerId": "c82cf8e6-ad7f-4298-95aa-cddda912446a",
     "cn": [
         {
-            "type": "Ext.field.Select",
+            "type": "Ext.form.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "displayField": "name",
-                "label": "Time Zone",
-                "maxLength": null,
-                "name": "timeZoneField",
-                "store": "timezonestore"
+                "designer|displayName": "preferencesForm",
+                "height": "100%",
+                "id": "preferencesform"
             },
-            "designerId": "0b42bbc8-15d2-47b0-8b1d-299186b7d487"
+            "designerId": "198f2f03-0ff0-431c-8bfe-f9233192bc2c",
+            "cn": [
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "name",
+                        "id": "timezonefield",
+                        "label": "Time Zone",
+                        "maxLength": null,
+                        "name": "timeZoneField",
+                        "store": "timezonestore"
+                    },
+                    "designerId": "0b42bbc8-15d2-47b0-8b1d-299186b7d487"
+                }
+            ]
         }
     ]
 }

@@ -19,6 +19,7 @@ Ext.define('MyApp.view.AuthView', {
 
     config: {
         id: 'authview',
+        autoDestroy: false,
         items: [
             {
                 xtype: 'toolbar',

@@ -8,7 +8,6 @@
     "userConfig": {
         "designer|userClassName": "AuthView",
         "views": [
-            "AuthView",
             "MainNav"
         ]
     },
@@ -76,10 +75,12 @@
                     "",
                     "if (login != 'admin' || password != 'adminadmin') {",
                     "    label.show();",
+                    "    localStorage.setItem(\"authOK\", \"false\");",
                     "}",
                     "else {",
-                    "    var sample = Ext.create('MyApp.view.MainNav');",
-                    "    Ext.Viewport.setActiveItem(sample);",
+                    "    var mainView = Ext.create('MyApp.view.MainNav');",
+                    "    Ext.Viewport.setActiveItem(mainView);",
+                    "    localStorage.setItem(\"authOK\", \"true\");",
                     "}",
                     "",
                     "loginField.setValue('');",
@@ -127,6 +128,31 @@
                 "selector": "#errorAuthText"
             },
             "designerId": "d64a9f7e-1dba-46da-8a42-bd20984fcd3a"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "//Récupération de la variable de session",
+                    "var foo = localStorage.getItem(\"authOK\");",
+                    "",
+                    "//Si l'utilisateur est déjà authentifié, on redirige vers la page d'accueil",
+                    "if (foo !== null && foo == \"true\") {",
+                    "    var mainView = Ext.create('MyApp.view.MainNav');",
+                    "    Ext.Viewport.setActiveItem(mainView);",
+                    "}"
+                ]
+            },
+            "designerId": "c7bf1ded-022f-4000-ae4c-e781937fa52d"
         }
     ]
 }

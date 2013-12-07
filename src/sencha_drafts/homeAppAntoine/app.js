@@ -29,19 +29,20 @@ Ext.application({
         'AuthView',
         'MenuList',
         'ProjectSolvingNav',
-        'PreferencesView',
         'MainNav',
-        'HomeView'
+        'HomeView',
+        'PreferencesView'
     ],
     controllers: [
         'AuthView',
-        'MainNav'
+        'MainNav',
+        'PreferencesView'
     ],
     name: 'MyApp',
 
     launch: function() {
 
-        Ext.create('MyApp.view.MainNav', {fullscreen: true});
+        Ext.create('MyApp.view.AuthView', {fullscreen: true});
     }
 
 });
