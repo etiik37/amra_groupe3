@@ -1,0 +1,12 @@
+[
+	{"date": "13/07/2013 15:20", "criticity": "high", "label": "Alarm1", "description": "N/A"},
+	{"date": "13/07/2013 16:20", "criticity": "medium", "label": "Alarm2", "description": "N/A"},
+	{"date": "07/12/2013 19:20", "criticity": "medium", "label": "Alarm2", "description": "N/A"},
+	{"date": "07/12/2013 19:20", "criticity": "medium", "label": "Alarm2", "description": "N/A"},
+	{"date": "08/12/2013 19:20", "criticity": "high", "label": "Alarm3", "description": "N/A"},
+	{"date": "08/12/2013 19:20", "criticity": "high", "label": "Alarm3", "description": "N/A"},
+	{"date": "08/12/2013 19:20", "criticity": "high", "label": "Alarm3", "description": "N/A"},
+	{"date": "08/12/2013 19:20", "criticity": "high", "label": "Alarm3", "description": "N/A"},
+	{"date": "08/12/2013 19:20", "criticity": "high", "label": "Alarm3", "description": "N/A"},
+	{"date": "08/12/2013 19:20", "criticity": "high", "label": "Alarm3", "description": "N/A"}
+]

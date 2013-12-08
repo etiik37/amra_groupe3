@@ -642,15 +642,18 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "MyApp.controller.AuthView": [],
   "MyApp.controller.MainNav": [],
-  "MyApp.model.MyModel": [],
+  "MyApp.controller.PreferencesView": [],
   "MyApp.store.MenuStore": [],
+  "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [],
+  "MyApp.view.HomeView": [],
   "MyApp.view.Main": [],
   "MyApp.view.MainNav": [],
   "MyApp.view.MenuList": [],
   "MyApp.view.MyToolbar3": [],
+  "MyApp.view.NotificationsList": [],
   "MyApp.view.PreferencesView": [],
   "MyApp.view.ProjectSolvingNav": []
 });
@@ -1373,21 +1376,34 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.WindowsPhone": [],
   "MyApp.controller.AuthView": [],
   "MyApp.controller.MainNav": [],
-  "MyApp.model.MyModel": [],
+  "MyApp.controller.PreferencesView": [],
   "MyApp.store.MenuStore": [],
+  "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.store.TimeZoneStore": [],
-  "MyApp.view.AuthView": [],
+  "MyApp.view.AuthView": [
+    "widget.authview"
+  ],
+  "MyApp.view.HomeView": [
+    "widget.homeview"
+  ],
   "MyApp.view.Main": [
     "widget.main"
   ],
-  "MyApp.view.MainNav": [],
+  "MyApp.view.MainNav": [
+    "widget.mainnav"
+  ],
   "MyApp.view.MenuList": [
     "widget.menulist"
   ],
   "MyApp.view.MyToolbar3": [],
-  "MyApp.view.PreferencesView": [],
+  "MyApp.view.NotificationsList": [
+    "widget.notificationslist"
+  ],
+  "MyApp.view.PreferencesView": [
+    "widget.preferencesview"
+  ],
   "MyApp.view.ProjectSolvingNav": [
-    "widget.mypanel"
+    "widget.projectsolvingnav"
   ]
 });

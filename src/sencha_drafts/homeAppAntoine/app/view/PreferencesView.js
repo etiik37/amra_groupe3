@@ -26,12 +26,32 @@ Ext.define('MyApp.view.PreferencesView', {
                 id: 'preferencesform',
                 items: [
                     {
+                        xtype: 'numberfield',
+                        component: {
+                            type: 'number'
+                        },
+                        label: 'Notifications Refresh Time (ms)',
+                        labelWrap: true,
+                        name: 'notifRefreshTimeField',
+                        value: 5000,
+                        maxValue: 30000,
+                        minValue: 0
+                    },
+                    {
                         xtype: 'selectfield',
-                        id: 'timezonefield',
                         label: 'Time Zone',
+                        labelWrap: true,
                         name: 'timeZoneField',
                         displayField: 'name',
                         store: 'timezonestore'
+                    },
+                    {
+                        xtype: 'selectfield',
+                        label: 'Language',
+                        labelWrap: true,
+                        name: 'languageField',
+                        displayField: 'label',
+                        store: 'LanguageStore'
                     }
                 ]
             }

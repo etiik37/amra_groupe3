@@ -17,11 +17,17 @@ Ext.define('MyApp.controller.MainNav', {
     extend: 'Ext.app.Controller',
 
     config: {
+        views: [
+            'MainNav'
+        ],
+
         refs: {
-            menulist: '#menulist',
+            menulist: 'menulist',
             mainnav: 'mainnav',
-            projectsolvingnav: 'projectsolvingnav',
-            authview: 'authview'
+            authview: 'authview',
+            menubutton: '#menubutton',
+            notificationsbutton: '#notificationsbutton',
+            notificationslist: 'notificationslist'
         },
 
         control: {
@@ -33,6 +39,9 @@ Ext.define('MyApp.controller.MainNav', {
             },
             "#logoutbutton": {
                 tap: 'onLogOutButtonTap'
+            },
+            "#notificationsbutton": {
+                tap: 'onNotificationsButtonTap'
             }
         }
     },
@@ -78,6 +87,9 @@ Ext.define('MyApp.controller.MainNav', {
         //Suppression de la variable de session
         localStorage.removeItem("authOK");
 
+        //Arrêt du timer pour la mise à jour des notifications
+        clearInterval(timerCheckForNotifications);
+
         //Redirection vers la page d'authentification
         Ext.Viewport.setActiveItem(0);
 
@@ -85,17 +97,37 @@ Ext.define('MyApp.controller.MainNav', {
         Ext.Viewport.remove(mainNavView);
     },
 
-    launch: function() {
-        var view = Ext.create('MyApp.view.MenuList');
-        var overlay = Ext.Viewport.add(view);
+    onNotificationsButtonTap: function(button, e, eOpts) {
+        button.setBadgeText('');
+        localStorage.setItem("previousNotifNb", localStorage.getItem("newNotifNb"));
+    },
 
-        Ext.Viewport.on({
-            delegate: '#menuButton',
-            tap: function(button) {
-                // When you tap on a button, we want to show the overlay by the button we just tapped.
-                overlay.showBy(button);
+    launch: function() {
+        var MenuListView = Ext.create('MyApp.view.MenuList');
+        var overlayMenuList = Ext.Viewport.add(MenuListView);
+
+        var NotificationsListView = Ext.create('MyApp.view.NotificationsList');
+        var overlayNotificationsList = Ext.Viewport.add(NotificationsListView);
+
+        Ext.Viewport.on(
+            {
+                delegate: '#notificationsbutton',
+                tap: function(button) {
+                    // When you tap on a button, we want to show the overlay by the button we just tapped.
+                    overlayNotificationsList.showBy(button);
+                }
             }
-        });
+        );
+
+        Ext.Viewport.on(
+            {
+                delegate: '#menubutton',
+                tap: function(button) {
+                    // When you tap on a button, we want to show the overlay by the button we just tapped.
+                    overlayMenuList.showBy(button);
+                }
+            }
+        );
     }
 
 });

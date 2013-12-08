@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "container|animation": "flip",
+        "container|animation": false,
         "defaultBackButtonText": "Home",
         "designer|userAlias": "mainnav",
         "designer|userClassName": "MainNav",
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "docked": "left",
                         "iconCls": "list",
-                        "id": "menuButton",
+                        "id": "menubutton",
                         "text": null,
                         "ui": "plain"
                     },
@@ -64,7 +64,7 @@
                         "icon": null,
                         "iconAlign": "right",
                         "iconCls": "info",
-                        "id": "notificationsButton",
+                        "id": "notificationsbutton",
                         "text": null,
                         "ui": "plain"
                     },

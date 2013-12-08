@@ -27,6 +27,28 @@
             "designerId": "198f2f03-0ff0-431c-8bfe-f9233192bc2c",
             "cn": [
                 {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "component": [
+                            "{\"type\":\"number\"}"
+                        ],
+                        "label": "Notifications Refresh Time (ms)",
+                        "labelWrap": true,
+                        "maxValue": 30000,
+                        "minValue": 0,
+                        "name": "notifRefreshTimeField",
+                        "value": [
+                            "5000"
+                        ]
+                    },
+                    "designerId": "e2041b0b-e18b-41ae-aad4-fc150d655764"
+                },
+                {
                     "type": "Ext.field.Select",
                     "reference": {
                         "name": "items",
@@ -35,13 +57,32 @@
                     "codeClass": null,
                     "userConfig": {
                         "displayField": "name",
-                        "id": "timezonefield",
+                        "id": null,
                         "label": "Time Zone",
+                        "labelWrap": true,
                         "maxLength": null,
                         "name": "timeZoneField",
                         "store": "timezonestore"
                     },
                     "designerId": "0b42bbc8-15d2-47b0-8b1d-299186b7d487"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "label",
+                        "id": null,
+                        "label": "Language",
+                        "labelWrap": true,
+                        "maxLength": null,
+                        "name": "languageField",
+                        "store": "LanguageStore"
+                    },
+                    "designerId": "4f1efc67-bce5-4333-a417-bcf6b5829a4d"
                 }
             ]
         }

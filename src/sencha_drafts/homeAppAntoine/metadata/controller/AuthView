@@ -7,6 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "AuthView",
+        "stores": [
+            "NotificationStore"
+        ],
         "views": [
             "MainNav"
         ]
@@ -22,7 +25,7 @@
             "codeClass": null,
             "userConfig": {
                 "ref": "mainnav",
-                "selector": "#mainnav"
+                "selector": "mainnav"
             },
             "designerId": "6fc729de-4bae-4397-be41-bbe8a5bc7b63"
         },
@@ -35,7 +38,7 @@
             "codeClass": null,
             "userConfig": {
                 "ref": "authview",
-                "selector": "#authview"
+                "selector": "authview"
             },
             "designerId": "4fc33d83-f52f-4a84-a2b4-ec2dba906b38"
         },
@@ -78,9 +81,26 @@
                     "    localStorage.setItem(\"authOK\", \"false\");",
                     "}",
                     "else {",
+                    "    //Redirection vers la page d'accueil",
                     "    var mainView = Ext.create('MyApp.view.MainNav');",
                     "    Ext.Viewport.setActiveItem(mainView);",
+                    "",
+                    "    //On enregistre que l'utilisateur est authentifié",
                     "    localStorage.setItem(\"authOK\", \"true\");",
+                    "",
+                    "    //On enregistre le nombre de notifications",
+                    "    var notificationsStore = Ext.getStore('notificationsstore');",
+                    "    localStorage.setItem(\"previousNotifNb\", 0);",
+                    "",
+                    "    //Démarrage du timer pour la mise à jour du store des notifications",
+                    "    timerCheckForNotifications = setInterval(function checkForNotifications() {",
+                    "        notificationsStore.load();",
+                    "        localStorage.setItem(\"newNotifNb\", notificationsStore.getAllCount());",
+                    "        var newNotifNbToPrint = localStorage.getItem('newNotifNb') - localStorage.getItem('previousNotifNb');",
+                    "        if (newNotifNbToPrint !== 0) {",
+                    "            Ext.getCmp('notificationsbutton').setBadgeText(newNotifNbToPrint);",
+                    "        }",
+                    "    },5000);",
                     "}",
                     "",
                     "loginField.setValue('');",
@@ -152,7 +172,33 @@
                     "}"
                 ]
             },
-            "designerId": "c7bf1ded-022f-4000-ae4c-e781937fa52d"
+            "designerId": "9d865567-972c-4d9a-91b4-057b0118759a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "notificationsbutton",
+                "selector": "#notificationsbutton"
+            },
+            "designerId": "6176e42f-e169-41ce-958e-8b4db537845e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "notificationslist",
+                "selector": "notificationslist"
+            },
+            "designerId": "39304603-f487-4d8e-82aa-b1e8f186cdb9"
         }
     ]
 }

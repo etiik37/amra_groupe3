@@ -25,7 +25,7 @@ Ext.define('MyApp.view.MainNav', {
         id: 'mainnav',
         defaultBackButtonText: 'Home',
         layout: {
-            animation: 'flip',
+            animation: false,
             type: 'card'
         },
         navigationBar: {
@@ -39,7 +39,7 @@ Ext.define('MyApp.view.MainNav', {
                 {
                     xtype: 'button',
                     docked: 'left',
-                    id: 'menuButton',
+                    id: 'menubutton',
                     ui: 'plain',
                     iconCls: 'list'
                 },
@@ -47,7 +47,7 @@ Ext.define('MyApp.view.MainNav', {
                     xtype: 'button',
                     align: 'right',
                     docked: 'right',
-                    id: 'notificationsButton',
+                    id: 'notificationsbutton',
                     ui: 'plain',
                     iconAlign: 'right',
                     iconCls: 'info'

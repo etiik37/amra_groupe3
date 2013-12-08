@@ -1,0 +1,125 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "NotificationStore",
+        "storeId": "notificationsstore"
+    },
+    "designerId": "95777b2b-9fed-4b9a-82f4-ca915d6f6860",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "d/m/Y H:i",
+                "name": "date",
+                "sortDir": null,
+                "sortType": null,
+                "type": "date"
+            },
+            "designerId": "821343a2-117e-4c35-9c99-3256160885a0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "criticity",
+                "type": "string"
+            },
+            "designerId": "85f53320-11c4-435b-9663-742628d3b26d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "type": "string"
+            },
+            "designerId": "c487b021-c63e-4e42-9472-f7350bc0747c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description",
+                "type": "string"
+            },
+            "designerId": "5792afe5-360c-420c-a301-bf2a307a9813"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directionParam": null,
+                "groupParam": null,
+                "simpleSortMode": true,
+                "url": "notifications.json"
+            },
+            "designerId": "9bd4b42f-0f82-49c2-a89f-5285e6733afa"
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "SortByDate"
+            },
+            "designerId": "5e382642-6fbc-4a50-a95a-4946dd9b1c6f",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "first",
+                            "second"
+                        ],
+                        "fn": "sorterFn",
+                        "implHandler": [
+                            "if (first >= second){",
+                            "    return 1;",
+                            "}",
+                            "else {",
+                            "    return 0;",
+                            "}"
+                        ]
+                    },
+                    "designerId": "8140ebc9-9966-480d-8687-3738dcfe85a0"
+                }
+            ]
+        }
+    ]
+}

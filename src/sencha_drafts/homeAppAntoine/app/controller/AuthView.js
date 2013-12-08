@@ -17,17 +17,22 @@ Ext.define('MyApp.controller.AuthView', {
     extend: 'Ext.app.Controller',
 
     config: {
+        stores: [
+            'NotificationStore'
+        ],
         views: [
             'MainNav'
         ],
 
         refs: {
-            mainnav: '#mainnav',
-            authview: '#authview',
+            mainnav: 'mainnav',
+            authview: 'authview',
             loginButton: '#loginButton',
             loginField: '#loginField',
             passwordField: '#passwordField',
-            errorAuthText: '#errorAuthText'
+            errorAuthText: '#errorAuthText',
+            notificationsbutton: '#notificationsbutton',
+            notificationslist: 'notificationslist'
         },
 
         control: {
@@ -52,9 +57,26 @@ Ext.define('MyApp.controller.AuthView', {
             localStorage.setItem("authOK", "false");
         }
         else {
+            //Redirection vers la page d'accueil
             var mainView = Ext.create('MyApp.view.MainNav');
             Ext.Viewport.setActiveItem(mainView);
+
+            //On enregistre que l'utilisateur est authentifié
             localStorage.setItem("authOK", "true");
+
+            //On enregistre le nombre de notifications
+            var notificationsStore = Ext.getStore('notificationsstore');
+            localStorage.setItem("previousNotifNb", 0);
+
+            //Démarrage du timer pour la mise à jour du store des notifications
+            timerCheckForNotifications = setInterval(function checkForNotifications() {
+                notificationsStore.load();
+                localStorage.setItem("newNotifNb", notificationsStore.getAllCount());
+                var newNotifNbToPrint = localStorage.getItem('newNotifNb') - localStorage.getItem('previousNotifNb');
+                if (newNotifNbToPrint !== 0) {
+                    Ext.getCmp('notificationsbutton').setBadgeText(newNotifNbToPrint);
+                }
+            },5000);
         }
 
         loginField.setValue('');

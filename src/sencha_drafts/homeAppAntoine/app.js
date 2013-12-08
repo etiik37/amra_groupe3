@@ -23,25 +23,29 @@ Ext.application({
     stores: [
         'MenuStore',
         'ProblemSolvingStore',
-        'TimeZoneStore'
+        'TimeZoneStore',
+        'NotificationStore',
+        'LanguageStore'
     ],
     views: [
         'AuthView',
         'MenuList',
         'ProjectSolvingNav',
-        'MainNav',
+        'PreferencesView',
         'HomeView',
-        'PreferencesView'
+        'MainNav',
+        'NotificationsList'
     ],
     controllers: [
         'AuthView',
-        'MainNav',
-        'PreferencesView'
+        'PreferencesView',
+        'MainNav'
     ],
     name: 'MyApp',
 
     launch: function() {
-
+        //Pour la mise à jour des notifications
+        var timerCheckForNotifications;
         Ext.create('MyApp.view.AuthView', {fullscreen: true});
     }
 

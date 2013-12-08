@@ -23,6 +23,7 @@
         "minHeight": null,
         "minWidth": null,
         "modal": true,
+        "pinHeaders": false,
         "store": "menustore",
         "striped": true,
         "style": "border-color: black; border-style: solid; border-radius:10px;",

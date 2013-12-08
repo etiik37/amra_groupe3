@@ -8,23 +8,44 @@
     "userConfig": {
         "controllers": [
             "AuthView",
-            "MainNav",
-            "PreferencesView"
+            "PreferencesView",
+            "MainNav"
         ],
         "name": "MyApp",
         "stores": [
             "MenuStore",
             "ProblemSolvingStore",
-            "TimeZoneStore"
+            "TimeZoneStore",
+            "NotificationStore",
+            "LanguageStore"
         ],
         "views": [
             "AuthView",
             "MenuList",
             "ProjectSolvingNav",
-            "MainNav",
+            "PreferencesView",
             "HomeView",
-            "PreferencesView"
+            "MainNav",
+            "NotificationsList"
         ]
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "//Pour la mise à jour des notifications",
+                    "var timerCheckForNotifications;"
+                ]
+            },
+            "designerId": "bd18622b-25d7-448e-ab0c-dc669b0d11a7"
+        }
+    ]
 }

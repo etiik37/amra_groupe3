@@ -37,6 +37,7 @@ Ext.define('MyApp.view.MenuList', {
         store: 'menustore',
         grouped: true,
         infinite: true,
+        pinHeaders: false,
         striped: true,
         variableHeights: true,
         itemTpl: [
