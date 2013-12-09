@@ -23,10 +23,12 @@ Ext.define('MyApp.view.NotificationsList', {
 
     config: {
         height: '80%',
+        id: 'notificationslist',
         padding: 10,
         width: '25%',
         hideOnMaskTap: true,
         modal: true,
+        deselectOnContainerClick: false,
         disableSelection: true,
         scrollToTopOnRefresh: false,
         store: 'notificationsstore',

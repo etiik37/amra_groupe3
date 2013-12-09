@@ -35,14 +35,7 @@
                 "designer|targetType": "Ext.field.Select",
                 "fn": "onSelectfieldChange",
                 "implHandler": [
-                    "var foo = localStorage.getItem(\"timeZone\");",
-                    "",
-                    "",
-                    "alert(foo);",
-                    "",
-                    "localStorage.setItem(\"timeZone\", selectfield.getValue());",
-                    "",
-                    "alert(foo);"
+                    "localStorage.setItem(\"timeZone\", selectfield.getValue());"
                 ],
                 "name": "change"
             },

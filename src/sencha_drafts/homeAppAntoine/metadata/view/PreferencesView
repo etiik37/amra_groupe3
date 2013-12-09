@@ -7,24 +7,29 @@
     "codeClass": null,
     "userConfig": {
         "autoDestroy": false,
+        "centered": false,
         "designer|userAlias": "preferencesview",
-        "designer|userClassName": "PreferencesView"
+        "designer|userClassName": "PreferencesView",
+        "width": null
     },
     "designerId": "c82cf8e6-ad7f-4298-95aa-cddda912446a",
     "cn": [
         {
-            "type": "Ext.form.Panel",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "preferencesForm",
-                "height": "100%",
-                "id": "preferencesform"
+                "centered": false,
+                "docked": "top",
+                "hidden": false,
+                "layout": "fit",
+                "right": null,
+                "width": "100%"
             },
-            "designerId": "198f2f03-0ff0-431c-8bfe-f9233192bc2c",
+            "designerId": "0fbacf9e-d743-4c16-b113-8525de0edb05",
             "cn": [
                 {
                     "type": "Ext.field.Number",
@@ -34,6 +39,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "centered": false,
                         "component": [
                             "{\"type\":\"number\"}"
                         ],
@@ -80,7 +86,7 @@
                         "labelWrap": true,
                         "maxLength": null,
                         "name": "languageField",
-                        "store": "LanguageStore"
+                        "store": "languageStore"
                     },
                     "designerId": "4f1efc67-bce5-4333-a417-bcf6b5829a4d"
                 }

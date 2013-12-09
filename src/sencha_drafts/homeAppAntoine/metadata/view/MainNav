@@ -7,11 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "container|animation": false,
-        "defaultBackButtonText": "Home",
         "designer|userAlias": "mainnav",
         "designer|userClassName": "MainNav",
         "id": "mainnav",
-        "itemId": null
+        "itemId": null,
+        "useTitleForBackButtonText": null
     },
     "designerId": "b2acb95f-cf34-4fea-a689-bbafade179db",
     "cn": [
@@ -29,6 +29,7 @@
                 "designer|createAlias": "toolbartop",
                 "designer|displayName": "NavigationBar",
                 "docked": "top",
+                "id": "toolbartop",
                 "tplWriteMode": null
             },
             "designerId": "8d95e0ef-45fd-410f-bec0-11984fbe3ab6",
@@ -82,8 +83,8 @@
             "userConfig": {
                 "title": "SCC Portal"
             },
-            "designerId": "4390d0e8-eb01-45be-a372-64353322e305",
-            "masterInstanceId": "5b5736e8-6f91-49c4-91ad-563b41dadbf5"
+            "designerId": "420d2df5-a555-4e9e-8f0d-1e78ba63cb66",
+            "masterInstanceId": "513a1ef2-95a6-43ac-92eb-1c30a3245e45"
         }
     ]
 }

@@ -169,6 +169,10 @@
                     "if (foo !== null && foo == \"true\") {",
                     "    var mainView = Ext.create('MyApp.view.MainNav');",
                     "    Ext.Viewport.setActiveItem(mainView);",
+                    "}",
+                    "else {",
+                    "    var mainView = Ext.create('MyApp.view.MainNav');",
+                    "    Ext.Viewport.setActiveItem(mainView);",
                     "}"
                 ]
             },

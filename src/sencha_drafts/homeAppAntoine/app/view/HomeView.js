@@ -18,7 +18,10 @@ Ext.define('MyApp.view.HomeView', {
     alias: 'widget.homeview',
 
     config: {
-        html: 'Cliquez sur le menu pour changer de page...'
+        html: 'Cliquez sur le menu pour changer de page...',
+        layout: {
+            type: 'fit'
+        }
     }
 
 });

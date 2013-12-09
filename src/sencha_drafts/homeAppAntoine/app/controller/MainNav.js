@@ -27,7 +27,7 @@ Ext.define('MyApp.controller.MainNav', {
             authview: 'authview',
             menubutton: '#menubutton',
             notificationsbutton: '#notificationsbutton',
-            notificationslist: 'notificationslist'
+            notificationslist: '#notificationslist'
         },
 
         control: {
@@ -51,7 +51,6 @@ Ext.define('MyApp.controller.MainNav', {
         var menuListOverlay = Ext.Viewport.getComponent('menulist');
         menuListOverlay.hide();
 
-
         var mainNavView = this.getMainnav();
 
         mainNavView.pop();
@@ -69,12 +68,12 @@ Ext.define('MyApp.controller.MainNav', {
 
         var mainNavView = this.getMainnav();
 
-                mainNavView.pop();
+        mainNavView.pop();
 
-                mainNavView.push({
-                    title : 'Preferences',
-                    xtype : 'preferencesview'
-                });
+        mainNavView.push({
+            title : 'Preferences',
+            xtype : 'preferencesview'
+        });
     },
 
     onLogOutButtonTap: function(button, e, eOpts) {
@@ -98,6 +97,18 @@ Ext.define('MyApp.controller.MainNav', {
     },
 
     onNotificationsButtonTap: function(button, e, eOpts) {
+        var newNotifNbToHighlight = localStorage.getItem('newNotifNb') - localStorage.getItem('previousNotifNb');
+
+        var itemClass = Ext.get('notificationslist').dom.getElementsByClassName("x-list-item");
+        for (var i = 0; i < itemClass.length; i++) {
+            if(i < newNotifNbToHighlight){
+                itemClass[i].style.backgroundColor='#c7f3c7'; //change the color of the row
+            }
+            else {
+                itemClass[i].style.backgroundColor='#ffffff'; //change the color of the row
+            }
+        }
+
         button.setBadgeText('');
         localStorage.setItem("previousNotifNb", localStorage.getItem("newNotifNb"));
     },

@@ -18,15 +18,22 @@ Ext.define('MyApp.view.PreferencesView', {
     alias: 'widget.preferencesview',
 
     config: {
+        centered: false,
         autoDestroy: false,
         items: [
             {
-                xtype: 'formpanel',
-                height: '100%',
-                id: 'preferencesform',
+                xtype: 'container',
+                centered: false,
+                docked: 'top',
+                hidden: false,
+                width: '100%',
+                layout: {
+                    type: 'fit'
+                },
                 items: [
                     {
                         xtype: 'numberfield',
+                        centered: false,
                         component: {
                             type: 'number'
                         },
@@ -51,7 +58,7 @@ Ext.define('MyApp.view.PreferencesView', {
                         labelWrap: true,
                         name: 'languageField',
                         displayField: 'label',
-                        store: 'LanguageStore'
+                        store: 'languageStore'
                     }
                 ]
             }

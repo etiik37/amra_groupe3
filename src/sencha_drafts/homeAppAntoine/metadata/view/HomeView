@@ -8,7 +8,8 @@
     "userConfig": {
         "designer|userAlias": "homeview",
         "designer|userClassName": "HomeView",
-        "html": "Cliquez sur le menu pour changer de page..."
+        "html": "Cliquez sur le menu pour changer de page...",
+        "layout": "fit"
     },
-    "designerId": "5b5736e8-6f91-49c4-91ad-563b41dadbf5"
+    "designerId": "513a1ef2-95a6-43ac-92eb-1c30a3245e45"
 }

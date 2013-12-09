@@ -25,27 +25,37 @@ Ext.application({
         'ProblemSolvingStore',
         'TimeZoneStore',
         'NotificationStore',
-        'LanguageStore'
+        'LanguageStore',
+        'ItemsGonogo',
+        'ListActionsGonogo'
     ],
     views: [
         'AuthView',
         'MenuList',
         'ProjectSolvingNav',
         'PreferencesView',
-        'HomeView',
         'MainNav',
-        'NotificationsList'
+        'NotificationsList',
+        'GonogoListCheck',
+        'HomeView',
+        'GonogoView'
     ],
     controllers: [
         'AuthView',
         'PreferencesView',
-        'MainNav'
+        'MainNav',
+        'GonogoView'
     ],
     name: 'MyApp',
 
     launch: function() {
         //Pour la mise à jour des notifications
         var timerCheckForNotifications;
+
+        //Récupération du store
+        var sto = Ext.getStore('itemsgonogo');
+        //On affiche par défaut uniquement les GONOGO en cours
+        sto.filter('finished', 'false');
         Ext.create('MyApp.view.AuthView', {fullscreen: true});
     }
 

@@ -1,0 +1,7 @@
+[
+	{ "label": "METEOSAT 3000", "id_view": "", "finished": "false"},
+	{ "label": "Ariane 5", "id_view": "", "finished": "true"},
+	{ "label": "Challenger 2013", "id_view": "", "finished": "false"},
+	{ "label": "Astrium rocket", "id_view": "", "finished": "false"},
+	{ "label": "Mooner 2020", "id_view": "", "finished": "true"}
+]

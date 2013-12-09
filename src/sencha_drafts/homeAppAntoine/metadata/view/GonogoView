@@ -1,0 +1,163 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": false,
+        "designer|userAlias": "gonogoview",
+        "designer|userClassName": "GonogoView",
+        "id": null
+    },
+    "designerId": "06104c25-4fc7-46d7-a069-c21d2560751e",
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "container|align": "center",
+                "container|pack": "center",
+                "designer|createAlias": null,
+                "designer|displayName": "TabBarGonogo",
+                "docked": "top",
+                "hidden": false,
+                "id": "tabbargonogo"
+            },
+            "designerId": "a60177a2-ceb2-4d5c-8f5f-55b34a20c4b5"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "height": "100%",
+                "html": null,
+                "itemId": null,
+                "layout": "fit",
+                "scrollable": null,
+                "title": "In progress"
+            },
+            "designerId": "71aa368a-e720-4659-a97c-5392dd3004d0",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowDeselect": null,
+                        "centered": true,
+                        "deselectOnContainerClick": null,
+                        "designer|createAlias": null,
+                        "designer|displayName": null,
+                        "designer|uiInterfaceName": "round",
+                        "disableSelection": null,
+                        "height": "100%",
+                        "modal": null,
+                        "mode": null,
+                        "onItemDisclosure": true,
+                        "preventSelectionOnDisclose": null,
+                        "store": "itemsgonogo",
+                        "striped": true,
+                        "ui": "round",
+                        "width": "50%"
+                    },
+                    "designerId": "94db20a1-c049-4bb0-b879-40663af34fef",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<div>{label}</div>"
+                                ]
+                            },
+                            "designerId": "100985ce-9e30-4b7d-9b07-2b6dc84bbf73"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": null,
+                "height": "100%",
+                "html": null,
+                "layout": "fit",
+                "scrollable": null,
+                "title": "History"
+            },
+            "designerId": "9fdefd0f-49e4-47b1-bcaa-532b8bc20cc0",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowDeselect": null,
+                        "centered": true,
+                        "deselectOnContainerClick": null,
+                        "designer|createAlias": null,
+                        "designer|displayName": null,
+                        "designer|uiInterfaceName": "round",
+                        "disableSelection": null,
+                        "height": "100%",
+                        "modal": null,
+                        "mode": null,
+                        "onItemDisclosure": true,
+                        "preventSelectionOnDisclose": null,
+                        "store": "itemsgonogo",
+                        "striped": true,
+                        "ui": "round",
+                        "width": "50%"
+                    },
+                    "designerId": "c74c68c4-265e-4094-8f1d-fd25b4a3dff0",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<div>{label}</div>"
+                                ]
+                            },
+                            "designerId": "97cf8ca3-8396-46b1-b419-94ebca244e22"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

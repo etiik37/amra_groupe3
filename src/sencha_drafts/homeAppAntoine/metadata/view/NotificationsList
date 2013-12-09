@@ -7,11 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "baseCls": null,
+        "deselectOnContainerClick": false,
         "designer|userAlias": "notificationslist",
         "designer|userClassName": "NotificationsList",
         "disableSelection": true,
         "height": "80%",
         "hideOnMaskTap": true,
+        "id": "notificationslist",
         "itemCls": null,
         "itemHeight": 20,
         "modal": true,

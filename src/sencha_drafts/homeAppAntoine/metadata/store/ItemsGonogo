@@ -7,10 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "designer|userClassName": "LanguageStore",
-        "storeId": "languageStore"
+        "designer|userClassName": "ItemsGonogo",
+        "groupField": "finished",
+        "remoteGroup": true,
+        "storeId": "itemsgonogo"
     },
-    "designerId": "2fe857bc-b65d-490c-b4b3-9bd627170352",
+    "designerId": "1d17ab0f-595f-483d-b213-0ffdc5d49fe0",
     "cn": [
         {
             "type": "Ext.data.proxy.Ajax",
@@ -20,9 +22,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_language.json"
+                "url": "items_menu_gonogo.json"
             },
-            "designerId": "f8e603f5-0b61-44b6-9197-af5302f0c77d",
+            "designerId": "cbff029f-5840-4264-93e3-d7687a581e52",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -31,7 +33,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "designerId": "a29d50e0-40bf-4dab-a15c-3803abd51547"
+                    "designerId": "3b15bf07-429a-444f-9ff1-67bd08adf071"
                 }
             ]
         },
@@ -46,7 +48,7 @@
                 "name": "label",
                 "type": "string"
             },
-            "designerId": "63bd9183-e6ed-4c1e-845a-99c929fc8af9"
+            "designerId": "0803f3fb-dc6b-42a6-bfc3-2b3bf9f2f495"
         },
         {
             "type": "Ext.data.Field",
@@ -56,10 +58,23 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "value",
+                "name": "id_view",
                 "type": "string"
             },
-            "designerId": "c8ba8942-4619-4bfd-9930-f0cef3e6487c"
+            "designerId": "315ea964-e3f3-4540-ad7c-9cc7ef12bda8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "finished",
+                "type": "boolean"
+            },
+            "designerId": "4d3f2a8c-1463-496f-95ea-a534f1c5b896"
         }
     ]
 }

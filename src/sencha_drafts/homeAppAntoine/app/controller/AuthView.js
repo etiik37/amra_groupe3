@@ -92,6 +92,10 @@ Ext.define('MyApp.controller.AuthView', {
             var mainView = Ext.create('MyApp.view.MainNav');
             Ext.Viewport.setActiveItem(mainView);
         }
+        else {
+            var mainView = Ext.create('MyApp.view.MainNav');
+            Ext.Viewport.setActiveItem(mainView);
+        }
     }
 
 });

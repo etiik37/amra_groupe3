@@ -23,7 +23,6 @@ Ext.define('MyApp.view.MainNav', {
 
     config: {
         id: 'mainnav',
-        defaultBackButtonText: 'Home',
         layout: {
             animation: false,
             type: 'card'
@@ -31,6 +30,7 @@ Ext.define('MyApp.view.MainNav', {
         navigationBar: {
             centered: false,
             docked: 'top',
+            id: 'toolbartop',
             layout: {
                 pack: 'center',
                 type: 'hbox'

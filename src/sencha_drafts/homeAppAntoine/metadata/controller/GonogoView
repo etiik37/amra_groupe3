@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GonogoView"
+    },
+    "designerId": "72514518-d1f4-41b1-8cc2-9f31f8e78a7c",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoview",
+                "designer|targetType": "Ext.tab.Panel",
+                "fn": "onTabpanelActiveItemChange1",
+                "implHandler": [
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('itemsgonogo');",
+                    "",
+                    "//On efface tous les filtres existants",
+                    "sto.clearFilter();",
+                    "",
+                    "if (value.config.title !== 'History') {",
+                    "    sto.filter('finished', 'false');",
+                    "}"
+                ],
+                "name": "activeitemchange"
+            },
+            "designerId": "843212d5-5282-4d9e-96e0-c9b35f8fe3fd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "tabbargonogo",
+                "selector": "#tabbargonogo"
+            },
+            "designerId": "b8e41c41-35f9-404d-97b9-5b71665d07c9"
+        }
+    ]
+}
