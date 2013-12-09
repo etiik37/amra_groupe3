@@ -30,16 +30,19 @@ Ext.application({
     views: [
         'AuthView',
         'MenuList',
-        'ProjectSolvingNav',
         'PreferencesView',
         'HomeView',
         'MainNav',
-        'NotificationsList'
+        'NotificationsList',
+        'WikiView',
+        'ProjectSolvingList',
+        'ProjectSolvingNav'
     ],
     controllers: [
         'AuthView',
         'PreferencesView',
-        'MainNav'
+        'MainNav',
+        'ProjectSolvingNav'
     ],
     name: 'MyApp',
 

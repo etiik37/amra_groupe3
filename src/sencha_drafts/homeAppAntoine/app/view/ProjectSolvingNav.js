@@ -14,25 +14,23 @@
  */
 
 Ext.define('MyApp.view.ProjectSolvingNav', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.navigation.View',
     alias: 'widget.projectsolvingnav',
 
     requires: [
-        'Ext.XTemplate'
+        'MyApp.view.ProjectSolvingList'
     ],
 
     config: {
-        modal: false,
         items: [
             {
-                xtype: 'list',
-                height: '100%',
-                itemTpl: [
-                    '<div>List Item {string}</div>'
-                ],
-                store: 'problemsolvingstore'
+                xtype: 'projectsolvinglist'
             }
-        ]
+        ],
+        navigationBar: {
+            docked: 'top',
+            hidden: true
+        }
     }
 
 });

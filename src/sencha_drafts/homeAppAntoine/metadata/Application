@@ -9,7 +9,8 @@
         "controllers": [
             "AuthView",
             "PreferencesView",
-            "MainNav"
+            "MainNav",
+            "ProjectSolvingNav"
         ],
         "name": "MyApp",
         "stores": [
@@ -22,11 +23,13 @@
         "views": [
             "AuthView",
             "MenuList",
-            "ProjectSolvingNav",
             "PreferencesView",
             "HomeView",
             "MainNav",
-            "NotificationsList"
+            "NotificationsList",
+            "WikiView",
+            "ProjectSolvingList",
+            "ProjectSolvingNav"
         ]
     },
     "designerId": "application",

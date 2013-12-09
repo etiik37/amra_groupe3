@@ -1,5 +1,5 @@
 [
 	{ "name": "Documents", "id_view": "document" },
-	{ "name": "Wiki", "id_view": "Wiki" },
+	{ "name": "Wiki", "id_view": "wikiview" },
 	{ "name": "Question", "id_view": "question" }
 ]
