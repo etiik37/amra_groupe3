@@ -25,7 +25,8 @@ Ext.application({
         'ProblemSolvingStore',
         'TimeZoneStore',
         'NotificationStore',
-        'LanguageStore'
+        'LanguageStore',
+        'ListDocumentsStore'
     ],
     views: [
         'AuthView',
@@ -36,13 +37,19 @@ Ext.application({
         'NotificationsList',
         'WikiView',
         'ProjectSolvingList',
-        'ProjectSolvingNav'
+        'ProjectSolvingNav',
+        'QuestionView',
+        'DownloadDocumentsList'
+    ],
+    requires: [
+        'Ext.MessageBox'
     ],
     controllers: [
         'AuthView',
         'PreferencesView',
         'MainNav',
-        'ProjectSolvingNav'
+        'ProjectSolvingNav',
+        'DownloadDocuments'
     ],
     name: 'MyApp',
 

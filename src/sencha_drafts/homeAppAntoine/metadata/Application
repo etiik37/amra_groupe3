@@ -10,15 +10,20 @@
             "AuthView",
             "PreferencesView",
             "MainNav",
-            "ProjectSolvingNav"
+            "ProjectSolvingNav",
+            "DownloadDocuments"
         ],
         "name": "MyApp",
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "MenuStore",
             "ProblemSolvingStore",
             "TimeZoneStore",
             "NotificationStore",
-            "LanguageStore"
+            "LanguageStore",
+            "ListDocumentsStore"
         ],
         "views": [
             "AuthView",
@@ -29,7 +34,9 @@
             "NotificationsList",
             "WikiView",
             "ProjectSolvingList",
-            "ProjectSolvingNav"
+            "ProjectSolvingNav",
+            "QuestionView",
+            "DownloadDocumentsList"
         ]
     },
     "designerId": "application",

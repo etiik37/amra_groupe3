@@ -1,0 +1,8 @@
+[
+	{ "label": "How to solve this", "name_doc": "HowToSolveThis.pdf" },
+	{ "label": "How to solve that", "name_doc": "HowToSolveThat.pdf" },
+	{ "label": "How to solve that and this", "name_doc": "HowToSolveThatAndThis.pdf" },
+	{ "label": "How to not solve that", "name_doc": "HowToNotSolveThat.pdf" },
+	{ "label": "How to solve this and that", "name_doc": "HowToSolveThisAndThat.pdf" },
+	{ "label": "How to solve not that", "name_doc": "HowToSolveNotThat.pdf" }
+]

@@ -1,0 +1,58 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "downloaddocuments",
+        "designer|userClassName": "DownloadDocuments"
+    },
+    "designerId": "8b78a217-5e99-48a1-83ff-ba4dd7b4746c",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "downloaddocumentslist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "Ext.Msg.confirm(",
+                    "    \"Download document\",",
+                    "        \"Would you like to download \"+record.get('name_doc'),",
+                    "            function(buttonId) {",
+                    "                if (buttonId === 'yes') {",
+                    "                    //TODO retrieve the file .. new panel ?",
+                    "                    window.open(document.URL+record.get('name_doc'));",
+                    "                    //alert(document.URL);",
+                    "                }",
+                    "            }",
+                    "        );",
+                    "",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "d5932123-a0be-4cb3-a1de-1416c2ee4f00"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "downloaddocumentslist",
+                "selector": "downloaddocumentslist"
+            },
+            "designerId": "b133a7f3-f09e-4a89-8144-fd76cd4da388"
+        }
+    ]
+}

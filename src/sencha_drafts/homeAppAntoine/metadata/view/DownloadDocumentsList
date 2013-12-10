@@ -1,0 +1,33 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "downloaddocumentslist",
+        "designer|userClassName": "DownloadDocumentsList",
+        "disableSelection": true,
+        "docked": null,
+        "store": "ListDocumentsStore"
+    },
+    "designerId": "f4b01527-e064-4089-9551-60bf6f2413e7",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{label}</div>"
+                ]
+            },
+            "designerId": "aed598bd-4257-48f3-a064-360575093e2d"
+        }
+    ]
+}
