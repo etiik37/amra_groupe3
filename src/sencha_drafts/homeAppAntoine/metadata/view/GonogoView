@@ -56,50 +56,19 @@
             "designerId": "71aa368a-e720-4659-a97c-5392dd3004d0",
             "cn": [
                 {
-                    "type": "Ext.dataview.List",
+                    "type": "Ext.dataview.DataView",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "allowDeselect": null,
-                        "autoDestroy": false,
-                        "centered": true,
-                        "deselectOnContainerClick": null,
-                        "designer|createAlias": null,
-                        "designer|displayName": "GonogoListInProgress",
-                        "designer|uiInterfaceName": "round",
-                        "disableSelection": null,
-                        "height": "100%",
-                        "id": "gonogolistinprogress",
-                        "modal": null,
-                        "mode": null,
-                        "onItemDisclosure": true,
-                        "preventSelectionOnDisclose": null,
+                        "defaultType": "gonogoitem",
+                        "disableSelection": false,
                         "store": "itemsgonogo",
-                        "striped": true,
-                        "ui": "round",
-                        "width": "50%"
+                        "useComponents": true
                     },
-                    "designerId": "94db20a1-c049-4bb0-b879-40663af34fef",
-                    "cn": [
-                        {
-                            "type": "Ext.XTemplate",
-                            "reference": {
-                                "name": "itemTpl",
-                                "type": "object"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|displayName": "itemTpl",
-                                "implHandler": [
-                                    "<div>{label}</div>"
-                                ]
-                            },
-                            "designerId": "100985ce-9e30-4b7d-9b07-2b6dc84bbf73"
-                        }
-                    ]
+                    "designerId": "a96b1dd0-82ec-4126-97f7-f1dc6640d1b8"
                 }
             ]
         },
@@ -122,50 +91,19 @@
             "designerId": "9fdefd0f-49e4-47b1-bcaa-532b8bc20cc0",
             "cn": [
                 {
-                    "type": "Ext.dataview.List",
+                    "type": "Ext.dataview.DataView",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "allowDeselect": null,
-                        "autoDestroy": false,
-                        "centered": true,
-                        "deselectOnContainerClick": null,
-                        "designer|createAlias": null,
-                        "designer|displayName": "GonogoListAll",
-                        "designer|uiInterfaceName": "round",
-                        "disableSelection": null,
-                        "height": "100%",
-                        "id": "gonogolistall",
-                        "modal": null,
-                        "mode": null,
-                        "onItemDisclosure": true,
-                        "preventSelectionOnDisclose": null,
+                        "defaultType": "gonogoitem",
+                        "disableSelection": false,
                         "store": "itemsgonogo",
-                        "striped": true,
-                        "ui": "round",
-                        "width": "50%"
+                        "useComponents": true
                     },
-                    "designerId": "c74c68c4-265e-4094-8f1d-fd25b4a3dff0",
-                    "cn": [
-                        {
-                            "type": "Ext.XTemplate",
-                            "reference": {
-                                "name": "itemTpl",
-                                "type": "object"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|displayName": "itemTpl",
-                                "implHandler": [
-                                    "<div>{label}</div>"
-                                ]
-                            },
-                            "designerId": "97cf8ca3-8396-46b1-b419-94ebca244e22"
-                        }
-                    ]
+                    "designerId": "cc716399-42ba-4895-aadb-5303f8310a96"
                 }
             ]
         }

@@ -8,35 +8,17 @@
     "userConfig": {
         "autoLoad": true,
         "designer|userClassName": "ItemsGonogo",
+        "groupDir": "ASC",
         "groupField": "finished",
-        "remoteGroup": true,
+        "model": null,
+        "remoteGroup": null,
         "storeId": "itemsgonogo"
     },
+    "mockCfgs": [
+        "data"
+    ],
     "designerId": "1d17ab0f-595f-483d-b213-0ffdc5d49fe0",
     "cn": [
-        {
-            "type": "Ext.data.proxy.Ajax",
-            "reference": {
-                "name": "proxy",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "url": "items_menu_gonogo.json"
-            },
-            "designerId": "cbff029f-5840-4264-93e3-d7687a581e52",
-            "cn": [
-                {
-                    "type": "Ext.data.reader.Json",
-                    "reference": {
-                        "name": "reader",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "designerId": "3b15bf07-429a-444f-9ff1-67bd08adf071"
-                }
-            ]
-        },
         {
             "type": "Ext.data.Field",
             "reference": {
@@ -48,7 +30,7 @@
                 "name": "label",
                 "type": "string"
             },
-            "designerId": "0803f3fb-dc6b-42a6-bfc3-2b3bf9f2f495"
+            "designerId": "677930c5-299f-40df-9b2c-de02a7354a87"
         },
         {
             "type": "Ext.data.Field",
@@ -61,7 +43,7 @@
                 "name": "id_view",
                 "type": "string"
             },
-            "designerId": "315ea964-e3f3-4540-ad7c-9cc7ef12bda8"
+            "designerId": "2e859062-2fea-4356-b024-e7e5e4a6afde"
         },
         {
             "type": "Ext.data.Field",
@@ -72,9 +54,32 @@
             "codeClass": null,
             "userConfig": {
                 "name": "finished",
-                "type": "boolean"
+                "type": "string"
             },
-            "designerId": "4d3f2a8c-1463-496f-95ea-a534f1c5b896"
+            "designerId": "c3923b17-be0e-4f31-8248-9cce4c09d06e"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "items_menu_gonogo.json"
+            },
+            "designerId": "2d5cca75-09d3-48b3-b466-914a537691f7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "cbb3a036-6a01-47ab-a149-3ce0e7b186ef"
+                }
+            ]
         }
     ]
 }

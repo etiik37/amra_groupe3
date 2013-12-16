@@ -20,9 +20,6 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
-    models: [
-        'GoNoGo'
-    ],
     stores: [
         'MenuStore',
         'ProblemSolvingStore',
@@ -40,7 +37,9 @@ Ext.application({
         'PreferencesView',
         'ProjectSolvingNav',
         'MenuList',
-        'AuthView'
+        'AuthView',
+        'GonogoList',
+        'GonogoItem'
     ],
     controllers: [
         'GonogoView',

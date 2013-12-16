@@ -17,23 +17,16 @@ Ext.define('MyApp.store.ItemsGonogo', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'Ext.data.Field',
         'Ext.data.proxy.Ajax',
-        'Ext.data.reader.Json',
-        'Ext.data.Field'
+        'Ext.data.reader.Json'
     ],
 
     config: {
         autoLoad: true,
+        groupDir: 'ASC',
         groupField: 'finished',
-        remoteGroup: true,
         storeId: 'itemsgonogo',
-        proxy: {
-            type: 'ajax',
-            url: 'items_menu_gonogo.json',
-            reader: {
-                type: 'json'
-            }
-        },
         fields: [
             {
                 name: 'label',
@@ -45,8 +38,15 @@ Ext.define('MyApp.store.ItemsGonogo', {
             },
             {
                 name: 'finished',
-                type: 'boolean'
+                type: 'string'
             }
-        ]
+        ],
+        proxy: {
+            type: 'ajax',
+            url: 'items_menu_gonogo.json',
+            reader: {
+                type: 'json'
+            }
+        }
     }
 });

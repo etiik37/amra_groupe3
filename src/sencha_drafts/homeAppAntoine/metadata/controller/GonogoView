@@ -37,52 +37,6 @@
             "designerId": "1009b56a-06fa-49ef-a841-e60137974e3b"
         },
         {
-            "type": "controlleraction",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|controlQuery": "#gonogolistinprogress",
-                "designer|targetType": "Ext.dataview.List",
-                "fn": "onListItemTapInProgress",
-                "implHandler": [
-                    "var mainNavView = this.getMainnav();",
-                    "",
-                    "mainNavView.push({",
-                    "    title : 'GoNoGo - ' + record.get('label'),",
-                    "    xtype : 'gonogolistcheck'",
-                    "});"
-                ],
-                "name": "itemtap"
-            },
-            "designerId": "5959d41e-1a1c-4d96-a19b-4d53a27622f0"
-        },
-        {
-            "type": "controlleraction",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|controlQuery": "#gonogolistall",
-                "designer|targetType": "Ext.dataview.List",
-                "fn": "onListItemTapAll",
-                "implHandler": [
-                    "var mainNavView = this.getMainnav();",
-                    "",
-                    "mainNavView.push({",
-                    "    title : 'GoNoGo - ' + record.get('label'),",
-                    "    xtype : 'gonogolistcheck'",
-                    "});"
-                ],
-                "name": "itemtap"
-            },
-            "designerId": "c262c227-408b-483c-b355-eca1d4b5ce60"
-        },
-        {
             "type": "controllerref",
             "reference": {
                 "name": "items",

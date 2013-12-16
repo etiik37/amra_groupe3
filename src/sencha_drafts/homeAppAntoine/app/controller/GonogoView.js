@@ -24,12 +24,6 @@ Ext.define('MyApp.controller.GonogoView', {
         control: {
             "tabpanel": {
                 activeitemchange: 'onTabpanelActiveItemChange'
-            },
-            "#gonogolistinprogress": {
-                itemtap: 'onListItemTapInProgress'
-            },
-            "#gonogolistall": {
-                itemtap: 'onListItemTapAll'
             }
         }
     },
@@ -44,24 +38,6 @@ Ext.define('MyApp.controller.GonogoView', {
         if (value.config.title !== 'History') {
             sto.filter('finished', 'false');
         }
-    },
-
-    onListItemTapInProgress: function(dataview, index, target, record, e, eOpts) {
-        var mainNavView = this.getMainnav();
-
-        mainNavView.push({
-            title : 'GoNoGo - ' + record.get('label'),
-            xtype : 'gonogolistcheck'
-        });
-    },
-
-    onListItemTapAll: function(dataview, index, target, record, e, eOpts) {
-        var mainNavView = this.getMainnav();
-
-        mainNavView.push({
-            title : 'GoNoGo - ' + record.get('label'),
-            xtype : 'gonogolistcheck'
-        });
     }
 
 });

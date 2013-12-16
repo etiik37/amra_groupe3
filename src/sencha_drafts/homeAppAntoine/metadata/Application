@@ -12,9 +12,6 @@
             "MainNav",
             "PreferencesView"
         ],
-        "models": [
-            "GoNoGo"
-        ],
         "name": "MyApp",
         "stores": [
             "MenuStore",
@@ -33,7 +30,9 @@
             "PreferencesView",
             "ProjectSolvingNav",
             "MenuList",
-            "AuthView"
+            "AuthView",
+            "GonogoList",
+            "GonogoItem"
         ]
     },
     "designerId": "application",

@@ -17,10 +17,6 @@ Ext.define('MyApp.view.GonogoView', {
     extend: 'Ext.tab.Panel',
     alias: 'widget.gonogoview',
 
-    requires: [
-        'Ext.XTemplate'
-    ],
-
     config: {
         autoDestroy: false,
         layout: {
@@ -50,19 +46,11 @@ Ext.define('MyApp.view.GonogoView', {
                 },
                 items: [
                     {
-                        xtype: 'list',
-                        centered: true,
-                        height: '100%',
-                        id: 'gonogolistinprogress',
-                        ui: 'round',
-                        width: '50%',
-                        autoDestroy: false,
-                        itemTpl: [
-                            '<div>{label}</div>'
-                        ],
+                        xtype: 'dataview',
+                        disableSelection: false,
+                        defaultType: 'gonogoitem',
                         store: 'itemsgonogo',
-                        onItemDisclosure: true,
-                        striped: true
+                        useComponents: true
                     }
                 ]
             },
@@ -76,19 +64,11 @@ Ext.define('MyApp.view.GonogoView', {
                 },
                 items: [
                     {
-                        xtype: 'list',
-                        centered: true,
-                        height: '100%',
-                        id: 'gonogolistall',
-                        ui: 'round',
-                        width: '50%',
-                        autoDestroy: false,
-                        itemTpl: [
-                            '<div>{label}</div>'
-                        ],
+                        xtype: 'dataview',
+                        disableSelection: false,
+                        defaultType: 'gonogoitem',
                         store: 'itemsgonogo',
-                        onItemDisclosure: true,
-                        striped: true
+                        useComponents: true
                     }
                 ]
             }
