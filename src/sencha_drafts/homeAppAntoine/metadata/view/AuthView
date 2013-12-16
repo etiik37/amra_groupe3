@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoDestroy": false,
         "designer|initialView": true,
         "designer|userAlias": "authview",
         "designer|userClassName": "AuthView",
@@ -38,7 +37,9 @@
             "userConfig": {
                 "centered": false,
                 "docked": null,
-                "id": "logInForm",
+                "height": null,
+                "id": "loginform",
+                "layout": "fit",
                 "title": "Log in",
                 "width": null
             },
@@ -52,7 +53,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "loginField",
+                        "id": "loginfield",
                         "label": "Login",
                         "required": true
                     },
@@ -66,7 +67,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "passwordField",
+                        "id": "passwordfield",
                         "label": "Password",
                         "required": true
                     },
@@ -83,7 +84,7 @@
                         "centered": false,
                         "docked": null,
                         "iconAlign": "center",
-                        "id": "loginButton",
+                        "id": "loginbutton",
                         "left": null,
                         "text": "OK",
                         "top": "",
@@ -91,26 +92,28 @@
                         "width": null
                     },
                     "designerId": "311cd19c-70fb-45f0-97b3-7880c28d9589"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "docked": "bottom",
+                        "height": 50,
+                        "hidden": true,
+                        "html": "<p style=\"color:red;\"><b>Wrong login/password combination<br />Login : admin<br :>Password : adminadmin</b></p>",
+                        "id": "errorauthtext",
+                        "layout": "fit",
+                        "styleHtmlContent": true,
+                        "width": "100%"
+                    },
+                    "designerId": "9e2358cd-2ccb-487d-8e65-905093e0ac0e"
                 }
             ]
-        },
-        {
-            "type": "Ext.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "centered": false,
-                "height": 50,
-                "hidden": true,
-                "html": "<p style=\"color:red;\"><b>Wrong login/password combination<br />Login : admin<br :>Password : adminadmin</b></p>",
-                "id": "errorAuthText",
-                "styleHtmlContent": true,
-                "width": "100%"
-            },
-            "designerId": "9e2358cd-2ccb-487d-8e65-905093e0ac0e"
         }
     ]
 }

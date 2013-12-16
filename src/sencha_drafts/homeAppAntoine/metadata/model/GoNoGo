@@ -1,0 +1,26 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GoNoGo"
+    },
+    "designerId": "1a0bda57-e693-4fce-85c7-97bcb82f679e",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "field12"
+            },
+            "designerId": "0065970e-0392-4a66-9c11-beaeb56b5f71"
+        }
+    ]
+}

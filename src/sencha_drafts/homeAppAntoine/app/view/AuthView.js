@@ -19,7 +19,6 @@ Ext.define('MyApp.view.AuthView', {
 
     config: {
         id: 'authview',
-        autoDestroy: false,
         items: [
             {
                 xtype: 'toolbar',
@@ -29,41 +28,48 @@ Ext.define('MyApp.view.AuthView', {
             {
                 xtype: 'fieldset',
                 centered: false,
-                id: 'logInForm',
+                id: 'loginform',
+                layout: {
+                    type: 'fit'
+                },
                 title: 'Log in',
                 items: [
                     {
                         xtype: 'textfield',
-                        id: 'loginField',
+                        id: 'loginfield',
                         label: 'Login',
                         required: true
                     },
                     {
                         xtype: 'passwordfield',
-                        id: 'passwordField',
+                        id: 'passwordfield',
                         label: 'Password',
                         required: true
                     },
                     {
                         xtype: 'button',
                         centered: false,
-                        id: 'loginButton',
+                        id: 'loginbutton',
                         top: '',
                         ui: 'confirm',
                         iconAlign: 'center',
                         text: 'OK'
+                    },
+                    {
+                        xtype: 'container',
+                        centered: false,
+                        docked: 'bottom',
+                        height: 50,
+                        hidden: true,
+                        html: '<p style="color:red;"><b>Wrong login/password combination<br />Login : admin<br :>Password : adminadmin</b></p>',
+                        id: 'errorauthtext',
+                        styleHtmlContent: true,
+                        width: '100%',
+                        layout: {
+                            type: 'fit'
+                        }
                     }
                 ]
-            },
-            {
-                xtype: 'container',
-                centered: false,
-                height: 50,
-                hidden: true,
-                html: '<p style="color:red;"><b>Wrong login/password combination<br />Login : admin<br :>Password : adminadmin</b></p>',
-                id: 'errorAuthText',
-                styleHtmlContent: true,
-                width: '100%'
             }
         ]
     }

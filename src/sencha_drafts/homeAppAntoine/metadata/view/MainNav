@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoDestroy": false,
         "container|animation": false,
         "designer|userAlias": "mainnav",
         "designer|userClassName": "MainNav",
@@ -23,6 +24,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "autoDestroy": false,
                 "centered": false,
                 "container|align": null,
                 "container|pack": "center",

@@ -20,6 +20,9 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
+    models: [
+        'GoNoGo'
+    ],
     stores: [
         'MenuStore',
         'ProblemSolvingStore',
@@ -30,21 +33,20 @@ Ext.application({
         'ListActionsGonogo'
     ],
     views: [
-        'AuthView',
-        'MenuList',
-        'ProjectSolvingNav',
-        'PreferencesView',
+        'HomeView',
         'MainNav',
         'NotificationsList',
-        'GonogoListCheck',
-        'HomeView',
-        'GonogoView'
+        'GonogoView',
+        'PreferencesView',
+        'ProjectSolvingNav',
+        'MenuList',
+        'AuthView'
     ],
     controllers: [
+        'GonogoView',
         'AuthView',
-        'PreferencesView',
         'MainNav',
-        'GonogoView'
+        'PreferencesView'
     ],
     name: 'MyApp',
 
@@ -56,6 +58,8 @@ Ext.application({
         var sto = Ext.getStore('itemsgonogo');
         //On affiche par défaut uniquement les GONOGO en cours
         sto.filter('finished', 'false');
+
+
         Ext.create('MyApp.view.AuthView', {fullscreen: true});
     }
 

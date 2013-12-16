@@ -17,10 +17,6 @@ Ext.define('MyApp.controller.MainNav', {
     extend: 'Ext.app.Controller',
 
     config: {
-        views: [
-            'MainNav'
-        ],
-
         refs: {
             menulist: 'menulist',
             mainnav: 'mainnav',
@@ -53,12 +49,14 @@ Ext.define('MyApp.controller.MainNav', {
 
         var mainNavView = this.getMainnav();
 
-        mainNavView.pop();
-
         mainNavView.push({
             title : record.get('label'),
             xtype : record.get('id_view')
         });
+
+        this.getApplication().getHistory().add(new Ext.app.Action({
+            url: record.get('url')
+        }), false);
     },
 
     onPreferencesButtonTap: function(button, e, eOpts) {
@@ -68,12 +66,14 @@ Ext.define('MyApp.controller.MainNav', {
 
         var mainNavView = this.getMainnav();
 
-        mainNavView.pop();
-
         mainNavView.push({
             title : 'Preferences',
             xtype : 'preferencesview'
         });
+
+        this.getApplication().getHistory().add(new Ext.app.Action({
+            url: 'preferences'
+        }), true);
     },
 
     onLogOutButtonTap: function(button, e, eOpts) {

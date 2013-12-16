@@ -17,35 +17,28 @@ Ext.define('MyApp.controller.AuthView', {
     extend: 'Ext.app.Controller',
 
     config: {
-        stores: [
-            'NotificationStore'
-        ],
-        views: [
-            'MainNav'
-        ],
-
         refs: {
             mainnav: 'mainnav',
             authview: 'authview',
-            loginButton: '#loginButton',
-            loginField: '#loginField',
-            passwordField: '#passwordField',
-            errorAuthText: '#errorAuthText',
+            loginbutton: '#loginbutton',
+            loginfield: '#loginfield',
+            passwordfield: '#passwordfield',
+            errorauthtext: '#errorauthtext',
             notificationsbutton: '#notificationsbutton',
             notificationslist: 'notificationslist'
         },
 
         control: {
-            "#loginButton": {
+            "#loginbutton": {
                 tap: 'onLoginTapButton'
             }
         }
     },
 
     onLoginTapButton: function(button, e, eOpts) {
-        var loginField = Ext.getCmp('loginField');
-        var passwordField = Ext.getCmp('passwordField');
-        var label = Ext.getCmp('errorAuthText');
+        var loginField = Ext.getCmp('loginfield');
+        var passwordField = Ext.getCmp('passwordfield');
+        var label = Ext.getCmp('errorauthtext');
 
         label.hide();
 
@@ -85,16 +78,17 @@ Ext.define('MyApp.controller.AuthView', {
 
     init: function(application) {
         //Récupération de la variable de session
-        var foo = localStorage.getItem("authOK");
+        var varAuthOK = localStorage.getItem("authOK");
+
+        var authView = Ext.Viewport.getActiveItem();
+        var mainView = Ext.create('MyApp.view.MainNav');
 
         //Si l'utilisateur est déjà authentifié, on redirige vers la page d'accueil
-        if (foo !== null && foo == "true") {
-            var mainView = Ext.create('MyApp.view.MainNav');
+        if (varAuthOK !== null && varAuthOK == 'true') {
             Ext.Viewport.setActiveItem(mainView);
         }
         else {
-            var mainView = Ext.create('MyApp.view.MainNav');
-            Ext.Viewport.setActiveItem(mainView);
+            Ext.Viewport.setActiveItem(authView);
         }
     }
 

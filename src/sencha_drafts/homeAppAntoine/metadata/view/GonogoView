@@ -6,9 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoDestroy": false,
         "container|animation": false,
         "designer|userAlias": "gonogoview",
         "designer|userClassName": "GonogoView",
+        "fullscreen": null,
         "id": null
     },
     "designerId": "06104c25-4fc7-46d7-a069-c21d2560751e",
@@ -22,13 +24,14 @@
             "codeClass": null,
             "userConfig": {
                 "activeTab": 0,
+                "autoDestroy": false,
                 "container|align": "center",
                 "container|pack": "center",
                 "designer|createAlias": null,
                 "designer|displayName": "TabBarGonogo",
                 "docked": "top",
                 "hidden": false,
-                "id": "tabbargonogo"
+                "id": null
             },
             "designerId": "a60177a2-ceb2-4d5c-8f5f-55b34a20c4b5"
         },
@@ -40,7 +43,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "autoDestroy": false,
                 "centered": false,
+                "designer|displayName": "InProgress",
                 "height": "100%",
                 "html": null,
                 "itemId": null,
@@ -59,13 +64,15 @@
                     "codeClass": null,
                     "userConfig": {
                         "allowDeselect": null,
+                        "autoDestroy": false,
                         "centered": true,
                         "deselectOnContainerClick": null,
                         "designer|createAlias": null,
-                        "designer|displayName": null,
+                        "designer|displayName": "GonogoListInProgress",
                         "designer|uiInterfaceName": "round",
                         "disableSelection": null,
                         "height": "100%",
+                        "id": "gonogolistinprogress",
                         "modal": null,
                         "mode": null,
                         "onItemDisclosure": true,
@@ -104,6 +111,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "autoDestroy": false,
                 "docked": null,
                 "height": "100%",
                 "html": null,
@@ -122,13 +130,15 @@
                     "codeClass": null,
                     "userConfig": {
                         "allowDeselect": null,
+                        "autoDestroy": false,
                         "centered": true,
                         "deselectOnContainerClick": null,
                         "designer|createAlias": null,
-                        "designer|displayName": null,
+                        "designer|displayName": "GonogoListAll",
                         "designer|uiInterfaceName": "round",
                         "disableSelection": null,
                         "height": "100%",
+                        "id": "gonogolistall",
                         "modal": null,
                         "mode": null,
                         "onItemDisclosure": true,

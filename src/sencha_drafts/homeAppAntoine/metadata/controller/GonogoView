@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "GonogoView"
     },
-    "designerId": "72514518-d1f4-41b1-8cc2-9f31f8e78a7c",
+    "designerId": "bfae7adb-6770-4541-acfb-859d954325e7",
     "cn": [
         {
             "type": "controlleraction",
@@ -18,9 +18,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "gonogoview",
+                "designer|controlQuery": "tabpanel",
                 "designer|targetType": "Ext.tab.Panel",
-                "fn": "onTabpanelActiveItemChange1",
+                "fn": "onTabpanelActiveItemChange",
                 "implHandler": [
                     "//Récupération du store",
                     "var sto = Ext.getStore('itemsgonogo');",
@@ -34,7 +34,53 @@
                 ],
                 "name": "activeitemchange"
             },
-            "designerId": "843212d5-5282-4d9e-96e0-c9b35f8fe3fd"
+            "designerId": "1009b56a-06fa-49ef-a841-e60137974e3b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#gonogolistinprogress",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTapInProgress",
+                "implHandler": [
+                    "var mainNavView = this.getMainnav();",
+                    "",
+                    "mainNavView.push({",
+                    "    title : 'GoNoGo - ' + record.get('label'),",
+                    "    xtype : 'gonogolistcheck'",
+                    "});"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "5959d41e-1a1c-4d96-a19b-4d53a27622f0"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#gonogolistall",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTapAll",
+                "implHandler": [
+                    "var mainNavView = this.getMainnav();",
+                    "",
+                    "mainNavView.push({",
+                    "    title : 'GoNoGo - ' + record.get('label'),",
+                    "    xtype : 'gonogolistcheck'",
+                    "});"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "c262c227-408b-483c-b355-eca1d4b5ce60"
         },
         {
             "type": "controllerref",
@@ -44,10 +90,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "tabbargonogo",
-                "selector": "#tabbargonogo"
+                "ref": "mainnav",
+                "selector": "mainnav"
             },
-            "designerId": "b8e41c41-35f9-404d-97b9-5b71665d07c9"
+            "designerId": "617b3c0a-2c19-4899-b27d-870de6d23e80"
         }
     ]
 }

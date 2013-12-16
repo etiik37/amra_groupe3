@@ -7,10 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "controllers": [
+            "GonogoView",
             "AuthView",
-            "PreferencesView",
             "MainNav",
-            "GonogoView"
+            "PreferencesView"
+        ],
+        "models": [
+            "GoNoGo"
         ],
         "name": "MyApp",
         "stores": [
@@ -23,15 +26,14 @@
             "ListActionsGonogo"
         ],
         "views": [
-            "AuthView",
-            "MenuList",
-            "ProjectSolvingNav",
-            "PreferencesView",
+            "HomeView",
             "MainNav",
             "NotificationsList",
-            "GonogoListCheck",
-            "HomeView",
-            "GonogoView"
+            "GonogoView",
+            "PreferencesView",
+            "ProjectSolvingNav",
+            "MenuList",
+            "AuthView"
         ]
     },
     "designerId": "application",
@@ -52,7 +54,9 @@
                     "//Récupération du store",
                     "var sto = Ext.getStore('itemsgonogo');",
                     "//On affiche par défaut uniquement les GONOGO en cours",
-                    "sto.filter('finished', 'false');"
+                    "sto.filter('finished', 'false');",
+                    "",
+                    ""
                 ]
             },
             "designerId": "bd18622b-25d7-448e-ab0c-dc669b0d11a7"

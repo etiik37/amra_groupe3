@@ -23,6 +23,7 @@ Ext.define('MyApp.view.MainNav', {
 
     config: {
         id: 'mainnav',
+        autoDestroy: false,
         layout: {
             animation: false,
             type: 'card'
@@ -31,6 +32,7 @@ Ext.define('MyApp.view.MainNav', {
             centered: false,
             docked: 'top',
             id: 'toolbartop',
+            autoDestroy: false,
             layout: {
                 pack: 'center',
                 type: 'hbox'

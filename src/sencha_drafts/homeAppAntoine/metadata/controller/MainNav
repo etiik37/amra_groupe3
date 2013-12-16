@@ -6,10 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MainNav",
-        "views": [
-            "MainNav"
-        ]
+        "designer|userClassName": "MainNav"
     },
     "designerId": "5f48e3bd-92b3-47e9-865d-19647adb0c12",
     "cn": [
@@ -83,12 +80,14 @@
                     "",
                     "var mainNavView = this.getMainnav();",
                     "",
-                    "mainNavView.pop();",
-                    "",
                     "mainNavView.push({",
                     "    title : record.get('label'),",
                     "    xtype : record.get('id_view')",
-                    "});"
+                    "});",
+                    "",
+                    "this.getApplication().getHistory().add(new Ext.app.Action({",
+                    "    url: record.get('url')",
+                    "}), false);"
                 ],
                 "name": "itemtap"
             },
@@ -125,12 +124,14 @@
                     "",
                     "var mainNavView = this.getMainnav();",
                     "",
-                    "mainNavView.pop();",
-                    "",
                     "mainNavView.push({",
                     "    title : 'Preferences',",
                     "    xtype : 'preferencesview'",
-                    "});"
+                    "});",
+                    "",
+                    "this.getApplication().getHistory().add(new Ext.app.Action({",
+                    "    url: 'preferences'",
+                    "}), true);"
                 ],
                 "name": "tap"
             },

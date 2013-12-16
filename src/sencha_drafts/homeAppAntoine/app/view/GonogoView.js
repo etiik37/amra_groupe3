@@ -22,6 +22,7 @@ Ext.define('MyApp.view.GonogoView', {
     ],
 
     config: {
+        autoDestroy: false,
         layout: {
             animation: false,
             type: 'card'
@@ -29,7 +30,7 @@ Ext.define('MyApp.view.GonogoView', {
         tabBar: {
             docked: 'top',
             hidden: false,
-            id: 'tabbargonogo',
+            autoDestroy: false,
             activeTab: 0,
             layout: {
                 align: 'center',
@@ -43,6 +44,7 @@ Ext.define('MyApp.view.GonogoView', {
                 title: 'In progress',
                 centered: false,
                 height: '100%',
+                autoDestroy: false,
                 layout: {
                     type: 'fit'
                 },
@@ -51,8 +53,10 @@ Ext.define('MyApp.view.GonogoView', {
                         xtype: 'list',
                         centered: true,
                         height: '100%',
+                        id: 'gonogolistinprogress',
                         ui: 'round',
                         width: '50%',
+                        autoDestroy: false,
                         itemTpl: [
                             '<div>{label}</div>'
                         ],
@@ -66,6 +70,7 @@ Ext.define('MyApp.view.GonogoView', {
                 xtype: 'container',
                 title: 'History',
                 height: '100%',
+                autoDestroy: false,
                 layout: {
                     type: 'fit'
                 },
@@ -74,8 +79,10 @@ Ext.define('MyApp.view.GonogoView', {
                         xtype: 'list',
                         centered: true,
                         height: '100%',
+                        id: 'gonogolistall',
                         ui: 'round',
                         width: '50%',
+                        autoDestroy: false,
                         itemTpl: [
                             '<div>{label}</div>'
                         ],

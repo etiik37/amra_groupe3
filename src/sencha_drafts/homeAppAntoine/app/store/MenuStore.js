@@ -42,6 +42,10 @@ Ext.define('MyApp.store.MenuStore', {
             },
             {
                 name: 'group'
+            },
+            {
+                name: 'url',
+                type: 'string'
             }
         ],
         grouper: {

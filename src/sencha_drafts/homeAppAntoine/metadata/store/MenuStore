@@ -99,6 +99,19 @@
                     "designerId": "81c6f70f-3dd6-45eb-b536-2450c03a988a"
                 }
             ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "url",
+                "type": "string"
+            },
+            "designerId": "fafa6e6e-2f0c-4ec8-9628-6adfcb733885"
         }
     ]
 }
