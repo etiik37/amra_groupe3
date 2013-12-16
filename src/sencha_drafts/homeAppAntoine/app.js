@@ -20,13 +20,17 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
+    models: [
+        'QuestionModel'
+    ],
     stores: [
         'MenuStore',
         'ProblemSolvingStore',
         'TimeZoneStore',
         'NotificationStore',
         'LanguageStore',
-        'ListDocumentsStore'
+        'ListDocumentsStore',
+        'QuestionsTreeStore'
     ],
     views: [
         'AuthView',
@@ -38,8 +42,9 @@ Ext.application({
         'WikiView',
         'ProjectSolvingList',
         'ProjectSolvingNav',
-        'QuestionView',
-        'DownloadDocumentsList'
+        'DownloadDocumentsList',
+        'QuestionsNav',
+        'QuestionsNestedList'
     ],
     requires: [
         'Ext.MessageBox'
@@ -49,7 +54,8 @@ Ext.application({
         'PreferencesView',
         'MainNav',
         'ProjectSolvingNav',
-        'DownloadDocuments'
+        'DownloadDocuments',
+        'QuestionNav'
     ],
     name: 'MyApp',
 

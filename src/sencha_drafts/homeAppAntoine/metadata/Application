@@ -11,7 +11,11 @@
             "PreferencesView",
             "MainNav",
             "ProjectSolvingNav",
-            "DownloadDocuments"
+            "DownloadDocuments",
+            "QuestionNav"
+        ],
+        "models": [
+            "QuestionModel"
         ],
         "name": "MyApp",
         "requires": [
@@ -23,7 +27,8 @@
             "TimeZoneStore",
             "NotificationStore",
             "LanguageStore",
-            "ListDocumentsStore"
+            "ListDocumentsStore",
+            "QuestionsTreeStore"
         ],
         "views": [
             "AuthView",
@@ -35,8 +40,9 @@
             "WikiView",
             "ProjectSolvingList",
             "ProjectSolvingNav",
-            "QuestionView",
-            "DownloadDocumentsList"
+            "DownloadDocumentsList",
+            "QuestionsNav",
+            "QuestionsNestedList"
         ]
     },
     "designerId": "application",

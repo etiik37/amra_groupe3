@@ -1,0 +1,38 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "questionsnav",
+        "designer|userClassName": "QuestionsNav"
+    },
+    "designerId": "229c2bf5-9563-4be5-b8ae-b53fd4e9569a",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "hidden": true
+            },
+            "designerId": "db80b1e8-8796-4e01-899a-707f1b484b41"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "7086ee76-051d-4b36-b899-00ede33f6c14",
+            "masterInstanceId": "bd5fe9c2-b165-442d-9d3e-2c6dfa3fb4a9"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "QuestionNav"
+    },
+    "designerId": "e31ce590-4865-43df-bc97-811ad26a9bab",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "questionsnestedlist",
+                "selector": "questionsnestedlist"
+            },
+            "designerId": "ae42415a-9739-43cd-8fcd-f7e87bfa001f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "questionsnav",
+                "selector": "questionsnav"
+            },
+            "designerId": "1db25aff-1fb4-4f06-80ed-f46e0cc6e60f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "nestedlist",
+                "designer|targetType": "Ext.dataview.NestedList",
+                "fn": "onNestedlistItemTap",
+                "implHandler": [
+                    "if (record.get('leaf')===true){",
+                    " var questionsNavView = this.getQuestionsnav();",
+                    " questionsNavView.pop();",
+                    "    questionsNavView.push({",
+                    "            xtype:'container',",
+                    "            scrollable:true,",
+                    "            items:[",
+                    "            {",
+                    "              xtype:'panel',",
+                    "              html: '<div style=\"-webkit-overflow-scrolling:touch; overflow:auto;width=100%;height=100%;position:fixed;top:0;left:0;float:left;z-index:99;\"\"><iframe style=position:fixed;top:0;left:0;float:left;z-index:1;\" width=\"100%\" height=\"100%\" src=\\\"http://192.168.56.101/mediawiki-1.21.2/index.php/'+record.get('wiki')+'\\\"</iframe></div>'",
+                    "            }",
+                    "                ]});",
+                    "                ",
+                    "}",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "b7408966-debe-4ffc-82e0-04aa01695665"
+        }
+    ]
+}
