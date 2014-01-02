@@ -1,0 +1,17 @@
+{
+    "type": "Ext.dataview.NestedList",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "questionsnestedlist",
+        "designer|userClassName": "QuestionsNestedList",
+        "fullscreen": true,
+        "itemId": null,
+        "store": "QuestionsTreeStore",
+        "title": "Questions"
+    },
+    "designerId": "bd5fe9c2-b165-442d-9d3e-2c6dfa3fb4a9"
+}

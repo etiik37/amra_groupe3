@@ -5,17 +5,17 @@
  * metadata-driven class system features 
  */
 Ext.Loader.addClassPathMappings({
-  "Ext": "../touch/src",
-  "Ext.device.Purchases.Product": "../touch/src/device/purchases/Sencha.js",
-  "Ext.device.filesystem.DirectoryEntry": "../touch/src/device/filesystem/HTML5.js",
-  "Ext.device.filesystem.Entry": "../touch/src/device/filesystem/HTML5.js",
-  "Ext.device.filesystem.FileEntry": "../touch/src/device/filesystem/HTML5.js",
-  "Ext.device.filesystem.FileSystem": "../touch/src/device/filesystem/HTML5.js",
-  "Ext.device.purchases.Purchase": "../touch/src/device/purchases/Sencha.js",
-  "Ext.device.sqlite.Database": "../touch/src/device/sqlite/Sencha.js",
-  "Ext.device.sqlite.SQLResultSet": "../touch/src/device/sqlite/Sencha.js",
-  "Ext.device.sqlite.SQLResultSetRowList": "../touch/src/device/sqlite/Sencha.js",
-  "Ext.device.sqlite.SQLTransaction": "../touch/src/device/sqlite/Sencha.js",
+  "Ext": "touch/src",
+  "Ext.device.Purchases.Product": "touch/src/device/purchases/Sencha.js",
+  "Ext.device.filesystem.DirectoryEntry": "touch/src/device/filesystem/HTML5.js",
+  "Ext.device.filesystem.Entry": "touch/src/device/filesystem/HTML5.js",
+  "Ext.device.filesystem.FileEntry": "touch/src/device/filesystem/HTML5.js",
+  "Ext.device.filesystem.FileSystem": "touch/src/device/filesystem/HTML5.js",
+  "Ext.device.purchases.Purchase": "touch/src/device/purchases/Sencha.js",
+  "Ext.device.sqlite.Database": "touch/src/device/sqlite/Sencha.js",
+  "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
+  "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
+  "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
   "MyApp": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
@@ -641,13 +641,29 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "MyApp.controller.AuthView": [],
+  "MyApp.controller.DownloadDocuments": [],
+  "MyApp.controller.GonogoView": [],
   "MyApp.controller.MainNav": [],
   "MyApp.controller.PreferencesView": [],
+  "MyApp.controller.ProjectSolvingNav": [],
+  "MyApp.controller.QuestionNav": [],
+  "MyApp.model.GoNoGo": [],
+  "MyApp.model.QuestionModel": [],
+  "MyApp.store.ItemsGonogo": [],
+  "MyApp.store.LanguageStore": [],
+  "MyApp.store.ListActionsGonogo": [],
+  "MyApp.store.ListDocumentsStore": [],
   "MyApp.store.MenuStore": [],
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
+  "MyApp.store.QuestionsTreeStore": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [],
+  "MyApp.view.DownloadDocumentsList": [],
+  "MyApp.view.GonogoItem": [],
+  "MyApp.view.GonogoList": [],
+  "MyApp.view.GonogoListCheck": [],
+  "MyApp.view.GonogoView": [],
   "MyApp.view.HomeView": [],
   "MyApp.view.Main": [],
   "MyApp.view.MainNav": [],
@@ -655,7 +671,12 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.view.MyToolbar3": [],
   "MyApp.view.NotificationsList": [],
   "MyApp.view.PreferencesView": [],
-  "MyApp.view.ProjectSolvingNav": []
+  "MyApp.view.ProjectSolvingList": [],
+  "MyApp.view.ProjectSolvingNav": [],
+  "MyApp.view.QuestionView": [],
+  "MyApp.view.QuestionsNav": [],
+  "MyApp.view.QuestionsNestedList": [],
+  "MyApp.view.WikiView": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1375,14 +1396,44 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "MyApp.controller.AuthView": [],
+  "MyApp.controller.DownloadDocuments": [
+    "controller.downloaddocuments"
+  ],
+  "MyApp.controller.GonogoView": [],
   "MyApp.controller.MainNav": [],
   "MyApp.controller.PreferencesView": [],
+  "MyApp.controller.ProjectSolvingNav": [
+    "controller.projectsolvingnav"
+  ],
+  "MyApp.controller.QuestionNav": [],
+  "MyApp.model.GoNoGo": [],
+  "MyApp.model.QuestionModel": [],
+  "MyApp.store.ItemsGonogo": [],
+  "MyApp.store.LanguageStore": [],
+  "MyApp.store.ListActionsGonogo": [],
+  "MyApp.store.ListDocumentsStore": [],
   "MyApp.store.MenuStore": [],
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
+  "MyApp.store.QuestionsTreeStore": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [
     "widget.authview"
+  ],
+  "MyApp.view.DownloadDocumentsList": [
+    "widget.downloaddocumentslist"
+  ],
+  "MyApp.view.GonogoItem": [
+    "widget.gonogoitem"
+  ],
+  "MyApp.view.GonogoList": [
+    "widget.gonogolist"
+  ],
+  "MyApp.view.GonogoListCheck": [
+    "widget.gonogolistcheck"
+  ],
+  "MyApp.view.GonogoView": [
+    "widget.gonogoview"
   ],
   "MyApp.view.HomeView": [
     "widget.homeview"
@@ -1403,7 +1454,22 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.PreferencesView": [
     "widget.preferencesview"
   ],
+  "MyApp.view.ProjectSolvingList": [
+    "widget.projectsolvinglist"
+  ],
   "MyApp.view.ProjectSolvingNav": [
     "widget.projectsolvingnav"
+  ],
+  "MyApp.view.QuestionView": [
+    "widget.questionview"
+  ],
+  "MyApp.view.QuestionsNav": [
+    "widget.questionsnav"
+  ],
+  "MyApp.view.QuestionsNestedList": [
+    "widget.questionsnestedlist"
+  ],
+  "MyApp.view.WikiView": [
+    "widget.wikiview"
   ]
 });

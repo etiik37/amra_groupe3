@@ -1,0 +1,63 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "ListDocumentsStore",
+        "storeId": "ListDocumentsStore"
+    },
+    "designerId": "d8e3cc9a-3dec-444b-9169-d1bc5c6527ab",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "items_listdocuments.json"
+            },
+            "designerId": "442b1cb8-6e69-43f7-8cac-9a1da3e96eb7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "6cf60164-a3da-46f7-96c5-77358aa053d5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label"
+            },
+            "designerId": "1d433f11-15ef-4402-afc3-e7c9c56fc456"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name_doc"
+            },
+            "designerId": "4e09e45c-04f4-480b-b318-d06014b845ea"
+        }
+    ]
+}

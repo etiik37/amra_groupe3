@@ -4,7 +4,7 @@
    "url": null,
    "js": [
       {
-         "path": "../touch/sencha-touch.js",
+         "path": "touch/sencha-touch.js",
          "x-bootstrap": true
       },
       {
@@ -49,7 +49,7 @@
    ],
    "archivePath": "archive",
    "requires": [],
-   "id": "ee86df8d-6d2b-4f23-8122-e6302e9cc7ba",
+   "id": "bfc389bc-ac69-4838-aa37-f4495946206c",
    "_architect": {
       "_comment": "Please don't edit. This is Architect data.",
       "name": "MyApp",

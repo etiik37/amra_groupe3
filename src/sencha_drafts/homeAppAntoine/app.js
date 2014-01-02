@@ -20,6 +20,9 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
+    models: [
+        'QuestionModel'
+    ],
     stores: [
         'MenuStore',
         'ProblemSolvingStore',
@@ -27,7 +30,9 @@ Ext.application({
         'NotificationStore',
         'LanguageStore',
         'ItemsGonogo',
-        'ListActionsGonogo'
+        'ListActionsGonogo',
+        'ListDocumentsStore',
+        'QuestionsTreeStore'
     ],
     views: [
         'HomeView',
@@ -39,13 +44,24 @@ Ext.application({
         'MenuList',
         'AuthView',
         'GonogoList',
-        'GonogoItem'
+        'GonogoItem',
+        'WikiView',
+        'ProjectSolvingList',
+        'DownloadDocumentsList',
+        'QuestionsNav',
+        'QuestionsNestedList'
+    ],
+    requires: [
+        'Ext.MessageBox'
     ],
     controllers: [
         'GonogoView',
         'AuthView',
         'MainNav',
-        'PreferencesView'
+        'PreferencesView',
+        'ProjectSolvingNav',
+        'DownloadDocuments',
+        'QuestionNav'
     ],
     name: 'MyApp',
 

@@ -1,0 +1,66 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "projectsolvingnav",
+        "designer|userClassName": "ProjectSolvingNav"
+    },
+    "designerId": "82c413a3-e822-4052-8025-e9e37afd54f9",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "projectsolvinglist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var projectSolvingNavView = this.getProjectsolvingnav();",
+                    "",
+                    "projectSolvingNavView.pop();",
+                    "",
+                    "projectSolvingNavView.push({",
+                    "    title : record.get('name'),",
+                    "    xtype : record.get('id_view')",
+                    "});"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "ebbe395b-775f-4230-ab83-02c4d156673d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "projectsolvingnav",
+                "selector": "projectsolvingnav"
+            },
+            "designerId": "96e03a05-742f-4d2d-b381-dadb939f76da"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "projectsolvinglist",
+                "selector": "projectsolvinglist"
+            },
+            "designerId": "57bc0a8f-471a-4ab5-8afb-e415f706df2e"
+        }
+    ]
+}

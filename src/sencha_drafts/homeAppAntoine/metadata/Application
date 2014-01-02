@@ -10,9 +10,18 @@
             "GonogoView",
             "AuthView",
             "MainNav",
-            "PreferencesView"
+            "PreferencesView",
+            "ProjectSolvingNav",
+            "DownloadDocuments",
+            "QuestionNav"
         ],
         "name": "MyApp",
+        "models": [
+            "QuestionModel"
+        ],
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "MenuStore",
             "ProblemSolvingStore",
@@ -20,7 +29,9 @@
             "NotificationStore",
             "LanguageStore",
             "ItemsGonogo",
-            "ListActionsGonogo"
+            "ListActionsGonogo",
+            "ListDocumentsStore",
+            "QuestionsTreeStore"
         ],
         "views": [
             "HomeView",
@@ -32,7 +43,12 @@
             "MenuList",
             "AuthView",
             "GonogoList",
-            "GonogoItem"
+            "GonogoItem",
+            "WikiView",
+            "ProjectSolvingList",
+            "DownloadDocumentsList",
+            "QuestionsNav",
+            "QuestionsNestedList"
         ]
     },
     "designerId": "application",

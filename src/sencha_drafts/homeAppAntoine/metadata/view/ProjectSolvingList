@@ -1,0 +1,32 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "projectsolvinglist",
+        "designer|userClassName": "ProjectSolvingList",
+        "padding": 10,
+        "store": "problemsolvingstore"
+    },
+    "designerId": "910505bb-8e35-422f-aa22-4d7b05fdbcdf",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{name}</div>"
+                ]
+            },
+            "designerId": "db4a4730-eb38-49a3-82e4-f6e66000b8c1"
+        }
+    ]
+}
