@@ -16,6 +16,9 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
+  "Ext.grid": "packages/sencha-touch-grid/src/grid",
+  "Ext.grid.column.Action": "packages/sencha-touch-grid/src/grid/column/unsupported/Action.js",
+  "Ext.grid.column.CheckColumn": "packages/sencha-touch-grid/src/grid/column/unsupported/CheckColumn.js",
   "MyApp": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
@@ -502,6 +505,30 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.fx.runner.Css": [],
   "Ext.fx.runner.CssAnimation": [],
   "Ext.fx.runner.CssTransition": [],
+  "Ext.grid.Grid": [],
+  "Ext.grid.HeaderContainer": [],
+  "Ext.grid.HeaderGroup": [],
+  "Ext.grid.Row": [],
+  "Ext.grid.column.Action": [
+    "Ext.grid.ActionColumn"
+  ],
+  "Ext.grid.column.Boolean": [],
+  "Ext.grid.column.CheckColumn": [
+    "Ext.ux.CheckColumn"
+  ],
+  "Ext.grid.column.Column": [],
+  "Ext.grid.column.Date": [],
+  "Ext.grid.column.Number": [],
+  "Ext.grid.column.Template": [],
+  "Ext.grid.infinite.Grid": [],
+  "Ext.grid.infinite.Row": [],
+  "Ext.grid.infinite.TemplateRow": [],
+  "Ext.grid.plugin.ColumnResizing": [],
+  "Ext.grid.plugin.Editable": [],
+  "Ext.grid.plugin.MultiSelection": [],
+  "Ext.grid.plugin.PagingToolbar": [],
+  "Ext.grid.plugin.SummaryRow": [],
+  "Ext.grid.plugin.ViewOptions": [],
   "Ext.layout.Abstract": [],
   "Ext.layout.Box": [],
   "Ext.layout.Card": [],
@@ -647,12 +674,14 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.PreferencesView": [],
   "MyApp.controller.ProjectSolvingNav": [],
   "MyApp.controller.QuestionNav": [],
+  "MyApp.controller.TMView": [],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.QuestionModel": [],
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
   "MyApp.store.ListActionsGonogo": [],
   "MyApp.store.ListDocumentsStore": [],
+  "MyApp.store.LogsStore": [],
   "MyApp.store.MenuStore": [],
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
@@ -660,11 +689,15 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [],
   "MyApp.view.DownloadDocumentsList": [],
+  "MyApp.view.FOPDetailView": [],
+  "MyApp.view.FOPMainView": [],
   "MyApp.view.GonogoItem": [],
   "MyApp.view.GonogoList": [],
   "MyApp.view.GonogoListCheck": [],
   "MyApp.view.GonogoView": [],
+  "MyApp.view.GraphicTM": [],
   "MyApp.view.HomeView": [],
+  "MyApp.view.LogMainView": [],
   "MyApp.view.Main": [],
   "MyApp.view.MainNav": [],
   "MyApp.view.MenuList": [],
@@ -676,6 +709,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.view.QuestionView": [],
   "MyApp.view.QuestionsNav": [],
   "MyApp.view.QuestionsNestedList": [],
+  "MyApp.view.TMView": [],
   "MyApp.view.WikiView": []
 });
 Ext.ClassManager.addNameAliasMappings({
@@ -1226,6 +1260,66 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.fx.runner.Css": [],
   "Ext.fx.runner.CssAnimation": [],
   "Ext.fx.runner.CssTransition": [],
+  "Ext.grid.Grid": [
+    "widget.grid"
+  ],
+  "Ext.grid.HeaderContainer": [
+    "widget.headercontainer"
+  ],
+  "Ext.grid.HeaderGroup": [
+    "widget.gridheadergroup"
+  ],
+  "Ext.grid.Row": [
+    "widget.gridrow"
+  ],
+  "Ext.grid.column.Action": [
+    "widget.actioncolumn"
+  ],
+  "Ext.grid.column.Boolean": [
+    "widget.booleancolumn"
+  ],
+  "Ext.grid.column.CheckColumn": [
+    "widget.checkcolumn"
+  ],
+  "Ext.grid.column.Column": [
+    "widget.column"
+  ],
+  "Ext.grid.column.Date": [
+    "widget.datecolumn"
+  ],
+  "Ext.grid.column.Number": [
+    "widget.numbercolumn"
+  ],
+  "Ext.grid.column.Template": [
+    "widget.templatecolumn"
+  ],
+  "Ext.grid.infinite.Grid": [
+    "widget.grid"
+  ],
+  "Ext.grid.infinite.Row": [
+    "widget.gridrow"
+  ],
+  "Ext.grid.infinite.TemplateRow": [
+    "widget.listgridrow"
+  ],
+  "Ext.grid.plugin.ColumnResizing": [
+    "plugin.gridcolumnresizing"
+  ],
+  "Ext.grid.plugin.Editable": [
+    "plugin.grideditable"
+  ],
+  "Ext.grid.plugin.MultiSelection": [
+    "plugin.gridmultiselection"
+  ],
+  "Ext.grid.plugin.PagingToolbar": [
+    "plugin.gridpagingtoolbar"
+  ],
+  "Ext.grid.plugin.SummaryRow": [
+    "plugin.gridsummaryrow"
+  ],
+  "Ext.grid.plugin.ViewOptions": [
+    "plugin.gridviewoptions"
+  ],
   "Ext.layout.Abstract": [],
   "Ext.layout.Box": [
     "layout.tablebox"
@@ -1406,12 +1500,14 @@ Ext.ClassManager.addNameAliasMappings({
     "controller.projectsolvingnav"
   ],
   "MyApp.controller.QuestionNav": [],
+  "MyApp.controller.TMView": [],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.QuestionModel": [],
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
   "MyApp.store.ListActionsGonogo": [],
   "MyApp.store.ListDocumentsStore": [],
+  "MyApp.store.LogsStore": [],
   "MyApp.store.MenuStore": [],
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
@@ -1422,6 +1518,10 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.DownloadDocumentsList": [
     "widget.downloaddocumentslist"
+  ],
+  "MyApp.view.FOPDetailView": [],
+  "MyApp.view.FOPMainView": [
+    "widget.fopview"
   ],
   "MyApp.view.GonogoItem": [
     "widget.gonogoitem"
@@ -1435,9 +1535,11 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.GonogoView": [
     "widget.gonogoview"
   ],
+  "MyApp.view.GraphicTM": [],
   "MyApp.view.HomeView": [
     "widget.homeview"
   ],
+  "MyApp.view.LogMainView": [],
   "MyApp.view.Main": [
     "widget.main"
   ],
@@ -1469,7 +1571,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.QuestionsNestedList": [
     "widget.questionsnestedlist"
   ],
+  "MyApp.view.TMView": [],
   "MyApp.view.WikiView": [
     "widget.wikiview"
   ]
 });
+Ext.setVersion("sencha-touch-grid", "2.3.0.2");

@@ -1,0 +1,108 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FOPDetailView"
+    },
+    "designerId": "ec9d95e6-b3c2-4bbd-8f58-6b00f30e7c6e",
+    "cn": [
+        {
+            "type": "grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": 1136,
+                "title": "FOPDetailGrid"
+            },
+            "designerId": "bb1e4f78-a5ae-4b87-ac4f-7e7dc4543fd9",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Line",
+                        "width": 110
+                    },
+                    "designerId": "be80aa86-d636-4d50-b695-d5201c87bdd5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Action",
+                        "width": 170
+                    },
+                    "designerId": "af3cc7b5-608f-4c38-a33d-d577ecc61998"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Entity",
+                        "width": 130
+                    },
+                    "designerId": "28e6e1ab-923f-4fe9-ac01-0fb09bbd3d9c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Label",
+                        "width": 130
+                    },
+                    "designerId": "4a4fb9fd-26b9-423d-8d3e-f15b22cc4f23"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Time",
+                        "width": 130
+                    },
+                    "designerId": "cbeef2b4-7779-4e18-970c-1d54415a3418"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Report",
+                        "width": 160
+                    },
+                    "designerId": "db410f84-4e39-429d-a46e-bc1a46198d8d"
+                }
+            ]
+        }
+    ]
+}

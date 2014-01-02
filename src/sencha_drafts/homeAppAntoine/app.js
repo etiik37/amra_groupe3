@@ -19,6 +19,10 @@ Ext.Loader.setConfig({
 });
 
 
+Ext.Loader.setPath('Ext.grid.column.Column','packages/sencha-touch-grid/src/grid/column/Column.js');
+Ext.Loader.setPath('Ext.grid.column.Date','packages/sencha-touch-grid/src/grid/column/Date.js');
+Ext.Loader.setPath('Ext.grid.Grid','packages/sencha-touch-grid/src/grid/Grid.js');
+
 Ext.application({
     models: [
         'QuestionModel'
@@ -32,7 +36,8 @@ Ext.application({
         'ItemsGonogo',
         'ListActionsGonogo',
         'ListDocumentsStore',
-        'QuestionsTreeStore'
+        'QuestionsTreeStore',
+        'LogsStore'
     ],
     views: [
         'HomeView',
@@ -49,7 +54,10 @@ Ext.application({
         'ProjectSolvingList',
         'DownloadDocumentsList',
         'QuestionsNav',
-        'QuestionsNestedList'
+        'QuestionsNestedList',
+        'LogMainView',
+        'TMView',
+        'GraphicTM'
     ],
     requires: [
         'Ext.MessageBox'
@@ -61,7 +69,8 @@ Ext.application({
         'PreferencesView',
         'ProjectSolvingNav',
         'DownloadDocuments',
-        'QuestionNav'
+        'QuestionNav',
+        'TMView'
     ],
     name: 'MyApp',
 

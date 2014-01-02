@@ -1,0 +1,282 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "logview",
+        "designer|userClassName": "LogMainView",
+        "layout": "vbox",
+        "requires": [
+            "Ext.field.Search",
+            "Ext.field.Select",
+            "Ext.field.DatePicker",
+            "Ext.grid.Grid"
+        ]
+    },
+    "designerId": "c9bb73bb-68b0-4cfd-98e5-17962882863a",
+    "cn": [
+        {
+            "type": "Ext.field.Search",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": null
+            },
+            "designerId": "37951eec-eeab-43fb-b0bb-4fe104520532"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "FilterBar",
+                "layout": "hbox"
+            },
+            "designerId": "793db541-6f6c-41e7-a766-9018d172b015",
+            "cn": [
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "appFilter",
+                        "label": null,
+                        "name": "appFilter",
+                        "options": [
+                            "{text: 'All apps',  value: 'all_apps'},",
+                            "{text: 'Go/No-Go', value: 'go_no_go'},",
+                            "{text: 'TM Viewer',  value: 'tm_viewer'}"
+                        ],
+                        "width": 204
+                    },
+                    "designerId": "95f4c80e-36cc-4ab8-a7b8-0d957cce2601"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "levelFilter",
+                        "label": null,
+                        "name": "levelFilter",
+                        "options": [
+                            "{text: 'All levels',  value: 'all_levels'},",
+                            "{text: 'High', value: 'high'},",
+                            "{text: '(At least ?)Medium',  value: 'medium'},",
+                            "{text: '(At least ?)Low',  value: 'low'}"
+                        ],
+                        "width": 196
+                    },
+                    "designerId": "3ebb324c-56d5-4337-8e44-6a09649cabe0"
+                },
+                {
+                    "type": "Ext.field.DatePicker",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "startDate",
+                        "label": null,
+                        "name": "startDate",
+                        "placeHolder": "mm/dd/yyyy",
+                        "width": 167
+                    },
+                    "designerId": "104bf936-bf88-4dd1-a89c-6a81e63f0eb3",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "98511d2b-e8a2-4bcf-9b34-340677a3715d",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "doneButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Done"
+                                    },
+                                    "designerId": "2cbc58fc-b203-43f5-9f23-0ee861bb0a96"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "cancelButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Cancel"
+                                    },
+                                    "designerId": "23fc5c31-331c-4aec-87c7-ffece4d47d51"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.field.DatePicker",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "endDate",
+                        "label": null,
+                        "name": "endDate",
+                        "placeHolder": "mm/dd/yyyy"
+                    },
+                    "designerId": "e5fd576c-4d5f-4fd4-afeb-dd7104a29c87",
+                    "cn": [
+                        {
+                            "type": "Ext.picker.Date",
+                            "reference": {
+                                "name": "picker",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "20d4fc9f-3d8b-4470-b89d-c9aa77cb6b4d",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "doneButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Done"
+                                    },
+                                    "designerId": "0e2431bb-606e-4429-81e6-86556518a205"
+                                },
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "cancelButton",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Cancel"
+                                    },
+                                    "designerId": "3412db8c-0b09-443b-8e92-08a8760ce273"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "logsGrid",
+                "layout|flex": 10,
+                "store": "LogsStore",
+                "title": "Remove title bar"
+            },
+            "designerId": "7175ab36-3be4-4869-91eb-0c0c6dae8032",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "app",
+                        "text": "App",
+                        "width": 110
+                    },
+                    "designerId": "e62dd728-ea70-43c0-91e7-a7f9e700dc18"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "text": "ID",
+                        "width": 110
+                    },
+                    "designerId": "0d543c9a-6c59-4fab-b377-7be4c66a86e9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "message",
+                        "text": "Message",
+                        "width": 110
+                    },
+                    "designerId": "3082120a-2187-4c8e-b723-087f4bff3b98"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "level",
+                        "text": "Level",
+                        "width": 110
+                    },
+                    "designerId": "4c77ffaa-a83e-4943-bdfb-7e993c432a82"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date",
+                        "text": "Date",
+                        "width": 110
+                    },
+                    "designerId": "6f3866d6-6764-4112-9a94-cd0fdec3f2b7"
+                }
+            ]
+        }
+    ]
+}

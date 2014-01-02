@@ -13,7 +13,8 @@
             "PreferencesView",
             "ProjectSolvingNav",
             "DownloadDocuments",
-            "QuestionNav"
+            "QuestionNav",
+            "TMView"
         ],
         "name": "MyApp",
         "models": [
@@ -31,7 +32,8 @@
             "ItemsGonogo",
             "ListActionsGonogo",
             "ListDocumentsStore",
-            "QuestionsTreeStore"
+            "QuestionsTreeStore",
+            "LogsStore"
         ],
         "views": [
             "HomeView",
@@ -43,7 +45,12 @@
             "MenuList",
             "AuthView",
             "GonogoList",
-            "GonogoItem"
+            "GonogoItem",
+            "WikiView",
+            "ProjectSolvingList",
+            "DownloadDocumentsList",
+            "QuestionsNav",
+            "QuestionsNestedList"
         ]
     },
     "designerId": "application",
