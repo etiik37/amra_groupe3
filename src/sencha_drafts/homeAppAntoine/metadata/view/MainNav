@@ -32,6 +32,7 @@
                 "designer|displayName": "NavigationBar",
                 "docked": "top",
                 "id": "toolbartop",
+                "itemId": "mynavigationbar",
                 "tplWriteMode": null
             },
             "designerId": "8d95e0ef-45fd-410f-bec0-11984fbe3ab6",
@@ -47,6 +48,7 @@
                         "docked": "left",
                         "iconCls": "list",
                         "id": "menubutton",
+                        "itemId": "mybutton1",
                         "text": null,
                         "ui": "plain"
                     },
@@ -61,6 +63,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "align": "right",
+                        "autoEvent": null,
                         "badgeText": null,
                         "designer|displayName": null,
                         "docked": "right",

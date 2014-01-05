@@ -48,18 +48,6 @@
       ".svn$"
    ],
    "archivePath": "archive",
-   "requires": [
-      "sencha-touch-grid"
-   ],
-   "id": "bfc389bc-ac69-4838-aa37-f4495946206c",
-   "_architect": {
-      "_comment": "Please don't edit. This is Architect data.",
-      "name": "MyApp",
-      "css": [],
-      "js": [],
-      "resources": [],
-      "requires": [
-         "sencha-touch-grid"
-      ]
-   }
+   "requires": [],
+   "id": "bfc389bc-ac69-4838-aa37-f4495946206c"
 }

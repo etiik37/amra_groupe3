@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /home/etiik/Bureau/Astrium/amra_groupe3/src/sencha_drafts/homeAppAntoine/app.js
+// @require /home/antoine/Desktop/homeAppMerge/amra_groupe3/src/sencha_drafts/homeAppAntoine/app.js
