@@ -36,8 +36,7 @@ Ext.application({
         'ItemsGonogo',
         'ListActionsGonogo',
         'ListDocumentsStore',
-        'QuestionsTreeStore',
-        'LogsStore'
+        'QuestionsTreeStore'
     ],
     views: [
         'HomeView',
@@ -54,10 +53,7 @@ Ext.application({
         'ProjectSolvingList',
         'DownloadDocumentsList',
         'QuestionsNav',
-        'QuestionsNestedList',
-        'LogMainView',
-        'TMView',
-        'GraphicTM'
+        'QuestionsNestedList'
     ],
     requires: [
         'Ext.MessageBox'
@@ -69,8 +65,7 @@ Ext.application({
         'PreferencesView',
         'ProjectSolvingNav',
         'DownloadDocuments',
-        'QuestionNav',
-        'TMView'
+        'QuestionNav'
     ],
     name: 'MyApp',
 
