@@ -18,7 +18,28 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|controlQuery": "tabpanel",
+                "designer|controlQuery": "gonogoview",
+                "designer|targetType": "Ext.tab.Panel",
+                "fn": "onTabpanelShow",
+                "implHandler": [
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('itemsgonogo');",
+                    "//On affiche par défaut uniquement les GONOGO en cours",
+                    "sto.filter('finished', 'false');"
+                ],
+                "name": "show"
+            },
+            "designerId": "3c8315d9-dfc8-4b70-8273-61e916348991"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoview",
                 "designer|targetType": "Ext.tab.Panel",
                 "fn": "onTabpanelActiveItemChange",
                 "implHandler": [
@@ -48,6 +69,19 @@
                 "selector": "mainnav"
             },
             "designerId": "617b3c0a-2c19-4899-b27d-870de6d23e80"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogoview",
+                "selector": "gonogoview"
+            },
+            "designerId": "63672d85-eafa-4ab4-9704-95df6509d0f6"
         }
     ]
 }

@@ -24,45 +24,6 @@
             "designerId": "16ec161a-3bd7-449d-9441-7e05b0302567"
         },
         {
-            "type": "fixedfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "launch",
-                "implHandler": [
-                    "var MenuListView = Ext.create('MyApp.view.MenuList');",
-                    "var overlayMenuList = Ext.Viewport.add(MenuListView);",
-                    "",
-                    "var NotificationsListView = Ext.create('MyApp.view.NotificationsList');",
-                    "var overlayNotificationsList = Ext.Viewport.add(NotificationsListView);",
-                    "",
-                    "Ext.Viewport.on(",
-                    "    {",
-                    "        delegate: '#notificationsbutton',",
-                    "        tap: function(button) {",
-                    "            // When you tap on a button, we want to show the overlay by the button we just tapped.",
-                    "            overlayNotificationsList.showBy(button);",
-                    "        }",
-                    "    }",
-                    ");",
-                    "",
-                    "Ext.Viewport.on(",
-                    "    {",
-                    "        delegate: '#menubutton',",
-                    "        tap: function(button) {",
-                    "            // When you tap on a button, we want to show the overlay by the button we just tapped.",
-                    "            overlayMenuList.showBy(button);",
-                    "        }",
-                    "    }",
-                    ");"
-                ]
-            },
-            "designerId": "b300c14b-91bc-4513-8b53-166b3587a6cf"
-        },
-        {
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -253,6 +214,59 @@
                 "name": "tap"
             },
             "designerId": "273e2d9f-297c-4460-a730-14b008eaf109"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var MenuListView = Ext.create('MyApp.view.MenuList');",
+                    "var overlayMenuList = Ext.Viewport.add(MenuListView);",
+                    "",
+                    "var NotificationsListView = Ext.create('MyApp.view.NotificationsList');",
+                    "var overlayNotificationsList = Ext.Viewport.add(NotificationsListView);",
+                    "",
+                    "Ext.Viewport.on(",
+                    "    {",
+                    "        delegate: '#notificationsbutton',",
+                    "        tap: function(button) {",
+                    "            // When you tap on a button, we want to show the overlay by the button we just tapped.",
+                    "            overlayNotificationsList.showBy(button);",
+                    "        }",
+                    "    }",
+                    ");",
+                    "",
+                    "Ext.Viewport.on(",
+                    "    {",
+                    "        delegate: '#menubutton',",
+                    "        tap: function(button) {",
+                    "            // When you tap on a button, we want to show the overlay by the button we just tapped.",
+                    "            overlayMenuList.showBy(button);",
+                    "        }",
+                    "    }",
+                    ");",
+                    "",
+                    "//On enregistre le nombre de notifications",
+                    "var notificationsStore = Ext.getStore('notificationsstore');",
+                    "localStorage.setItem(\"previousNotifNb\", 0);",
+                    "",
+                    "//Démarrage du timer pour la mise à jour du store des notifications",
+                    "timerCheckForNotifications = setInterval(function checkForNotifications() {",
+                    "    notificationsStore.load();",
+                    "    localStorage.setItem(\"newNotifNb\", notificationsStore.getAllCount());",
+                    "    var newNotifNbToPrint = localStorage.getItem('newNotifNb') - localStorage.getItem('previousNotifNb');",
+                    "    if (newNotifNbToPrint !== 0) {",
+                    "        Ext.getCmp('notificationsbutton').setBadgeText(newNotifNbToPrint);",
+                    "        }",
+                    "},5000);"
+                ]
+            },
+            "designerId": "36ec1eca-ba1b-4be9-ba98-9f9340fa19d0"
         }
     ]
 }

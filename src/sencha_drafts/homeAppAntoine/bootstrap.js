@@ -1539,7 +1539,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.HomeView": [
     "widget.homeview"
   ],
-  "MyApp.view.LogMainView": [],
+  "MyApp.view.LogMainView": [
+    "widget.logview"
+  ],
   "MyApp.view.Main": [
     "widget.main"
   ],
@@ -1571,7 +1573,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.QuestionsNestedList": [
     "widget.questionsnestedlist"
   ],
-  "MyApp.view.TMView": [],
+  "MyApp.view.TMView": [
+    "widget.tmview"
+  ],
   "MyApp.view.WikiView": [
     "widget.wikiview"
   ]
