@@ -24,7 +24,7 @@
                 "implHandler": [
                     "//Récupération du store",
                     "var sto = Ext.getStore('itemsgonogo');",
-                    "//On affiche par défaut uniquement les GONOGO en cours",
+                    "",
                     "sto.filter('finished', 'false');"
                 ],
                 "name": "show"
@@ -82,6 +82,77 @@
                 "selector": "gonogoview"
             },
             "designerId": "63672d85-eafa-4ab4-9704-95df6509d0f6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogoitem",
+                "selector": "gonogoitem"
+            },
+            "designerId": "839eab48-9c40-40ab-a9a7-a8560139756e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoitem #gonogobutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var gonogoItemName = button.up('gonogoitem').getRecord().get('label');",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "var navBarMainView = this.getNavigationbar();",
+                    "",
+                    "var previousTitleMainView = navBarMainView.getTitle();",
+                    "",
+                    "//var GonogoCheckListView = Ext.create('MyApp.view.GonogoCheckListView');",
+                    "",
+                    "mainNavView.push({",
+                    "    title : previousTitleMainView,",
+                    "    xtype : 'gonogochecklistview'",
+                    "});",
+                    "",
+                    "mainNavView.down('gonogochecklistview').down('#navigationbar').setTitle(gonogoItemName);"
+                ],
+                "name": "tap"
+            },
+            "designerId": "b68e2e7b-7c42-49d9-b1ee-ccf7f3c26de9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogochecklistview",
+                "selector": "gonogochecklistview"
+            },
+            "designerId": "16f69ebb-99c0-4fe9-b38b-88b8481c760b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "navigationbar",
+                "selector": "mainnav #navigationbar"
+            },
+            "designerId": "15c7faa1-7d62-469d-acb3-c47883b2fb5e"
         }
     ]
 }

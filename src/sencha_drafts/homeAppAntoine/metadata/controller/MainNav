@@ -44,11 +44,7 @@
                     "mainNavView.push({",
                     "    title : record.get('label'),",
                     "    xtype : record.get('id_view')",
-                    "});",
-                    "",
-                    "this.getApplication().getHistory().add(new Ext.app.Action({",
-                    "    url: record.get('url')",
-                    "}), false);"
+                    "});"
                 ],
                 "name": "itemtap"
             },
@@ -88,11 +84,7 @@
                     "mainNavView.push({",
                     "    title : 'Preferences',",
                     "    xtype : 'preferencesview'",
-                    "});",
-                    "",
-                    "this.getApplication().getHistory().add(new Ext.app.Action({",
-                    "    url: 'preferences'",
-                    "}), true);"
+                    "});"
                 ],
                 "name": "tap"
             },

@@ -47,16 +47,17 @@ Ext.define('MyApp.view.GonogoItem', {
                 xtype: 'label',
                 flex: 1,
                 height: 50,
-                id: 'gonogoitemname'
+                itemId: 'gonogoitemname'
             },
             {
                 xtype: 'button',
                 flex: 1,
                 height: 50,
+                itemId: 'gonogobutton',
                 maxWidth: 70,
                 minWidth: 70,
                 width: 70,
-                text: 'MyButton6'
+                text: 'GO'
             }
         ]
     },
@@ -66,8 +67,6 @@ Ext.define('MyApp.view.GonogoItem', {
         var me = this;
 
         me.down('#gonogoitemname').setHtml(record.get('label'));
-
-        /*me.down('#textCmp').setHtml(record.get('val2'));*/
 
         me.callParent(arguments);
     }

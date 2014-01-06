@@ -1,0 +1,21 @@
+{
+    "type": "Ext.dataview.DataView",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaultType": "gonogoservices",
+        "designer|userAlias": "gonogoserviceslist",
+        "designer|userClassName": "GonogoServicesList",
+        "disableSelection": true,
+        "modal": true,
+        "requires": [
+            "MyApp.view.GonogoServices"
+        ],
+        "store": "servicesgonogo",
+        "useComponents": true
+    },
+    "designerId": "a80aebbf-d5da-49f4-862d-d5382134a9d6"
+}

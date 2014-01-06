@@ -1,7 +1,7 @@
 [
-	{ "label": "METEOSAT 3000", "id_view": "", "finished": "false"},
-	{ "label": "Ariane 5", "id_view": "", "finished": "false"},
-	{ "label": "Challenger 2013", "id_view": "", "finished": "false"},
-	{ "label": "Astrium rocket", "id_view": "", "finished": "false"},
-	{ "label": "Mooner 2020", "id_view": "", "finished": "true"}
+	{ "label": "METEOSAT 3000", "id": 1, "finished": "false"},
+	{ "label": "Ariane 5", "id": "2", "finished": "true"},
+	{ "label": "Challenger 2013", "id": "3", "finished": "false"},
+	{ "label": "Astrium rocket", "id": "4", "finished": "false"},
+	{ "label": "Mooner 2020", "id": "5", "finished": "true"}
 ]

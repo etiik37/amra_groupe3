@@ -19,7 +19,8 @@ Ext.define('MyApp.store.ItemsGonogo', {
     requires: [
         'Ext.data.Field',
         'Ext.data.proxy.Ajax',
-        'Ext.data.reader.Json'
+        'Ext.data.reader.Json',
+        'Ext.data.writer.Json'
     ],
 
     config: {
@@ -33,8 +34,8 @@ Ext.define('MyApp.store.ItemsGonogo', {
                 type: 'string'
             },
             {
-                name: 'id_view',
-                type: 'string'
+                name: 'id',
+                type: 'int'
             },
             {
                 name: 'finished',
@@ -45,6 +46,9 @@ Ext.define('MyApp.store.ItemsGonogo', {
             type: 'ajax',
             url: 'items_menu_gonogo.json',
             reader: {
+                type: 'json'
+            },
+            writer: {
                 type: 'json'
             }
         }

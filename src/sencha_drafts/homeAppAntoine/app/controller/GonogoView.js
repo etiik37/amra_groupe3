@@ -19,13 +19,19 @@ Ext.define('MyApp.controller.GonogoView', {
     config: {
         refs: {
             mainnav: 'mainnav',
-            gonogoview: 'gonogoview'
+            gonogoview: 'gonogoview',
+            gonogoitem: 'gonogoitem',
+            gonogochecklistview: 'gonogochecklistview',
+            navigationbar: 'mainnav #navigationbar'
         },
 
         control: {
             "gonogoview": {
                 show: 'onTabpanelShow',
                 activeitemchange: 'onTabpanelActiveItemChange'
+            },
+            "gonogoitem #gonogobutton": {
+                tap: 'onButtonTap'
             }
         }
     },
@@ -33,7 +39,7 @@ Ext.define('MyApp.controller.GonogoView', {
     onTabpanelShow: function(component, eOpts) {
         //Récupération du store
         var sto = Ext.getStore('itemsgonogo');
-        //On affiche par défaut uniquement les GONOGO en cours
+
         sto.filter('finished', 'false');
     },
 
@@ -47,6 +53,24 @@ Ext.define('MyApp.controller.GonogoView', {
         if (value.config.title !== 'History') {
             sto.filter('finished', 'false');
         }
+    },
+
+    onButtonTap: function(button, e, eOpts) {
+        var gonogoItemName = button.up('gonogoitem').getRecord().get('label');
+
+        var mainNavView = this.getMainnav();
+        var navBarMainView = this.getNavigationbar();
+
+        var previousTitleMainView = navBarMainView.getTitle();
+
+        //var GonogoCheckListView = Ext.create('MyApp.view.GonogoCheckListView');
+
+        mainNavView.push({
+            title : previousTitleMainView,
+            xtype : 'gonogochecklistview'
+        });
+
+        mainNavView.down('gonogochecklistview').down('#navigationbar').setTitle(gonogoItemName);
     }
 
 });

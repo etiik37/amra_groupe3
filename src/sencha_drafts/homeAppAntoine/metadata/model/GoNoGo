@@ -32,8 +32,8 @@
             "codeClass": null,
             "userConfig": {
                 "defaultValue": null,
-                "name": "id_view",
-                "type": "string"
+                "name": "id",
+                "type": "int"
             },
             "designerId": "4ee20c80-d5e7-45a4-843a-3fa1b43ddec3"
         },

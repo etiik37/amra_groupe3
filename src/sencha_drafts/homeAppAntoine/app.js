@@ -25,7 +25,8 @@ Ext.application({
         'Ext.MessageBox'
     ],
     models: [
-        'QuestionModel'
+        'QuestionModel',
+        'Services'
     ],
     stores: [
         'MenuStore',
@@ -36,7 +37,8 @@ Ext.application({
         'ItemsGonogo',
         'ListActionsGonogo',
         'ListDocumentsStore',
-        'QuestionsTreeStore'
+        'QuestionsTreeStore',
+        'ServicesGonogo'
     ],
     views: [
         'HomeView',
@@ -53,7 +55,10 @@ Ext.application({
         'DownloadDocumentsList',
         'QuestionsNav',
         'QuestionsNestedList',
-        'MainNav'
+        'MainNav',
+        'GonogoCheckListView',
+        'GonogoServices',
+        'GonogoServicesList'
     ],
     controllers: [
         'GonogoView',

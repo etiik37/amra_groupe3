@@ -40,8 +40,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id_view",
-                "type": "string"
+                "name": "id",
+                "type": "int"
             },
             "designerId": "2e859062-2fea-4356-b024-e7e5e4a6afde"
         },
@@ -78,6 +78,15 @@
                     },
                     "codeClass": null,
                     "designerId": "cbb3a036-6a01-47ab-a149-3ce0e7b186ef"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "adbec1f8-0626-4890-84bf-8446f0733a60"
                 }
             ]
         }

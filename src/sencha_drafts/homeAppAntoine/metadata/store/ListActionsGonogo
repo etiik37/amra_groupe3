@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "list_actions_gonogo.json"
+                "url": "data/gonogo/list_actions_gonogo.json"
             },
             "designerId": "66fc79b5-e125-42c1-9340-f19891647bdf",
             "cn": [

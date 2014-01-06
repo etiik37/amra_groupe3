@@ -1,0 +1,89 @@
+{
+    "type": "Ext.dataview.component.DataItem",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userAlias": "gonogoservices",
+        "designer|userClassName": "GonogoServices",
+        "disabled": null,
+        "layout": "hbox",
+        "maxHeight": 70,
+        "modal": null,
+        "padding": 10
+    },
+    "designerId": "f7ce3cde-e803-4130-9d82-85a7f280aee1",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "updateRecord",
+                "implHandler": [
+                    "// Provide an implementation to update this container's child items",
+                    "var me = this;",
+                    "",
+                    "me.down('#gonogochecklistbox').setLabel(record.get('label'));",
+                    "",
+                    "me.callParent(arguments);"
+                ]
+            },
+            "designerId": "c8ff0571-d299-4556-9754-303aa0b7dd55"
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "gonogochecklistbox",
+                "label": "Field",
+                "labelWidth": "60%",
+                "width": "80%"
+            },
+            "designerId": "b3784ec4-8dba-4eb2-b653-8a3dc2547e37"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "editchecklist",
+                "text": "Edit",
+                "width": "10%"
+            },
+            "designerId": "2964104e-3a37-4052-a500-c6548187153a"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "itemId": "viewchecklist",
+                "text": "View",
+                "width": "10%"
+            },
+            "designerId": "0805d068-220a-480e-9f3d-29aa15a0f97f"
+        }
+    ]
+}

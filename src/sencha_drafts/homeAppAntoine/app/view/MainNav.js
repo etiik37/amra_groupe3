@@ -34,8 +34,7 @@ Ext.define('MyApp.view.MainNav', {
         navigationBar: {
             centered: false,
             docked: 'top',
-            id: 'toolbartop',
-            itemId: 'mynavigationbar',
+            itemId: 'navigationbar',
             autoDestroy: false,
             layout: {
                 type: 'hbox',

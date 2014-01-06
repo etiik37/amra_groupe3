@@ -17,7 +17,8 @@
             "TMView"
         ],
         "models": [
-            "QuestionModel"
+            "QuestionModel",
+            "Services"
         ],
         "name": "MyApp",
         "requires": [
@@ -32,7 +33,8 @@
             "ItemsGonogo",
             "ListActionsGonogo",
             "ListDocumentsStore",
-            "QuestionsTreeStore"
+            "QuestionsTreeStore",
+            "ServicesGonogo"
         ],
         "views": [
             "HomeView",
@@ -49,7 +51,10 @@
             "DownloadDocumentsList",
             "QuestionsNav",
             "QuestionsNestedList",
-            "MainNav"
+            "MainNav",
+            "GonogoCheckListView",
+            "GonogoServices",
+            "GonogoServicesList"
         ]
     },
     "designerId": "application",

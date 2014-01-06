@@ -27,8 +27,8 @@ Ext.define('MyApp.model.GoNoGo', {
                 type: 'string'
             },
             {
-                name: 'id_view',
-                type: 'string'
+                name: 'id',
+                type: 'int'
             },
             {
                 name: 'finished',

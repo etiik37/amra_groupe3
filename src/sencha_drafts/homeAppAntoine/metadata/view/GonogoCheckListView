@@ -1,0 +1,38 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "gonogochecklistview",
+        "designer|userClassName": "GonogoCheckListView"
+    },
+    "designerId": "6c075d27-926a-4783-b10c-7c7e31d99584",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "itemId": "navigationbar"
+            },
+            "designerId": "b1aa15d3-3a83-4ffd-801c-b7dbb20f4e7e"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "fe6b7c03-ec23-429d-9320-f0bd00c064f6",
+            "masterInstanceId": "a80aebbf-d5da-49f4-862d-d5382134a9d6"
+        }
+    ]
+}

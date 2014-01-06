@@ -36,8 +36,6 @@
                     "",
                     "me.down('#gonogoitemname').setHtml(record.get('label'));",
                     "",
-                    "/*me.down('#textCmp').setHtml(record.get('val2'));*/",
-                    "",
                     "me.callParent(arguments);"
                 ]
             },
@@ -75,7 +73,8 @@
             "codeClass": null,
             "userConfig": {
                 "height": 50,
-                "id": "gonogoitemname",
+                "id": null,
+                "itemId": "gonogoitemname",
                 "layout|flex": 1
             },
             "designerId": "d5920c89-6d49-449a-af2d-6ffbf45c6c6b"
@@ -88,12 +87,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|createAlias": null,
                 "height": 50,
+                "itemId": "gonogobutton",
                 "layout|flex": 1,
                 "maxHeight": null,
                 "maxWidth": 70,
                 "minWidth": 70,
-                "text": "MyButton6",
+                "text": "GO",
                 "width": 70
             },
             "designerId": "7de894b0-5874-482c-8896-154d6c05af04"
