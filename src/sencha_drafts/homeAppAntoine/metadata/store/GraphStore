@@ -1,0 +1,39 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GraphStore",
+        "model": "GraphModel",
+        "storeId": "GraphStore"
+    },
+    "designerId": "3452d60f-404d-4843-b800-0e27b7eed9ec",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "tmviewer.json"
+            },
+            "designerId": "92b0e231-0167-404a-ab9f-a8f605a1331f",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "6f1a31f6-9200-4990-845d-a6d2f51daa94"
+                }
+            ]
+        }
+    ]
+}

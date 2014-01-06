@@ -34,7 +34,8 @@
             "ListActionsGonogo",
             "ListDocumentsStore",
             "QuestionsTreeStore",
-            "ServicesGonogo"
+            "ServicesGonogo",
+            "LogsStore"
         ],
         "views": [
             "HomeView",

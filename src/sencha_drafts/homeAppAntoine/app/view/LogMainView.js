@@ -41,13 +41,43 @@ Ext.define('MyApp.view.LogMainView', {
                         xtype: 'selectfield',
                         width: 204,
                         name: 'appFilter',
-                        options: '{text: \'All apps\',  value: \'all_apps\'},\n{text: \'Go/No-Go\', value: \'go_no_go\'},\n{text: \'TM Viewer\',  value: \'tm_viewer\'}'
+                        options: [
+                            {
+                                text: 'All apps',
+                                value: 'all_apps'
+                            },
+                            {
+                                text: 'Go/No-Go',
+                                value: 'go_no_go'
+                            },
+                            {
+                                text: 'TM Viewer',
+                                value: 'tm_viewer'
+                            }
+                        ]
                     },
                     {
                         xtype: 'selectfield',
                         width: 196,
                         name: 'levelFilter',
-                        options: '{text: \'All levels\',  value: \'all_levels\'},\n{text: \'High\', value: \'high\'},\n{text: \'(At least ?)Medium\',  value: \'medium\'},\n{text: \'(At least ?)Low\',  value: \'low\'}'
+                        options: [
+                            {
+                                text: 'All levels',
+                                value: 'all_levels'
+                            },
+                            {
+                                text: 'High',
+                                value: 'high'
+                            },
+                            {
+                                text: '(At least ?)Medium',
+                                value: 'medium'
+                            },
+                            {
+                                text: '(At least ?)Low',
+                                value: 'low'
+                            }
+                        ]
                     },
                     {
                         xtype: 'datepickerfield',
@@ -65,7 +95,7 @@ Ext.define('MyApp.view.LogMainView', {
             {
                 xtype: 'grid',
                 flex: 10,
-                store: 'LogsStore',
+                store: 'logsstore',
                 title: 'Remove title bar',
                 columns: [
                     {

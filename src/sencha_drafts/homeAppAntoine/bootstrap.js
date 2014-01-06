@@ -676,7 +676,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
   "MyApp.model.GoNoGo": [],
+  "MyApp.model.GraphModel": [],
   "MyApp.model.QuestionModel": [],
+  "MyApp.model.Services": [],
+  "MyApp.store.GraphStore": [],
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
   "MyApp.store.ListActionsGonogo": [],
@@ -686,14 +689,18 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.store.QuestionsTreeStore": [],
+  "MyApp.store.ServicesGonogo": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [],
   "MyApp.view.DownloadDocumentsList": [],
   "MyApp.view.FOPDetailView": [],
   "MyApp.view.FOPMainView": [],
+  "MyApp.view.GonogoCheckListView": [],
   "MyApp.view.GonogoItem": [],
   "MyApp.view.GonogoList": [],
   "MyApp.view.GonogoListCheck": [],
+  "MyApp.view.GonogoServices": [],
+  "MyApp.view.GonogoServicesList": [],
   "MyApp.view.GonogoView": [],
   "MyApp.view.GraphicTM": [],
   "MyApp.view.HomeView": [],
@@ -1502,7 +1509,10 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
   "MyApp.model.GoNoGo": [],
+  "MyApp.model.GraphModel": [],
   "MyApp.model.QuestionModel": [],
+  "MyApp.model.Services": [],
+  "MyApp.store.GraphStore": [],
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
   "MyApp.store.ListActionsGonogo": [],
@@ -1512,6 +1522,7 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.store.QuestionsTreeStore": [],
+  "MyApp.store.ServicesGonogo": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [
     "widget.authview"
@@ -1523,6 +1534,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.FOPMainView": [
     "widget.fopview"
   ],
+  "MyApp.view.GonogoCheckListView": [
+    "widget.gonogochecklistview"
+  ],
   "MyApp.view.GonogoItem": [
     "widget.gonogoitem"
   ],
@@ -1531,6 +1545,12 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.GonogoListCheck": [
     "widget.gonogolistcheck"
+  ],
+  "MyApp.view.GonogoServices": [
+    "widget.gonogoservices"
+  ],
+  "MyApp.view.GonogoServicesList": [
+    "widget.gonogoserviceslist"
   ],
   "MyApp.view.GonogoView": [
     "widget.gonogoview"

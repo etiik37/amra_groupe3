@@ -8,7 +8,7 @@
     "userConfig": {
         "autoLoad": true,
         "designer|userClassName": "LogsStore",
-        "storeId": "LogsStore"
+        "storeId": "logsstore"
     },
     "designerId": "a083326d-819a-4383-ac21-42e80a6e1204",
     "cn": [

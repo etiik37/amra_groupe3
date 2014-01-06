@@ -55,9 +55,9 @@
                         "label": null,
                         "name": "appFilter",
                         "options": [
-                            "{text: 'All apps',  value: 'all_apps'},",
+                            "[{text: 'All apps',  value: 'all_apps'},",
                             "{text: 'Go/No-Go', value: 'go_no_go'},",
-                            "{text: 'TM Viewer',  value: 'tm_viewer'}"
+                            "{text: 'TM Viewer',  value: 'tm_viewer'}]"
                         ],
                         "width": 204
                     },
@@ -75,10 +75,10 @@
                         "label": null,
                         "name": "levelFilter",
                         "options": [
-                            "{text: 'All levels',  value: 'all_levels'},",
+                            "[{text: 'All levels',  value: 'all_levels'},",
                             "{text: 'High', value: 'high'},",
                             "{text: '(At least ?)Medium',  value: 'medium'},",
-                            "{text: '(At least ?)Low',  value: 'low'}"
+                            "{text: '(At least ?)Low',  value: 'low'}]"
                         ],
                         "width": 196
                     },
@@ -201,7 +201,7 @@
             "userConfig": {
                 "designer|displayName": "logsGrid",
                 "layout|flex": 10,
-                "store": "LogsStore",
+                "store": "logsstore",
                 "title": "Remove title bar"
             },
             "designerId": "7175ab36-3be4-4869-91eb-0c0c6dae8032",

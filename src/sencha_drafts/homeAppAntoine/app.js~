@@ -41,8 +41,7 @@ Ext.application({
         'ListActionsGonogo',
         'ListDocumentsStore',
         'QuestionsTreeStore',
-        'ServicesGonogo',
-        'LogsStore'
+        'ServicesGonogo'
     ],
     views: [
         'HomeView',
