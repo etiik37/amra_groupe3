@@ -62,7 +62,8 @@ Ext.application({
         'MainNav',
         'GonogoCheckListView',
         'GonogoServices',
-        'GonogoServicesList'
+        'GonogoServicesList',
+        'LogMainView'
     ],
     controllers: [
         'GonogoView',
@@ -72,7 +73,8 @@ Ext.application({
         'DownloadDocuments',
         'QuestionNav',
         'MainNav',
-        'TMView'
+        'TMView',
+        'LogView'
     ],
     name: 'MyApp',
 

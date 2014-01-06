@@ -27,7 +27,7 @@ Ext.define('MyApp.store.LogsStore', {
         storeId: 'logsstore',
         proxy: {
             type: 'ajax',
-            url: 'logs.json',
+            url: 'items_logs.json',
             reader: {
                 type: 'json'
             }
@@ -46,7 +46,8 @@ Ext.define('MyApp.store.LogsStore', {
                 name: 'level'
             },
             {
-                name: 'date'
+                name: 'date',
+                type: 'date'
             }
         ]
     }

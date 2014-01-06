@@ -14,7 +14,8 @@
             "DownloadDocuments",
             "QuestionNav",
             "MainNav",
-            "TMView"
+            "TMView",
+            "LogView"
         ],
         "models": [
             "QuestionModel",
@@ -55,7 +56,8 @@
             "MainNav",
             "GonogoCheckListView",
             "GonogoServices",
-            "GonogoServicesList"
+            "GonogoServicesList",
+            "LogMainView"
         ]
     },
     "designerId": "application",

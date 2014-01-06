@@ -35,10 +35,12 @@ Ext.define('MyApp.view.LogMainView', {
             },
             {
                 xtype: 'container',
+                itemId: 'filterbar',
                 layout: 'hbox',
                 items: [
                     {
                         xtype: 'selectfield',
+                        id: 'appfilter',
                         width: 204,
                         name: 'appFilter',
                         options: [
@@ -53,11 +55,16 @@ Ext.define('MyApp.view.LogMainView', {
                             {
                                 text: 'TM Viewer',
                                 value: 'tm_viewer'
+                            },
+                            {
+                                text: 'FOP Viewer',
+                                value: 'fop_viewer'
                             }
                         ]
                     },
                     {
                         xtype: 'selectfield',
+                        id: 'lvlfilter',
                         width: 196,
                         name: 'levelFilter',
                         options: [
@@ -83,12 +90,11 @@ Ext.define('MyApp.view.LogMainView', {
                         xtype: 'datepickerfield',
                         width: 167,
                         name: 'startDate',
-                        placeHolder: 'mm/dd/yyyy'
-                    },
-                    {
-                        xtype: 'datepickerfield',
-                        name: 'endDate',
-                        placeHolder: 'mm/dd/yyyy'
+                        placeHolder: 'mm/dd/yyyy',
+                        picker: {
+                            id: 'begindatepicker',
+                            yearFrom: 2013
+                        }
                     }
                 ]
             },
@@ -124,7 +130,8 @@ Ext.define('MyApp.view.LogMainView', {
                     },
                     {
                         xtype: 'column',
-                        width: 110,
+                        minWidth: 50,
+                        width: 250,
                         dataIndex: 'date',
                         text: 'Date'
                     }

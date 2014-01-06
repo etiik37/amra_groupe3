@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "logs.json"
+                "url": "items_logs.json"
             },
             "designerId": "adbf54c8-5a5a-4f47-858d-85e1308734b0",
             "cn": [
@@ -91,7 +91,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "date"
+                "name": "date",
+                "type": "date"
             },
             "designerId": "541fadb7-8d0a-43da-be07-120ea69e9e99"
         }
