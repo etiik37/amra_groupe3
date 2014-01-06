@@ -31,7 +31,8 @@ Ext.define('MyApp.view.LogMainView', {
         layout: 'vbox',
         items: [
             {
-                xtype: 'searchfield'
+                xtype: 'searchfield',
+                id: 'fieldsearch'
             },
             {
                 xtype: 'container',

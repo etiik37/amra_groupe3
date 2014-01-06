@@ -26,6 +26,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "fieldsearch",
                 "label": null
             },
             "designerId": "37951eec-eeab-43fb-b0bb-4fe104520532"

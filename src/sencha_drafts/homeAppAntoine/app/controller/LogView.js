@@ -32,6 +32,9 @@ Ext.define('MyApp.controller.LogView', {
             },
             "#begindatepicker": {
                 change: 'onDatepickerfieldChange'
+            },
+            "#fieldsearch": {
+                change: 'onSearchfieldChange'
             }
         }
     },
@@ -146,6 +149,24 @@ Ext.define('MyApp.controller.LogView', {
 
         sto.filter('date',newDate);
         localStorage.setItem("date", newDate);
+    },
+
+    onSearchfieldChange: function(textfield, newValue, oldValue, eOpts) {
+        var sto = Ext.getStore('logsstore');
+        if (newValue === ""){
+            sto.clearFilter();
+            if (localStorage.getItem("appName") !== 'null' && localStorage.getItem("appName") !== null){
+                sto.filter('app',localStorage.getItem("appName"));
+            }
+            if (localStorage.getItem("lvl") !== 'null' && localStorage.getItem("lvl") !== null){
+                sto.filter('level',localStorage.getItem("lvl"));
+            }
+            if (localStorage.getItem("date") !== null){
+                sto.filter('date',localStorage.getItem("date"));
+            }
+        } else {
+            sto.filter('message',newValue,true,false);
+        }
     }
 
 });

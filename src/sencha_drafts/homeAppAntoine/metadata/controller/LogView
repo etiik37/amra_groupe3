@@ -202,6 +202,38 @@
                 "name": "change"
             },
             "designerId": "69c4fd46-d207-4c9b-81b4-4a3cd0929a65"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#fieldsearch",
+                "designer|targetType": "Ext.field.Search",
+                "fn": "onSearchfieldChange",
+                "implHandler": [
+                    "var sto = Ext.getStore('logsstore');",
+                    "if (newValue === \"\"){",
+                    "    sto.clearFilter();",
+                    "    if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null){",
+                    "        sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "    }",
+                    "    if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null){",
+                    "        sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "    }",
+                    "    if (localStorage.getItem(\"date\") !== null){",
+                    "        sto.filter('date',localStorage.getItem(\"date\"));",
+                    "    }",
+                    "} else {",
+                    "    sto.filter('message',newValue,true,false);",
+                    "}"
+                ],
+                "name": "change"
+            },
+            "designerId": "11054f96-e9b6-4ec0-8a60-97adf98f073a"
         }
     ]
 }
