@@ -24,6 +24,7 @@ Ext.define('MyApp.view.ProjectSolvingNav', {
     ],
 
     config: {
+        autoDestroy: false,
         items: [
             {
                 xtype: 'projectsolvinglist'

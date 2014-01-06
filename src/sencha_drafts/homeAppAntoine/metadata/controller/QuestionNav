@@ -57,10 +57,10 @@
                     "            items:[",
                     "            {",
                     "              xtype:'panel',",
-                    "              html: '<div style=\"-webkit-overflow-scrolling:touch; overflow:auto;width=100%;height=100%;position:fixed;top:0;left:0;float:left;z-index:99;\"\"><iframe style=position:fixed;top:0;left:0;float:left;z-index:1;\" width=\"100%\" height=\"100%\" src=\\\"http://192.168.56.101/mediawiki-1.21.2/index.php/'+record.get('wiki')+'\\\"</iframe></div>'",
+                    "              html: '<div style=\"overflow:scroll;-webkit-overflow-scrolling:touch; overflow:auto;width=100%;height=100%;position:fixed;top:0;left:0;float:left;\"><iframe style=position:fixed;top:0;left:0;float:left;\" width=\"100%\" height=\"100%\" src=\"http://37.59.48.149:12080/w/index.php/'+record.get('wiki')+'\\\"</iframe></div>'",
                     "            }",
                     "                ]});",
-                    "                ",
+                    "",
                     "}",
                     ""
                 ],
