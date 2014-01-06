@@ -53,7 +53,9 @@ Ext.define('MyApp.controller.LogView', {
                        sto.filter('date',localStorage.getItem("date"));
                    } else if (localStorage.getItem("lvl") !== 'null' && localStorage.getItem("lvl") !== null) {
                        sto.filter('level',localStorage.getItem("lvl"));
-                   }
+                   } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
+                    }
                 }
 
                 if (newValue === 'go_no_go') {
@@ -62,6 +64,8 @@ Ext.define('MyApp.controller.LogView', {
                         sto.filter('date',localStorage.getItem("date"));
                     } else if (localStorage.getItem("lvl") !== 'null' && localStorage.getItem("lvl") !== null){
                         sto.filter('level',localStorage.getItem("lvl"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                     sto.filter('app', 'Go/No-go');
                     localStorage.setItem("appName", 'Go/No-go');
@@ -74,6 +78,8 @@ Ext.define('MyApp.controller.LogView', {
                         sto.filter('date',localStorage.getItem("date"));
                     } else if (localStorage.getItem("lvl") !== 'null' && localStorage.getItem("lvl") !== null){
                         sto.filter('level',localStorage.getItem("lvl"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                     sto.filter('app', 'TM Viewer');
                     localStorage.setItem("appName", 'TM Viewer');
@@ -85,10 +91,11 @@ Ext.define('MyApp.controller.LogView', {
                           sto.filter('date',localStorage.getItem("date"));
                     } else if (localStorage.getItem("lvl") !== 'null' && localStorage.getItem("lvl") !== null){
                        sto.filter('level',localStorage.getItem("lvl"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                     sto.filter('app', 'FOP Viewer');
                     localStorage.setItem("appName", 'FOP Viewer');
-
 
                 }
 
@@ -109,6 +116,8 @@ Ext.define('MyApp.controller.LogView', {
                         sto.filter('date',localStorage.getItem("date"));
                     } else if (localStorage.getItem("appName") !== 'null' && localStorage.getItem("appName") !== null){
                         sto.filter('app',localStorage.getItem("appName"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                 }
 
@@ -116,8 +125,10 @@ Ext.define('MyApp.controller.LogView', {
                     if (localStorage.getItem("appName") !== 'null' && localStorage.getItem("appName") !== null && localStorage.getItem("date") !== null){
                         sto.filter('app',localStorage.getItem("appName"));
                         sto.filter('date',localStorage.getItem("date"));
-                    }else if (localStorage.getItem("app") !== null){
+                    } else if (localStorage.getItem("appName") !== null && localStorage.getItem("appName") !== null){
                         sto.filter('app',localStorage.getItem("appName"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                     sto.filter('level', 'High');
                     localStorage.setItem("lvl", 'High');
@@ -130,9 +141,10 @@ Ext.define('MyApp.controller.LogView', {
                         sto.filter('date',localStorage.getItem("date"));
                     } else if (localStorage.getItem("appName") !== 'null' && localStorage.getItem("appName") !== null){
                         sto.filter('app',localStorage.getItem("appName"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                     sto.filter('level', 'Medium');
-
                     localStorage.setItem("lvl", 'Medium');
 
                 }
@@ -143,6 +155,8 @@ Ext.define('MyApp.controller.LogView', {
                         sto.filter('date',localStorage.getItem("date"));
                     } else if (localStorage.getItem("appName") !== 'null' && localStorage.getItem("appName") !== null){
                         sto.filter('app',localStorage.getItem("appName"));
+                    } else if (localStorage.getItem("date") !== null){
+                        sto.filter('date',localStorage.getItem("date"));
                     }
                     sto.filter('level', 'Low');
                     localStorage.setItem("lvl", 'Low');
