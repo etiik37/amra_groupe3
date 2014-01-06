@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoLoad": true,
         "designer|userClassName": "GraphStore",
         "model": "GraphModel",
         "storeId": "GraphStore"

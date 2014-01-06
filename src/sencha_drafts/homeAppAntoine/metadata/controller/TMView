@@ -8,8 +8,7 @@
     "userConfig": {
         "designer|userClassName": "TMView",
         "views": [
-            "TMView",
-            "GraphicTM"
+            "TMView"
         ]
     },
     "designerId": "9a161f49-a543-4c7c-b195-fb7b7b35e31c",

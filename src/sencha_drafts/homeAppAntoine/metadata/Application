@@ -57,7 +57,8 @@
             "GonogoCheckListView",
             "GonogoServices",
             "GonogoServicesList",
-            "LogMainView"
+            "LogMainView",
+            "GraphTM"
         ]
     },
     "designerId": "application",

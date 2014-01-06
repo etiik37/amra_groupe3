@@ -63,7 +63,8 @@ Ext.application({
         'GonogoCheckListView',
         'GonogoServices',
         'GonogoServicesList',
-        'LogMainView'
+        'LogMainView',
+        'GraphTM'
     ],
     controllers: [
         'GonogoView',

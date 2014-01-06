@@ -10,12 +10,12 @@
         "exportPath": "",
         "canvasControls": {
             "viewportSize": {
-                "name": "iPhone",
+                "name": "Microsoft Surface",
                 "builtIn": true,
-                "height": 480,
-                "width": 320
+                "height": 1366,
+                "width": 768
             },
-            "viewportOrientation": "portrait"
+            "viewportOrientation": "landscape"
         },
         "spacesToIndent": 4,
         "sdkPath": "",
@@ -57,10 +57,10 @@
             "c82cf8e6-ad7f-4298-95aa-cddda912446a",
             "ec9d95e6-b3c2-4bbd-8f58-6b00f30e7c6e",
             "a449659b-839f-4e10-b43c-7dfcea9fcaa8",
-            "82855c7b-f30b-41ca-9c12-c04c7a599160",
             "c9bb73bb-68b0-4cfd-98e5-17962882863a",
             "34530bc5-d334-4702-80bf-ff4a06e6390d",
-            "6c075d27-926a-4783-b10c-7c7e31d99584"
+            "6c075d27-926a-4783-b10c-7c7e31d99584",
+            "26f0ff12-193d-4860-9c89-0bb3a69c5e82"
         ],
         "store": [
             "3452d60f-404d-4843-b800-0e27b7eed9ec",

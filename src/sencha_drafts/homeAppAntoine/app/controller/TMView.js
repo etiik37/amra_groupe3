@@ -18,8 +18,7 @@ Ext.define('MyApp.controller.TMView', {
 
     config: {
         views: [
-            'TMView',
-            'GraphicTM'
+            'TMView'
         ],
 
         control: {
