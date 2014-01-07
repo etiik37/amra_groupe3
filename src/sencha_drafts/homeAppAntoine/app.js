@@ -20,6 +20,7 @@ Ext.Loader.setConfig({
 
 
 Ext.Loader.setPath('Ext.grid.column.Column','packages/sencha-touch-grid/src/grid/column/Column.js');
+Ext.Loader.setPath('Ext.grid.column.Date','packages/sencha-touch-grid/src/grid/column/Date.js');
 Ext.Loader.setPath('Ext.grid.Grid','packages/sencha-touch-grid/src/grid/Grid.js');
 
 Ext.application({
@@ -42,7 +43,9 @@ Ext.application({
         'ListDocumentsStore',
         'QuestionsTreeStore',
         'ServicesGonogo',
-        'LogsStore'
+        'LogsStore',
+        'ItemFop',
+        'ItemFopDetail'
     ],
     views: [
         'HomeView',
@@ -64,7 +67,9 @@ Ext.application({
         'GonogoServices',
         'GonogoServicesList',
         'LogMainView',
-        'GraphTM'
+        'GraphTM',
+        'FopDetailView',
+        'FopNavView'
     ],
     controllers: [
         'GonogoView',
@@ -75,7 +80,8 @@ Ext.application({
         'QuestionNav',
         'MainNav',
         'TMView',
-        'LogView'
+        'LogView',
+        'FopNavView'
     ],
     name: 'MyApp',
 

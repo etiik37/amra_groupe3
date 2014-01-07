@@ -1,0 +1,70 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fopnavview",
+        "designer|userClassName": "FopNavView"
+    },
+    "designerId": "04d83442-7b81-49bf-a1b8-617bd535e64a",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "mainnav"
+            },
+            "designerId": "1ace8022-b852-4330-a730-1d1d92670911"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#fopmaingrid",
+                "designer|targetType": "Ext.grid.Grid",
+                "fn": "onGridItemTap",
+                "implHandler": [
+                    "var mainNavView = this.getMainnav();",
+                    "//alert(record.get('C'));",
+                    "mainNavView.pop();",
+                    "mainNavView.push({",
+                    "    title : \"Detail\",",
+                    "    xtype : 'fopdetailview'",
+                    "});"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "e90d32dd-6f6d-47ea-8c3f-23c69f9009d4"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#fopdetailgrid",
+                "designer|targetType": "Ext.grid.Grid",
+                "fn": "onGridItemDoubletap",
+                "implHandler": [
+                    "alert(record.get('Status'));"
+                ],
+                "name": "itemdoubletap"
+            },
+            "designerId": "ad349d71-0147-4e13-bbd6-8adc2e7052e2"
+        }
+    ]
+}

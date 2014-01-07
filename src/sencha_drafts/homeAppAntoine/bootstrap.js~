@@ -670,22 +670,24 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.AuthView": [],
   "MyApp.controller.DownloadDocuments": [],
   "MyApp.controller.GonogoView": [],
-  "MyApp.controller.LogView": [],
   "MyApp.controller.MainNav": [],
   "MyApp.controller.PreferencesView": [],
   "MyApp.controller.ProjectSolvingNav": [],
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
+  "MyApp.model.CheckList": [],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.GraphModel": [],
   "MyApp.model.QuestionModel": [],
+<<<<<<< HEAD
+  "MyApp.store.CheckListService1": [],
+  "MyApp.store.CheckListService2": [],
+=======
   "MyApp.model.Services": [],
   "MyApp.store.GraphStore": [],
-  "MyApp.store.ItemFop": [],
-  "MyApp.store.ItemFopDetail": [],
+>>>>>>> cc5123418383335141a57ac7cbc47eef06e2084a
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
-  "MyApp.store.ListActionsGonogo": [],
   "MyApp.store.ListDocumentsStore": [],
   "MyApp.store.LogsStore": [],
   "MyApp.store.MenuStore": [],
@@ -705,7 +707,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.view.GonogoServices": [],
   "MyApp.view.GonogoServicesList": [],
   "MyApp.view.GonogoView": [],
-  "MyApp.view.GraphTM": [],
   "MyApp.view.GraphicTM": [],
   "MyApp.view.HomeView": [],
   "MyApp.view.LogMainView": [],
@@ -1505,7 +1506,6 @@ Ext.ClassManager.addNameAliasMappings({
     "controller.downloaddocuments"
   ],
   "MyApp.controller.GonogoView": [],
-  "MyApp.controller.LogView": [],
   "MyApp.controller.MainNav": [],
   "MyApp.controller.PreferencesView": [],
   "MyApp.controller.ProjectSolvingNav": [
@@ -1513,20 +1513,21 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
+  "MyApp.model.CheckList": [
+    "model.CheckList"
+  ],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.GraphModel": [],
   "MyApp.model.QuestionModel": [],
+<<<<<<< HEAD
+  "MyApp.store.CheckListService1": [],
+  "MyApp.store.CheckListService2": [],
+=======
   "MyApp.model.Services": [],
   "MyApp.store.GraphStore": [],
-  "MyApp.store.ItemFop": [
-    "store.itemfop"
-  ],
-  "MyApp.store.ItemFopDetail": [
-    "store.itemfopdetail"
-  ],
+>>>>>>> cc5123418383335141a57ac7cbc47eef06e2084a
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
-  "MyApp.store.ListActionsGonogo": [],
   "MyApp.store.ListDocumentsStore": [],
   "MyApp.store.LogsStore": [],
   "MyApp.store.MenuStore": [],
@@ -1565,9 +1566,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.GonogoView": [
     "widget.gonogoview"
-  ],
-  "MyApp.view.GraphTM": [
-    "widget.graphtm"
   ],
   "MyApp.view.GraphicTM": [],
   "MyApp.view.HomeView": [

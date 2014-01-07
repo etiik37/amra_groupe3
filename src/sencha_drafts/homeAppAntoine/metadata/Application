@@ -15,7 +15,8 @@
             "QuestionNav",
             "MainNav",
             "TMView",
-            "LogView"
+            "LogView",
+            "FopNavView"
         ],
         "models": [
             "QuestionModel",
@@ -36,7 +37,9 @@
             "ListDocumentsStore",
             "QuestionsTreeStore",
             "ServicesGonogo",
-            "LogsStore"
+            "LogsStore",
+            "ItemFop",
+            "ItemFopDetail"
         ],
         "views": [
             "HomeView",
@@ -58,7 +61,9 @@
             "GonogoServices",
             "GonogoServicesList",
             "LogMainView",
-            "GraphTM"
+            "GraphTM",
+            "FopDetailView",
+            "FopNavView"
         ]
     },
     "designerId": "application",
