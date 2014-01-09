@@ -45,7 +45,8 @@ Ext.application({
         'ServicesGonogo',
         'LogsStore',
         'ItemFop',
-        'ItemFopDetail'
+        'ItemFopDetail',
+        'GraphStore'
     ],
     views: [
         'HomeView',
@@ -67,9 +68,9 @@ Ext.application({
         'GonogoServices',
         'GonogoServicesList',
         'LogMainView',
-        'GraphTM',
         'FopDetailView',
-        'FopNavView'
+        'FopNavView',
+        'GraphicTM'
     ],
     controllers: [
         'GonogoView',

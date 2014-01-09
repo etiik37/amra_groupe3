@@ -39,7 +39,8 @@
             "ServicesGonogo",
             "LogsStore",
             "ItemFop",
-            "ItemFopDetail"
+            "ItemFopDetail",
+            "GraphStore"
         ],
         "views": [
             "HomeView",
@@ -61,9 +62,9 @@
             "GonogoServices",
             "GonogoServicesList",
             "LogMainView",
-            "GraphTM",
             "FopDetailView",
-            "FopNavView"
+            "FopNavView",
+            "GraphicTM"
         ]
     },
     "designerId": "application",

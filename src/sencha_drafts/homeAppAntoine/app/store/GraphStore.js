@@ -17,14 +17,13 @@ Ext.define('MyApp.store.GraphStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.GraphModel',
         'Ext.data.proxy.Ajax',
-        'Ext.data.reader.Json'
+        'Ext.data.reader.Json',
+        'Ext.data.Field'
     ],
 
     config: {
         autoLoad: true,
-        model: 'MyApp.model.GraphModel',
         storeId: 'GraphStore',
         proxy: {
             type: 'ajax',
@@ -32,6 +31,14 @@ Ext.define('MyApp.store.GraphStore', {
             reader: {
                 type: 'json'
             }
-        }
+        },
+        fields: [
+            {
+                name: 'x'
+            },
+            {
+                name: 'y'
+            }
+        ]
     }
 });

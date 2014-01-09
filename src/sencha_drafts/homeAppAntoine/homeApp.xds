@@ -2,7 +2,7 @@
     "name": "homeApp",
     "settings": {
         "cmd": {
-            "license": "commercial",
+            "license": "gpl",
             "cmdVersion": "4.0.1.45",
             "frameworkVersion": "2.3.0.328"
         },
@@ -10,12 +10,12 @@
         "exportPath": "",
         "canvasControls": {
             "viewportSize": {
-                "name": "Microsoft Surface",
+                "name": "iPhone",
                 "builtIn": true,
-                "height": 1366,
-                "width": 768
+                "height": 480,
+                "width": 320
             },
-            "viewportOrientation": "landscape"
+            "viewportOrientation": "portrait"
         },
         "spacesToIndent": 4,
         "sdkPath": "",
@@ -24,10 +24,7 @@
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
         "generateArchitectVersion": true,
-        "lastBuildSelection": {
-            "value": "webBuild",
-            "display": "Build web app"
-        }
+        "displayfield-ExtBox1-1277-inputEl": "Not Installed"
     },
     "xdsVersion": "3.0.1",
     "xdsBuild": 1343,
@@ -36,7 +33,6 @@
     "framework": "touch23",
     "viewOrderMap": {
         "view": [
-            "82855c7b-f30b-41ca-9c12-c04c7a599160",
             "301f6c04-b344-483a-b203-8a0b6e9b82ad",
             "bd5fe9c2-b165-442d-9d3e-2c6dfa3fb4a9",
             "229c2bf5-9563-4be5-b8ae-b53fd4e9569a",
@@ -59,9 +55,9 @@
             "c9bb73bb-68b0-4cfd-98e5-17962882863a",
             "34530bc5-d334-4702-80bf-ff4a06e6390d",
             "6c075d27-926a-4783-b10c-7c7e31d99584",
-            "26f0ff12-193d-4860-9c89-0bb3a69c5e82",
             "b98e93a4-5eb4-46ef-b36a-b0a3314a6b90",
-            "96d270f1-1c95-408b-8cb4-dd7392cf17e9"
+            "96d270f1-1c95-408b-8cb4-dd7392cf17e9",
+            "9c028598-fba5-44cb-a199-8e92bace37d1"
         ],
         "store": [
             "3452d60f-404d-4843-b800-0e27b7eed9ec",
@@ -92,7 +88,6 @@
             "04d83442-7b81-49bf-a1b8-617bd535e64a"
         ],
         "model": [
-            "2d289f47-ff1c-4402-9f6b-9313e759a9a9",
             "6ad91600-a247-42e7-99de-467c5f082e77",
             "1a0bda57-e693-4fce-85c7-97bcb82f679e",
             "51b38539-b9eb-48e8-89fa-01a991c0b77e"

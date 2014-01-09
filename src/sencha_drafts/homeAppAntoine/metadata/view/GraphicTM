@@ -1,15 +1,18 @@
 {
-    "type": "Ext.Container",
+    "type": "Ext.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "graphictm",
         "designer|userClassName": "GraphicTM",
-        "id": "tmgraphic"
+        "fullscreen": null,
+        "height": "100%",
+        "width": "100%"
     },
-    "designerId": "82855c7b-f30b-41ca-9c12-c04c7a599160",
+    "designerId": "9c028598-fba5-44cb-a199-8e92bace37d1",
     "cn": [
         {
             "type": "Ext.TitleBar",
@@ -22,7 +25,94 @@
                 "docked": "top",
                 "title": "Graphic"
             },
-            "designerId": "cfc33311-b794-4bb3-8562-a0c17828dc9a"
+            "designerId": "1c3996a7-cb9a-46de-869d-7a4dbe1cea35"
+        },
+        {
+            "type": "Ext.chart.CartesianChart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "colors": [
+                    "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+                ],
+                "height": "100%",
+                "store": "GraphStore",
+                "width": "100%",
+                "zIndex": null
+            },
+            "designerId": "ce21a08b-d785-4c25-9253-78da4b6d3575",
+            "isBuiltIn": true,
+            "iconCls": "icon-line-chart",
+            "autoName": "MyLineChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": null
+                    },
+                    "designerId": "7cf15cff-b6af-46b9-9a95-b6d601b5a82b"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "grid": [
+                            "{",
+                            "    odd: {",
+                            "        fill: '#e8e8e8'",
+                            "    }",
+                            "}"
+                        ],
+                        "position": "left",
+                        "title": null
+                    },
+                    "designerId": "30ebdb61-7181-46d2-909b-b3f4f08ce67d"
+                },
+                {
+                    "type": "Ext.chart.series.Line",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "colors": [
+                            "rgba(0,200,0,0.3)"
+                        ],
+                        "fill": false,
+                        "style": [
+                            "{",
+                            "    smooth: true,",
+                            "    stroke: 'rgb(0,200,0)',",
+                            "}"
+                        ],
+                        "xField": "x",
+                        "yField": "y"
+                    },
+                    "designerId": "6abf2c4c-30d8-4062-8128-66efbef1c02f"
+                },
+                {
+                    "type": "Ext.chart.interactions.PanZoom",
+                    "reference": {
+                        "name": "interactions",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "8258e201-c1e4-4d2f-a7a5-866302890ce9"
+                }
+            ]
         }
     ]
 }

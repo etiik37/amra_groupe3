@@ -14,19 +14,76 @@
  */
 
 Ext.define('MyApp.view.GraphicTM', {
-    extend: 'Ext.Container',
+    extend: 'Ext.Panel',
+    alias: 'widget.graphictm',
 
     requires: [
-        'Ext.TitleBar'
+        'Ext.TitleBar',
+        'Ext.chart.CartesianChart',
+        'Ext.chart.axis.Category',
+        'Ext.chart.axis.Numeric',
+        'Ext.chart.series.Line',
+        'Ext.chart.interactions.PanZoom'
     ],
 
     config: {
-        id: 'tmgraphic',
+        height: '100%',
+        width: '100%',
         items: [
             {
                 xtype: 'titlebar',
                 docked: 'top',
                 title: 'Graphic'
+            },
+            {
+                xtype: 'chart',
+                height: '100%',
+                width: '100%',
+                colors: [
+                    '#115fa6',
+                    '#94ae0a',
+                    '#a61120',
+                    '#ff8809',
+                    '#ffd13e',
+                    '#a61187',
+                    '#24ad9a',
+                    '#7c7474',
+                    '#a66111'
+                ],
+                store: 'GraphStore',
+                axes: [
+                    {
+                        type: 'category'
+                    },
+                    {
+                        type: 'numeric',
+                        grid: {
+                            odd: {
+                                fill: '#e8e8e8'
+                            }
+                        },
+                        position: 'left'
+                    }
+                ],
+                series: [
+                    {
+                        type: 'line',
+                        colors: 'rgba(0,200,0,0.3)',
+                        style: {
+                            smooth: true,
+                            stroke: 'rgb(0,200,0)',
+                            
+                        },
+                        xField: 'x',
+                        yField: 'y',
+                        fill: false
+                    }
+                ],
+                interactions: [
+                    {
+                        type: 'panzoom'
+                    }
+                ]
             }
         ]
     }
