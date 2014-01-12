@@ -22,7 +22,10 @@ Ext.define('MyApp.controller.GonogoView', {
             gonogoview: 'gonogoview',
             gonogoitem: 'gonogoitem',
             gonogochecklistview: 'gonogochecklistview',
-            navigationbar: 'mainnav #navigationbar'
+            navigationbar: 'mainnav #navigationbar',
+            gonogoservices: 'gonogoservices',
+            checklistview: 'checklistview',
+            checklist: 'checklist'
         },
 
         control: {
@@ -30,8 +33,14 @@ Ext.define('MyApp.controller.GonogoView', {
                 show: 'onTabpanelShow',
                 activeitemchange: 'onTabpanelActiveItemChange'
             },
+            "gonogoservices #viewchecklist": {
+                tap: 'onViewTapButton'
+            },
             "gonogoitem #gonogobutton": {
                 tap: 'onButtonTap'
+            },
+            "gonogoservices #editchecklist": {
+                tap: 'onEditTapButton'
             }
         }
     },
@@ -55,6 +64,37 @@ Ext.define('MyApp.controller.GonogoView', {
         }
     },
 
+    onViewTapButton: function(button, e, eOpts) {
+        var mainNavView = this.getMainnav();
+        var navBarMainView = this.getNavigationbar();
+
+        var gonogoCheckListView = this.getGonogochecklistview();
+
+        var serviceNameId = button.up('gonogoservices').getRecord().get('id');
+        var serviceName = button.up('gonogoservices').getRecord().get('label');
+
+        var gonogoName = mainNavView.down('gonogochecklistview').down('#navigationbar').getTitle().getTitle();
+
+        //Récupération du store
+        var sto = Ext.getStore('checklistservices');
+        //On efface tous les filtres existants
+        sto.clearFilter();
+
+        var previousTitleMainView = navBarMainView.getTitle();
+
+        sto.filter('service', serviceNameId);
+
+        mainNavView.push({
+            title : previousTitleMainView,
+            xtype : 'checklistlist'
+        });
+
+        mainNavView.down('checklistlist').down('#navigationbar').setTitle(gonogoName+' - '+serviceName);
+        localStorage.setItem("gonogoMode", "view");
+
+        mainNavView.down('checklistlist').down('#savechecklist').hide();
+    },
+
     onButtonTap: function(button, e, eOpts) {
         var gonogoItemName = button.up('gonogoitem').getRecord().get('label');
 
@@ -63,14 +103,50 @@ Ext.define('MyApp.controller.GonogoView', {
 
         var previousTitleMainView = navBarMainView.getTitle();
 
-        //var GonogoCheckListView = Ext.create('MyApp.view.GonogoCheckListView');
-
         mainNavView.push({
             title : previousTitleMainView,
             xtype : 'gonogochecklistview'
         });
 
         mainNavView.down('gonogochecklistview').down('#navigationbar').setTitle(gonogoItemName);
+
+        localStorage.setItem("gonogoName", gonogoItemName);
+    },
+
+    onEditTapButton: function(button, e, eOpts) {
+        var mainNavView = this.getMainnav();
+        var navBarMainView = this.getNavigationbar();
+
+        var gonogoCheckListView = this.getGonogochecklistview();
+
+        var serviceNameId = button.up('gonogoservices').getRecord().get('id');
+        var serviceName = button.up('gonogoservices').getRecord().get('label');
+
+        var gonogoName = mainNavView.down('gonogochecklistview').down('#navigationbar').getTitle().getTitle();
+
+        //Récupération du store
+        var sto = Ext.getStore('checklistservices');
+        //On efface tous les filtres existants
+        sto.clearFilter();
+
+        var previousTitleMainView = navBarMainView.getTitle();
+
+        if (serviceName == localStorage.getItem('userservice')){
+            sto.filter('service', serviceNameId);
+
+            mainNavView.push({
+                title : previousTitleMainView,
+                xtype : 'checklistlist'
+            });
+
+            mainNavView.down('checklistlist').down('#navigationbar').setTitle(gonogoName+' - '+serviceName);
+            localStorage.setItem("gonogoMode", "edit");
+
+            mainNavView.down('checklistlist').down('#savechecklist').show();
+        }
+        else {
+            alert('You don\'t have the permissions for doing that...');
+        }
     }
 
 });

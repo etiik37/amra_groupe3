@@ -9,17 +9,21 @@
         "controllers": [
             "GonogoView",
             "AuthView",
-            "MainNav",
             "PreferencesView",
             "ProjectSolvingNav",
             "DownloadDocuments",
             "QuestionNav",
-            "TMView"
+            "MainNav",
+            "TMView",
+            "LogView",
+            "FopNavView"
+        ],
+        "models": [
+            "QuestionModel",
+            "Services",
+            "CheckList"
         ],
         "name": "MyApp",
-        "models": [
-            "QuestionModel"
-        ],
         "requires": [
             "Ext.MessageBox"
         ],
@@ -33,11 +37,17 @@
             "ListActionsGonogo",
             "ListDocumentsStore",
             "QuestionsTreeStore",
-            "LogsStore"
+            "ServicesGonogo",
+            "LogsStore",
+            "ItemFop",
+            "ItemFopDetail",
+            "GraphStore",
+            "CheckListServices",
+            "CheckListsState"
+            
         ],
         "views": [
             "HomeView",
-            "MainNav",
             "NotificationsList",
             "GonogoView",
             "PreferencesView",
@@ -50,7 +60,15 @@
             "ProjectSolvingList",
             "DownloadDocumentsList",
             "QuestionsNav",
-            "QuestionsNestedList"
+            "QuestionsNestedList",
+            "MainNav",
+            "GonogoCheckListView",
+            "GonogoServices",
+            "GonogoServicesList",
+            "LogMainView",
+            "FopDetailView",
+            "FopNavView",
+            "GraphicTM"
         ]
     },
     "designerId": "application",
@@ -71,9 +89,7 @@
                     "//Récupération du store",
                     "var sto = Ext.getStore('itemsgonogo');",
                     "//On affiche par défaut uniquement les GONOGO en cours",
-                    "sto.filter('finished', 'false');",
-                    "",
-                    ""
+                    "sto.filter('finished', 'false');"
                 ]
             },
             "designerId": "bd18622b-25d7-448e-ab0c-dc669b0d11a7"

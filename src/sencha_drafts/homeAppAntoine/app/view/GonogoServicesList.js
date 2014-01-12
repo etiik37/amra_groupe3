@@ -22,6 +22,7 @@ Ext.define('MyApp.view.GonogoServicesList', {
     ],
 
     config: {
+        autoDestroy: false,
         modal: true,
         disableSelection: true,
         defaultType: 'gonogoservices',

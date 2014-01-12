@@ -8,8 +8,60 @@
     "userConfig": {
         "designer|userAlias": "homeview",
         "designer|userClassName": "HomeView",
-        "html": "Cliquez sur le menu pour changer de page...",
+        "html": null,
         "layout": "fit"
     },
-    "designerId": "513a1ef2-95a6-43ac-92eb-1c30a3245e45"
+    "designerId": "513a1ef2-95a6-43ac-92eb-1c30a3245e45",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": true
+            },
+            "designerId": "3a5f63b2-5f06-4487-98e4-16abd160de30",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "disabled": null,
+                        "disabledCls": "x-field",
+                        "id": "username",
+                        "label": "User",
+                        "readOnly": true,
+                        "width": null
+                    },
+                    "designerId": "6a367a5b-7935-4c57-bd62-41fe684c7106"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "disabled": null,
+                        "disabledCls": "x-field",
+                        "id": "userservice",
+                        "label": "Service",
+                        "readOnly": true,
+                        "width": null
+                    },
+                    "designerId": "7452318b-eb9e-410d-b3a2-7a51995785b4"
+                }
+            ]
+        }
+    ]
 }

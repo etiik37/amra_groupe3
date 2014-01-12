@@ -6,16 +6,23 @@
     },
     "codeClass": null,
     "userConfig": {
+        "bottom": null,
+        "centered": null,
         "defaultType": "gonogoitem",
         "designer|userAlias": "gonogolist",
         "designer|userClassName": "GonogoList",
         "disableSelection": true,
+        "height": null,
+        "left": null,
         "modal": true,
         "requires": [
             "MyApp.view.GonogoItem"
         ],
+        "right": null,
+        "scrollable": null,
         "store": "itemsgonogo",
-        "useComponents": true
+        "useComponents": true,
+        "width": "100%"
     },
     "designerId": "f31357c0-0ec3-4b7b-9bfb-0de04a6fb763"
 }

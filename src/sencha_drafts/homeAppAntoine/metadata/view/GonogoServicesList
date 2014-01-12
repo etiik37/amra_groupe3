@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoDestroy": false,
         "defaultType": "gonogoservices",
         "designer|userAlias": "gonogoserviceslist",
         "designer|userClassName": "GonogoServicesList",

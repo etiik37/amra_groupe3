@@ -20,7 +20,8 @@
         ],
         "models": [
             "QuestionModel",
-            "Services"
+            "Services",
+            "CheckList"
         ],
         "name": "MyApp",
         "requires": [
@@ -40,7 +41,10 @@
             "LogsStore",
             "ItemFop",
             "ItemFopDetail",
-            "GraphStore"
+            "GraphStore",
+            "CheckListServices",
+            "CheckListsState"
+            
         ],
         "views": [
             "HomeView",
@@ -64,7 +68,9 @@
             "LogMainView",
             "FopDetailView",
             "FopNavView",
-            "GraphicTM"
+            "GraphicTM",
+            "CheckListItem",
+            "CheckListList"
         ]
     },
     "designerId": "application",

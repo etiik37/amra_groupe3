@@ -19,10 +19,6 @@ Ext.Loader.setConfig({
 });
 
 
-Ext.Loader.setPath('Ext.grid.column.Column','packages/sencha-touch-grid/src/grid/column/Column.js');
-Ext.Loader.setPath('Ext.grid.column.Date','packages/sencha-touch-grid/src/grid/column/Date.js');
-Ext.Loader.setPath('Ext.grid.Grid','packages/sencha-touch-grid/src/grid/Grid.js');
-
 Ext.application({
 
     requires: [
@@ -30,7 +26,8 @@ Ext.application({
     ],
     models: [
         'QuestionModel',
-        'Services'
+        'Services',
+        'CheckList'
     ],
     stores: [
         'MenuStore',
@@ -46,7 +43,9 @@ Ext.application({
         'LogsStore',
         'ItemFop',
         'ItemFopDetail',
-        'GraphStore'
+        'GraphStore',
+        'CheckListServices',
+        'CheckListsState'
     ],
     views: [
         'HomeView',
@@ -70,7 +69,9 @@ Ext.application({
         'LogMainView',
         'FopDetailView',
         'FopNavView',
-        'GraphicTM'
+        'GraphicTM',
+        'CheckListItem',
+        'CheckListList'
     ],
     controllers: [
         'GonogoView',

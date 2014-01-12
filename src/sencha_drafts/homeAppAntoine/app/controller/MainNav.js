@@ -23,10 +23,16 @@ Ext.define('MyApp.controller.MainNav', {
             authview: 'authview',
             menubutton: '#menubutton',
             notificationsbutton: '#notificationsbutton',
-            notificationslist: '#notificationslist'
+            notificationslist: '#notificationslist',
+            homeview: 'homeview',
+            username: '#username',
+            userservice: '#userservice'
         },
 
         control: {
+            "mainnav": {
+                show: 'onNavigationviewShow'
+            },
             "#menulist": {
                 itemtap: 'onListItemTap'
             },
@@ -40,6 +46,11 @@ Ext.define('MyApp.controller.MainNav', {
                 tap: 'onNotificationsButtonTap'
             }
         }
+    },
+
+    onNavigationviewShow: function(component, eOpts) {
+        Ext.getCmp('username').setValue(localStorage.getItem("username"));
+        Ext.getCmp('userservice').setValue(localStorage.getItem("userservice"));
     },
 
     onListItemTap: function(dataview, index, target, record, e, eOpts) {

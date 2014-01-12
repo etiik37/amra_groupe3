@@ -22,6 +22,7 @@ Ext.define('MyApp.view.GonogoList', {
     ],
 
     config: {
+        width: '100%',
         modal: true,
         disableSelection: true,
         defaultType: 'gonogoitem',

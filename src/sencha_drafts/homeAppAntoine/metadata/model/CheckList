@@ -1,0 +1,69 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "checklist",
+        "designer|userClassName": "CheckList"
+    },
+    "designerId": "3fd9e963-e48d-4dad-afd8-69ce6171271d",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": false,
+                "name": "id_action",
+                "type": "int"
+            },
+            "designerId": "c571b4a3-dbdf-420e-a8e6-e79a9efd55f0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": false,
+                "name": "done",
+                "type": "boolean"
+            },
+            "designerId": "3a8a2520-49af-4bb3-944c-364053def418"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gonogo",
+                "type": "string"
+            },
+            "designerId": "d14020bc-0e77-4216-8238-d3aedbe6eabb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "auto"
+            },
+            "designerId": "3f0e53c6-b3b6-4821-b743-ea5a98d2a038"
+        }
+    ]
+}

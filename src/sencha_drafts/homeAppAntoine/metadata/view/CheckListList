@@ -1,0 +1,61 @@
+{
+    "type": "Ext.dataview.DataView",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": false,
+        "defaultType": "checklistitem",
+        "designer|userAlias": "checklistlist",
+        "designer|userClassName": "CheckListList",
+        "disableSelection": true,
+        "modal": true,
+        "requires": [
+            "MyApp.view.CheckListItem"
+        ],
+        "store": "checklistservices",
+        "useComponents": true
+    },
+    "designerId": "bca775db-39e0-4a57-bd07-793c85116e9f",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "itemId": "navigationbar"
+            },
+            "designerId": "d4d0bc3d-2608-45c5-bfb7-f87d1001a648"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bottom": "10%",
+                "centered": false,
+                "designer|uiInterfaceName": "action",
+                "docked": "bottom",
+                "height": 40,
+                "iconAlign": null,
+                "id": "savechecklist",
+                "left": "",
+                "right": "40%",
+                "text": "Save",
+                "top": null,
+                "ui": "action",
+                "width": "20%"
+            },
+            "designerId": "c7b577a1-3bc3-4024-81e5-151ba5387459"
+        }
+    ]
+}

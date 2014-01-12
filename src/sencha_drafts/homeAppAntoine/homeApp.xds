@@ -33,6 +33,12 @@
     "framework": "touch23",
     "viewOrderMap": {
         "view": [
+            "1f7e4b66-5e77-45e6-9cb6-35408ded0f2f",
+            "26f0ff12-193d-4860-9c89-0bb3a69c5e82",
+            "a449659b-839f-4e10-b43c-7dfcea9fcaa8",
+            "ec9d95e6-b3c2-4bbd-8f58-6b00f30e7c6e",
+            "bca775db-39e0-4a57-bd07-793c85116e9f",
+            "e7fedc8c-754e-472f-81a0-26c0b27833ec",
             "301f6c04-b344-483a-b203-8a0b6e9b82ad",
             "bd5fe9c2-b165-442d-9d3e-2c6dfa3fb4a9",
             "229c2bf5-9563-4be5-b8ae-b53fd4e9569a",
@@ -54,12 +60,13 @@
             "c82cf8e6-ad7f-4298-95aa-cddda912446a",
             "c9bb73bb-68b0-4cfd-98e5-17962882863a",
             "34530bc5-d334-4702-80bf-ff4a06e6390d",
-            "6c075d27-926a-4783-b10c-7c7e31d99584",
             "b98e93a4-5eb4-46ef-b36a-b0a3314a6b90",
             "96d270f1-1c95-408b-8cb4-dd7392cf17e9",
             "9c028598-fba5-44cb-a199-8e92bace37d1"
         ],
         "store": [
+            "1f74c36c-42ba-4498-93de-a36a16feddd7",
+            "60790ce4-fcfd-4657-8c82-6764c154148b",
             "3452d60f-404d-4843-b800-0e27b7eed9ec",
             "d8e3cc9a-3dec-444b-9169-d1bc5c6527ab",
             "8e2f27a0-f520-4621-9f3d-1993a844a487",
@@ -88,6 +95,9 @@
             "04d83442-7b81-49bf-a1b8-617bd535e64a"
         ],
         "model": [
+            "ef8d9841-1540-483d-85d0-109e4a80a150",
+            "2d289f47-ff1c-4402-9f6b-9313e759a9a9",
+            "3fd9e963-e48d-4dad-afd8-69ce6171271d",
             "6ad91600-a247-42e7-99de-467c5f082e77",
             "1a0bda57-e693-4fce-85c7-97bcb82f679e",
             "51b38539-b9eb-48e8-89fa-01a991c0b77e"

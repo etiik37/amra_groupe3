@@ -26,11 +26,7 @@ Ext.define('MyApp.view.GonogoItem', {
     config: {
         maxHeight: 70,
         padding: 10,
-        layout: {
-            type: 'hbox',
-            align: 'center',
-            pack: 'center'
-        },
+        layout: 'hbox',
         items: [
             {
                 xtype: 'container',
