@@ -6,15 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
-        "container|align": "center",
-        "container|pack": "center",
+        "centered": null,
+        "container|align": null,
+        "container|pack": null,
         "designer|userAlias": "gonogoitem",
         "designer|userClassName": "GonogoItem",
         "disabled": null,
         "layout": "hbox",
+        "left": null,
         "maxHeight": 70,
         "modal": null,
-        "padding": 10
+        "padding": 10,
+        "scrollable": null
     },
     "designerId": "e3dfbc22-3f44-4fa2-9ebb-c4c164c1973b",
     "cn": [

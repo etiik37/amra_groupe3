@@ -26,7 +26,8 @@ Ext.application({
     ],
     models: [
         'QuestionModel',
-        'Services'
+        'ActionsList',
+        'CheckList'
     ],
     stores: [
         'MenuStore',
@@ -35,10 +36,11 @@ Ext.application({
         'NotificationStore',
         'LanguageStore',
         'ItemsGonogo',
-        'ListActionsGonogo',
         'ListDocumentsStore',
         'QuestionsTreeStore',
-        'ServicesGonogo'
+        'ServicesGonogo',
+        'CheckListServices',
+        'CheckListsState'
     ],
     views: [
         'HomeView',
@@ -56,9 +58,11 @@ Ext.application({
         'QuestionsNav',
         'QuestionsNestedList',
         'MainNav',
-        'GonogoCheckListView',
         'GonogoServices',
-        'GonogoServicesList'
+        'GonogoServicesList',
+        'GonogoCheckListView',
+        'CheckListItem',
+        'CheckListList'
     ],
     controllers: [
         'GonogoView',

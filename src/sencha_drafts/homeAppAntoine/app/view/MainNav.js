@@ -25,7 +25,7 @@ Ext.define('MyApp.view.MainNav', {
     ],
 
     config: {
-        id: 'mainnav',
+        itemId: 'mainnav',
         autoDestroy: false,
         layout: {
             type: 'card',

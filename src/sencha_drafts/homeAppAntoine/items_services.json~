@@ -1,7 +1,5 @@
 [
-	{ "group": "Operations", "label": "Projet GoNoGo", "id_view": "gonogoview", "url": "gonogo"},
-	{ "group": "Operations", "label": "Project Problem Solving", "id_view": "projectsolvingnav", "url": "projectsolvingnav"},
-	{ "group": "Monitoring", "label": "Project Log Monitoring", "id_view": "logview", "url": "logview"},
-	{ "group": "Monitoring", "label": "Project FOP Viewer", "id_view": "fopview", "url": "fopview"},
-	{ "group": "Monitoring", "label": "Project TM Viewer", "id_view": "tmview", "url": "tmview"}
+	{ "label": "Service 1", "id": "service1"},
+	{ "label": "Service 2"},
+	{ "label": "Service 3"}
 ]

@@ -17,9 +17,37 @@ Ext.define('MyApp.view.HomeView', {
     extend: 'Ext.Panel',
     alias: 'widget.homeview',
 
+    requires: [
+        'Ext.Container',
+        'Ext.field.Text'
+    ],
+
     config: {
-        html: 'Cliquez sur le menu pour changer de page...',
-        layout: 'fit'
+        layout: 'fit',
+        items: [
+            {
+                xtype: 'container',
+                centered: true,
+                items: [
+                    {
+                        xtype: 'textfield',
+                        centered: false,
+                        disabledCls: 'x-field',
+                        id: 'username',
+                        label: 'User',
+                        readOnly: true
+                    },
+                    {
+                        xtype: 'textfield',
+                        centered: false,
+                        disabledCls: 'x-field',
+                        id: 'userservice',
+                        label: 'Service',
+                        readOnly: true
+                    }
+                ]
+            }
+        ]
     }
 
 });

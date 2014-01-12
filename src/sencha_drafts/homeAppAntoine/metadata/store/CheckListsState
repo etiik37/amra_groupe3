@@ -1,0 +1,43 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "CheckListsState",
+        "model": "CheckList",
+        "storeId": "checklistsstate"
+    },
+    "designerId": "60790ce4-fcfd-4657-8c82-6764c154148b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/gonogo/checklists_state.json"
+            },
+            "designerId": "6b117168-aaf6-4725-8306-4985eb4a30fe",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "idProperty": "id"
+                    },
+                    "designerId": "5079096e-ec77-4b62-9e66-8da96dd24ef7"
+                }
+            ]
+        }
+    ]
+}

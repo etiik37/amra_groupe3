@@ -10,7 +10,7 @@
         "container|pack": "center",
         "designer|userAlias": "gonogoservices",
         "designer|userClassName": "GonogoServices",
-        "disabled": null,
+        "disabled": false,
         "layout": "hbox",
         "maxHeight": 70,
         "modal": null,
@@ -42,6 +42,18 @@
             "designerId": "c8ff0571-d299-4556-9754-303aa0b7dd55"
         },
         {
+            "type": "Ext.field.Hidden",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "hiddenfielfservicename"
+            },
+            "designerId": "05761593-26b6-4497-91e2-96a4a044a49d"
+        },
+        {
             "type": "Ext.field.Checkbox",
             "reference": {
                 "name": "items",
@@ -49,6 +61,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "disabled": true,
+                "disabledCls": "x-field",
                 "itemId": "gonogochecklistbox",
                 "label": "Field",
                 "labelWidth": "60%",

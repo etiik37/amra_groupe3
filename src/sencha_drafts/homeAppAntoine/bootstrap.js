@@ -675,25 +675,31 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.ProjectSolvingNav": [],
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
+  "MyApp.model.CheckList": [],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.QuestionModel": [],
+  "MyApp.store.CheckListService1": [],
+  "MyApp.store.CheckListService2": [],
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
-  "MyApp.store.ListActionsGonogo": [],
   "MyApp.store.ListDocumentsStore": [],
   "MyApp.store.LogsStore": [],
   "MyApp.store.MenuStore": [],
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.store.QuestionsTreeStore": [],
+  "MyApp.store.ServicesGonogo": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [],
   "MyApp.view.DownloadDocumentsList": [],
   "MyApp.view.FOPDetailView": [],
   "MyApp.view.FOPMainView": [],
+  "MyApp.view.GonogoCheckListView": [],
   "MyApp.view.GonogoItem": [],
   "MyApp.view.GonogoList": [],
   "MyApp.view.GonogoListCheck": [],
+  "MyApp.view.GonogoServices": [],
+  "MyApp.view.GonogoServicesList": [],
   "MyApp.view.GonogoView": [],
   "MyApp.view.GraphicTM": [],
   "MyApp.view.HomeView": [],
@@ -1501,17 +1507,22 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
+  "MyApp.model.CheckList": [
+    "model.CheckList"
+  ],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.QuestionModel": [],
+  "MyApp.store.CheckListService1": [],
+  "MyApp.store.CheckListService2": [],
   "MyApp.store.ItemsGonogo": [],
   "MyApp.store.LanguageStore": [],
-  "MyApp.store.ListActionsGonogo": [],
   "MyApp.store.ListDocumentsStore": [],
   "MyApp.store.LogsStore": [],
   "MyApp.store.MenuStore": [],
   "MyApp.store.NotificationStore": [],
   "MyApp.store.ProblemSolvingStore": [],
   "MyApp.store.QuestionsTreeStore": [],
+  "MyApp.store.ServicesGonogo": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [
     "widget.authview"
@@ -1523,6 +1534,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.FOPMainView": [
     "widget.fopview"
   ],
+  "MyApp.view.GonogoCheckListView": [
+    "widget.gonogochecklistview"
+  ],
   "MyApp.view.GonogoItem": [
     "widget.gonogoitem"
   ],
@@ -1531,6 +1545,12 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.GonogoListCheck": [
     "widget.gonogolistcheck"
+  ],
+  "MyApp.view.GonogoServices": [
+    "widget.gonogoservices"
+  ],
+  "MyApp.view.GonogoServicesList": [
+    "widget.gonogoserviceslist"
   ],
   "MyApp.view.GonogoView": [
     "widget.gonogoview"

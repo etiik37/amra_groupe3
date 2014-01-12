@@ -11,6 +11,25 @@
     "designerId": "5f48e3bd-92b3-47e9-865d-19647adb0c12",
     "cn": [
         {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mainnav",
+                "designer|targetType": "Ext.navigation.View",
+                "fn": "onNavigationviewShow",
+                "implHandler": [
+                    "Ext.getCmp('username').setValue(localStorage.getItem(\"username\"));",
+                    "Ext.getCmp('userservice').setValue(localStorage.getItem(\"userservice\"));"
+                ],
+                "name": "show"
+            },
+            "designerId": "cb9692d6-77bf-4503-bb3b-31e5cd0732a8"
+        },
+        {
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -259,6 +278,45 @@
                 ]
             },
             "designerId": "36ec1eca-ba1b-4be9-ba98-9f9340fa19d0"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeview",
+                "selector": "homeview"
+            },
+            "designerId": "8a037476-6343-4b31-833d-335c57f5c1b3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "username",
+                "selector": "#username"
+            },
+            "designerId": "36212fbf-d7aa-4575-83ac-6eeae9f63683"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "userservice",
+                "selector": "#userservice"
+            },
+            "designerId": "35f21170-c77c-4065-b1af-07f71c730320"
         }
     ]
 }

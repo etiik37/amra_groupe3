@@ -10,8 +10,8 @@
         "container|animation": false,
         "designer|userAlias": "mainnav",
         "designer|userClassName": "MainNav",
-        "id": "mainnav",
-        "itemId": null,
+        "id": null,
+        "itemId": "mainnav",
         "useTitleForBackButtonText": null
     },
     "designerId": "b2acb95f-cf34-4fea-a689-bbafade179db",

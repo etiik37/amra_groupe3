@@ -1,0 +1,9 @@
+[
+	{ "id": 0, "service": "service1", "label": "Check trajectory", "info": "Air Space", "done": "false" },
+	{ "id": 1, "service": "service1", "label": "Check satellite", "info": "Control Center", "done": "false" },
+	{ "id": 2, "service": "service1", "label": "Check options", "info": "Air Space", "done": "false" },
+	{ "id": 3, "service": "service1", "label": "Check team", "info": "Control Center", "done": "false" },
+	{ "id": 4, "service": "service1", "label": "Launch satellite", "info": "Control Center", "done": "false" },
+	{ "id": 5, "service": "service2", "label": "Check trajectory", "info": "Air Space", "done": "false" },
+	{ "id": 6, "service": "service2", "label": "Check satellite", "info": "Control Center", "done": "false" }
+]

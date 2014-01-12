@@ -1,0 +1,80 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "actionslist",
+        "designer|userClassName": "ActionsList"
+    },
+    "designerId": "ef8d9841-1540-483d-85d0-109e4a80a150",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "auto"
+            },
+            "designerId": "f1f7f067-7441-4587-b871-436287efd298"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "type": "string"
+            },
+            "designerId": "5eeae3f4-1f3f-482b-8d46-9a2118804f34"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "info",
+                "type": "string"
+            },
+            "designerId": "a2d72d98-44ce-45b4-a98a-96fa23ed82ce"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "done",
+                "type": "string"
+            },
+            "designerId": "66a2786c-c99b-4926-a825-7102e04af792"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "service",
+                "type": "string"
+            },
+            "designerId": "f73fc7bc-a4e3-4596-8b7a-db811ee13a12"
+        }
+    ]
+}

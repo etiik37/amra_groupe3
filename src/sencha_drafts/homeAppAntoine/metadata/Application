@@ -18,7 +18,8 @@
         ],
         "models": [
             "QuestionModel",
-            "Services"
+            "ActionsList",
+            "CheckList"
         ],
         "name": "MyApp",
         "requires": [
@@ -31,10 +32,11 @@
             "NotificationStore",
             "LanguageStore",
             "ItemsGonogo",
-            "ListActionsGonogo",
             "ListDocumentsStore",
             "QuestionsTreeStore",
-            "ServicesGonogo"
+            "ServicesGonogo",
+            "CheckListServices",
+            "CheckListsState"
         ],
         "views": [
             "HomeView",
@@ -52,9 +54,11 @@
             "QuestionsNav",
             "QuestionsNestedList",
             "MainNav",
-            "GonogoCheckListView",
             "GonogoServices",
-            "GonogoServicesList"
+            "GonogoServicesList",
+            "GonogoCheckListView",
+            "CheckListItem",
+            "CheckListList"
         ]
     },
     "designerId": "application",

@@ -52,11 +52,15 @@ Ext.define('MyApp.controller.AuthView', {
             Ext.Viewport.setActiveItem(Ext.create('MyApp.view.MainNav'));
 
             //On enregistre que l'utilisateur est authentifié
+            localStorage.setItem("username", "admin");
             localStorage.setItem("authOK", "true");
+            localStorage.setItem("userservice", "Service 1");
         }
 
         loginField.setValue('');
         passwordField.setValue('');
+
+
     },
 
     init: function(application) {
