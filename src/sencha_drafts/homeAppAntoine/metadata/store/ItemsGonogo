@@ -66,7 +66,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_menu_gonogo.json"
+                "url": "data/gonogo/items_menu_gonogo.json"
             },
             "designerId": "2d5cca75-09d3-48b3-b466-914a537691f7",
             "cn": [

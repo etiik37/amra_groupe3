@@ -35,6 +35,9 @@ Ext.define('MyApp.controller.LogView', {
             },
             "#fieldsearch": {
                 change: 'onSearchfieldChange'
+            },
+            "logview": {
+                show: 'onContainerShow'
             }
         }
     },
@@ -188,6 +191,14 @@ Ext.define('MyApp.controller.LogView', {
         } else {
             sto.filter('message',newValue,true,false);
         }
+    },
+
+    onContainerShow: function(component, eOpts) {
+        localStorage.removeItem("appName");
+        localStorage.removeItem("lvl");
+        localStorage.removeItem("date");
+        var sto = Ext.getStore('logsstore');
+        sto.clearFilter();
     }
 
 });

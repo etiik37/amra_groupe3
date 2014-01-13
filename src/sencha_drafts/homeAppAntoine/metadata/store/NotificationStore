@@ -79,7 +79,7 @@
                 "directionParam": null,
                 "groupParam": null,
                 "simpleSortMode": true,
-                "url": "notifications.json"
+                "url": "data/notifications.json"
             },
             "designerId": "9bd4b42f-0f82-49c2-a89f-5285e6733afa"
         },

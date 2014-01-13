@@ -77,7 +77,7 @@
                     "            }",
                     "            sto.filter('app', 'Go/No-go');",
                     "            localStorage.setItem(\"appName\", 'Go/No-go');",
-                    "             ",
+                    "",
                     "        }",
                     "",
                     "        if (newValue === 'tm_viewer') {",
@@ -91,7 +91,7 @@
                     "            }",
                     "            sto.filter('app', 'TM Viewer');",
                     "            localStorage.setItem(\"appName\", 'TM Viewer');",
-                    "             ",
+                    "",
                     "        }",
                     "         if (newValue === 'fop_viewer') {",
                     "            if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null && localStorage.getItem(\"date\") !== null){",
@@ -103,7 +103,7 @@
                     "                sto.filter('date',localStorage.getItem(\"date\"));",
                     "            }",
                     "            sto.filter('app', 'FOP Viewer');",
-                    "            localStorage.setItem(\"appName\", 'FOP Viewer');             ",
+                    "            localStorage.setItem(\"appName\", 'FOP Viewer');",
                     "",
                     "        }",
                     "",
@@ -167,7 +167,7 @@
                     "            }",
                     "            sto.filter('level', 'High');",
                     "            localStorage.setItem(\"lvl\", 'High');",
-                    "            ",
+                    "",
                     "        }",
                     "",
                     "        if (newValue === 'medium') {",
@@ -179,9 +179,9 @@
                     "            } else if (localStorage.getItem(\"date\") !== null){",
                     "                sto.filter('date',localStorage.getItem(\"date\"));",
                     "            }",
-                    "            sto.filter('level', 'Medium');            ",
+                    "            sto.filter('level', 'Medium');",
                     "            localStorage.setItem(\"lvl\", 'Medium');",
-                    "            ",
+                    "",
                     "        }",
                     "",
                     "        if (newValue === 'low') {",
@@ -195,7 +195,7 @@
                     "            }",
                     "            sto.filter('level', 'Low');",
                     "            localStorage.setItem(\"lvl\", 'Low');",
-                    "            ",
+                    "",
                     "        }",
                     ""
                 ],
@@ -255,6 +255,28 @@
                 "name": "change"
             },
             "designerId": "11054f96-e9b6-4ec0-8a60-97adf98f073a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "logview",
+                "designer|targetType": "Ext.Container",
+                "fn": "onContainerShow",
+                "implHandler": [
+                    "localStorage.removeItem(\"appName\");",
+                    "localStorage.removeItem(\"lvl\");",
+                    "localStorage.removeItem(\"date\");",
+                    "var sto = Ext.getStore('logsstore');",
+                    "sto.clearFilter();"
+                ],
+                "name": "show"
+            },
+            "designerId": "91d234d7-de72-4607-8e45-2e214fdfd7fe"
         }
     ]
 }

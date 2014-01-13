@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_logs.json"
+                "url": "data/viewer/items_logs.json"
             },
             "designerId": "adbf54c8-5a5a-4f47-858d-85e1308734b0",
             "cn": [

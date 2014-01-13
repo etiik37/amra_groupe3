@@ -779,10 +779,14 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.ProjectSolvingNav": [],
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
+  "MyApp.model.ActionsList": [],
+  "MyApp.model.CheckList": [],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.GraphModel": [],
   "MyApp.model.QuestionModel": [],
   "MyApp.model.Services": [],
+  "MyApp.store.CheckListServices": [],
+  "MyApp.store.CheckListsState": [],
   "MyApp.store.GraphStore": [],
   "MyApp.store.ItemFop": [],
   "MyApp.store.ItemFopDetail": [],
@@ -798,7 +802,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.store.ServicesGonogo": [],
   "MyApp.store.TimeZoneStore": [],
   "MyApp.view.AuthView": [],
+  "MyApp.view.CheckListItem": [],
+  "MyApp.view.CheckListList": [],
   "MyApp.view.DownloadDocumentsList": [],
+  "MyApp.view.FOPDetailView": [],
+  "MyApp.view.FOPMainView": [],
   "MyApp.view.FopDetailView": [],
   "MyApp.view.FopNavView": [],
   "MyApp.view.GonogoCheckListView": [],
@@ -1837,10 +1845,18 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.controller.QuestionNav": [],
   "MyApp.controller.TMView": [],
+  "MyApp.model.ActionsList": [
+    "model.actionslist"
+  ],
+  "MyApp.model.CheckList": [
+    "model.checklist"
+  ],
   "MyApp.model.GoNoGo": [],
   "MyApp.model.GraphModel": [],
   "MyApp.model.QuestionModel": [],
   "MyApp.model.Services": [],
+  "MyApp.store.CheckListServices": [],
+  "MyApp.store.CheckListsState": [],
   "MyApp.store.GraphStore": [],
   "MyApp.store.ItemFop": [
     "store.itemfop"
@@ -1862,8 +1878,18 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.AuthView": [
     "widget.authview"
   ],
+  "MyApp.view.CheckListItem": [
+    "widget.checklistitem"
+  ],
+  "MyApp.view.CheckListList": [
+    "widget.checklistlist"
+  ],
   "MyApp.view.DownloadDocumentsList": [
     "widget.downloaddocumentslist"
+  ],
+  "MyApp.view.FOPDetailView": [],
+  "MyApp.view.FOPMainView": [
+    "widget.fopview"
   ],
   "MyApp.view.FopDetailView": [
     "widget.fopdetailview"

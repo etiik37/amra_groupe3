@@ -48,7 +48,7 @@ Ext.define('MyApp.store.NotificationStore', {
         proxy: {
             type: 'ajax',
             simpleSortMode: true,
-            url: 'notifications.json'
+            url: 'data/notifications.json'
         },
         sorters: {
             sorterFn: function(first, second) {

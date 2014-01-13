@@ -29,7 +29,7 @@ Ext.define('MyApp.store.ItemFopDetail', {
         storeId: 'ItemFopDetail',
         proxy: {
             type: 'ajax',
-            url: 'item_fop_detail.json',
+            url: 'data/viewer/item_fop_detail.json',
             reader: {
                 type: 'json'
             }

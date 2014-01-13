@@ -27,7 +27,7 @@ Ext.define('MyApp.store.ProblemSolvingStore', {
         storeId: 'problemsolvingstore',
         proxy: {
             type: 'ajax',
-            url: 'items_problemsolving_menu.json',
+            url: 'data/problemsolving/items_problemsolving_menu.json',
             reader: {
                 type: 'json'
             }

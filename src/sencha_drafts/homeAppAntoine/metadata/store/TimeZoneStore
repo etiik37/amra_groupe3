@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_timeZones.json"
+                "url": "data/items_timeZones.json"
             },
             "designerId": "fe47f763-061c-4dd1-a160-c544ae843701",
             "cn": [

@@ -1,0 +1,5 @@
+[
+	{ "name": "Documents", "id_view": "downloaddocumentslist" },
+	{ "name": "Wiki", "id_view": "wikiview" },
+	{ "name": "Questions", "id_view": "questionsnav" }
+]

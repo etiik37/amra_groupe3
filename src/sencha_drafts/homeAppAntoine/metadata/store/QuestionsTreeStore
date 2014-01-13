@@ -25,7 +25,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_question.json"
+                "url": "data/problemsolving/items_question.json"
             },
             "designerId": "e76daeba-fcf7-4dbd-ab81-ee7013aa5818",
             "cn": [

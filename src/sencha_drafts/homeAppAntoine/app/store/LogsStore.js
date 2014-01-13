@@ -27,7 +27,7 @@ Ext.define('MyApp.store.LogsStore', {
         storeId: 'logsstore',
         proxy: {
             type: 'ajax',
-            url: 'items_logs.json',
+            url: 'data/viewer/items_logs.json',
             reader: {
                 type: 'json'
             }

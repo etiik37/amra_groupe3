@@ -40,7 +40,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_services.json"
+                "url": "data/gonogo/items_services.json"
             },
             "designerId": "bbbc0078-874f-432d-8e48-08f0ba68cf8a",
             "cn": [

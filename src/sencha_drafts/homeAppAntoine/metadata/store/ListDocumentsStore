@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_listdocuments.json"
+                "url": "data/problemsolving/items_listdocuments.json"
             },
             "designerId": "442b1cb8-6e69-43f7-8cac-9a1da3e96eb7",
             "cn": [

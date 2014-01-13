@@ -48,6 +48,8 @@
       ".svn$"
    ],
    "archivePath": "archive",
-   "requires": [],
+   "requires": [
+      "sencha-touch-grid"
+   ],
    "id": "dd6e3fe0-269c-4642-9cf7-eabdd31f1e03"
 }

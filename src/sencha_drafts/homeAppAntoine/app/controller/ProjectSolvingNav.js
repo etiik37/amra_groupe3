@@ -20,7 +20,8 @@ Ext.define('MyApp.controller.ProjectSolvingNav', {
     config: {
         refs: {
             projectsolvingnav: 'projectsolvingnav',
-            projectsolvinglist: 'projectsolvinglist'
+            projectsolvinglist: 'projectsolvinglist',
+            mainnav: 'mainnav'
         },
 
         control: {
@@ -31,7 +32,9 @@ Ext.define('MyApp.controller.ProjectSolvingNav', {
     },
 
     onListItemTap: function(dataview, index, target, record, e, eOpts) {
-        var projectSolvingNavView = this.getProjectsolvingnav();
+        //var projectSolvingNavView = this.getProjectsolvingnav();
+        var projectSolvingNavView = this.getMainnav();
+
 
         projectSolvingNavView.pop();
 

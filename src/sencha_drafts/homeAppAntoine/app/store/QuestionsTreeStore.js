@@ -32,7 +32,7 @@ Ext.define('MyApp.store.QuestionsTreeStore', {
         },
         proxy: {
             type: 'ajax',
-            url: 'items_question.json',
+            url: 'data/problemsolving/items_question.json',
             reader: {
                 type: 'json'
             }

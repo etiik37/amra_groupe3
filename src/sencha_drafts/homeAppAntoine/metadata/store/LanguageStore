@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "items_language.json"
+                "url": "data/items_language.json"
             },
             "designerId": "f8e603f5-0b61-44b6-9197-af5302f0c77d",
             "cn": [

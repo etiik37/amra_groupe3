@@ -27,7 +27,7 @@ Ext.define('MyApp.store.GraphStore', {
         storeId: 'GraphStore',
         proxy: {
             type: 'ajax',
-            url: 'tmviewer.json',
+            url: 'data/viewer/tmviewer.json',
             reader: {
                 type: 'json'
             }

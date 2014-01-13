@@ -28,7 +28,7 @@ Ext.define('MyApp.store.MenuStore', {
         storeId: 'menustore',
         proxy: {
             type: 'ajax',
-            url: 'items_menu.json',
+            url: 'data/items_menu.json',
             reader: {
                 type: 'json'
             }

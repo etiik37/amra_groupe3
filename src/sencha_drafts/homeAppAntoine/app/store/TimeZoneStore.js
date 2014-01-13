@@ -27,7 +27,7 @@ Ext.define('MyApp.store.TimeZoneStore', {
         storeId: 'timezonestore',
         proxy: {
             type: 'ajax',
-            url: 'items_timeZones.json',
+            url: 'data/items_timeZones.json',
             reader: {
                 type: 'json'
             }

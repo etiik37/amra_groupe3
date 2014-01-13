@@ -23,7 +23,9 @@
                 "designer|targetType": "Ext.dataview.List",
                 "fn": "onListItemTap",
                 "implHandler": [
-                    "var projectSolvingNavView = this.getProjectsolvingnav();",
+                    "//var projectSolvingNavView = this.getProjectsolvingnav();",
+                    "var projectSolvingNavView = this.getMainnav();",
+                    "",
                     "",
                     "projectSolvingNavView.pop();",
                     "",
@@ -61,6 +63,19 @@
                 "selector": "projectsolvinglist"
             },
             "designerId": "57bc0a8f-471a-4ab5-8afb-e415f706df2e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "mainnav"
+            },
+            "designerId": "bb4955f4-5c21-4c38-a099-f5d0ccbbd8bc"
         }
     ]
 }

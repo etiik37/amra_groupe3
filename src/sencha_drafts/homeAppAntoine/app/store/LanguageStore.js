@@ -27,7 +27,7 @@ Ext.define('MyApp.store.LanguageStore', {
         storeId: 'languageStore',
         proxy: {
             type: 'ajax',
-            url: 'items_language.json',
+            url: 'data/items_language.json',
             reader: {
                 type: 'json'
             }

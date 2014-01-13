@@ -21,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "tmviewer.json"
+                "url": "data/viewer/tmviewer.json"
             },
             "designerId": "92b0e231-0167-404a-ab9f-a8f605a1331f",
             "cn": [

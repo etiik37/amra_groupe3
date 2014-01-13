@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "item_fop_detail.json"
+                "url": "data/viewer/item_fop_detail.json"
             },
             "designerId": "f12bac99-1583-49a6-b13f-4f1116090cce",
             "cn": [

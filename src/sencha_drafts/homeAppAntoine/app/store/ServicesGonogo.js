@@ -38,7 +38,7 @@ Ext.define('MyApp.store.ServicesGonogo', {
         ],
         proxy: {
             type: 'ajax',
-            url: 'items_services.json',
+            url: 'data/gonogo/items_services.json',
             reader: {
                 type: 'json'
             }

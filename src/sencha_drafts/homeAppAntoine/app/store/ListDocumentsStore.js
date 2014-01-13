@@ -27,7 +27,7 @@ Ext.define('MyApp.store.ListDocumentsStore', {
         storeId: 'ListDocumentsStore',
         proxy: {
             type: 'ajax',
-            url: 'items_listdocuments.json',
+            url: 'data/problemsolving/items_listdocuments.json',
             reader: {
                 type: 'json'
             }
