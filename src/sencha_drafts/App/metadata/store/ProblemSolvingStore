@@ -1,0 +1,63 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "ProblemSolvingStore",
+        "storeId": "problemsolvingstore"
+    },
+    "designerId": "a06633b3-5c0b-4d12-af75-7a02edca2996",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/problemsolving/items_problemsolving_menu.json"
+            },
+            "designerId": "7700daab-68fd-4ad6-b79b-b75f580c1f64",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "695a0995-6be9-4cb6-bb27-2592b7d110d8"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "designerId": "864a9181-0bc6-40fb-8989-a05b85d481d5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_view"
+            },
+            "designerId": "fbd8acae-939b-4cda-b843-2a9bad7f0e9e"
+        }
+    ]
+}

@@ -1,0 +1,292 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GonogoView"
+    },
+    "designerId": "bfae7adb-6770-4541-acfb-859d954325e7",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoview",
+                "designer|targetType": "Ext.tab.Panel",
+                "fn": "onTabpanelShow",
+                "implHandler": [
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('itemsgonogo');",
+                    "",
+                    "sto.filter('finished', 'false');"
+                ],
+                "name": "show"
+            },
+            "designerId": "3c8315d9-dfc8-4b70-8273-61e916348991"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoview",
+                "designer|targetType": "Ext.tab.Panel",
+                "fn": "onTabpanelActiveItemChange",
+                "implHandler": [
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('itemsgonogo');",
+                    "",
+                    "//On efface tous les filtres existants",
+                    "sto.clearFilter();",
+                    "",
+                    "if (value.config.title !== 'History') {",
+                    "    sto.filter('finished', 'false');",
+                    "}"
+                ],
+                "name": "activeitemchange"
+            },
+            "designerId": "1009b56a-06fa-49ef-a841-e60137974e3b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoservices #viewchecklist",
+                "designer|targetType": "Ext.Button",
+                "fn": "onViewTapButton",
+                "implHandler": [
+                    "var mainNavView = this.getMainnav();",
+                    "var navBarMainView = this.getNavigationbar();",
+                    "",
+                    "var gonogoCheckListView = this.getGonogochecklistview();",
+                    "",
+                    "var serviceNameId = button.up('gonogoservices').getRecord().get('id');",
+                    "var serviceName = button.up('gonogoservices').getRecord().get('label');",
+                    "",
+                    "var gonogoName = mainNavView.down('gonogochecklistview').down('#navigationbar').getTitle().getTitle();",
+                    "",
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('checklistservices');",
+                    "//On efface tous les filtres existants",
+                    "sto.clearFilter();",
+                    "",
+                    "var previousTitleMainView = navBarMainView.getTitle();",
+                    "",
+                    "sto.filter('service', serviceNameId);",
+                    "",
+                    "mainNavView.push({",
+                    "    title : previousTitleMainView,",
+                    "    xtype : 'checklistlist'",
+                    "});",
+                    "",
+                    "mainNavView.down('checklistlist').down('#navigationbar').setTitle(gonogoName+' - '+serviceName);",
+                    "localStorage.setItem(\"gonogoMode\", \"view\");",
+                    "",
+                    "mainNavView.down('checklistlist').down('#savechecklist').hide();"
+                ],
+                "name": "tap"
+            },
+            "designerId": "587f705a-9a13-46de-ade3-ac1a74184da1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "mainnav"
+            },
+            "designerId": "617b3c0a-2c19-4899-b27d-870de6d23e80"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogoview",
+                "selector": "gonogoview"
+            },
+            "designerId": "63672d85-eafa-4ab4-9704-95df6509d0f6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogoitem",
+                "selector": "gonogoitem"
+            },
+            "designerId": "839eab48-9c40-40ab-a9a7-a8560139756e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoitem #gonogobutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var gonogoItemName = button.up('gonogoitem').getRecord().get('label');",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "var navBarMainView = this.getNavigationbar();",
+                    "",
+                    "var previousTitleMainView = navBarMainView.getTitle();",
+                    "",
+                    "mainNavView.push({",
+                    "    title : previousTitleMainView,",
+                    "    xtype : 'gonogochecklistview'",
+                    "});",
+                    "",
+                    "mainNavView.down('gonogochecklistview').down('#navigationbar').setTitle(gonogoItemName);",
+                    "",
+                    "localStorage.setItem(\"gonogoName\", gonogoItemName);"
+                ],
+                "name": "tap"
+            },
+            "designerId": "b68e2e7b-7c42-49d9-b1ee-ccf7f3c26de9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gonogoservices #editchecklist",
+                "designer|targetType": "Ext.Button",
+                "fn": "onEditTapButton",
+                "implHandler": [
+                    "var mainNavView = this.getMainnav();",
+                    "var navBarMainView = this.getNavigationbar();",
+                    "",
+                    "var gonogoCheckListView = this.getGonogochecklistview();",
+                    "",
+                    "var serviceNameId = button.up('gonogoservices').getRecord().get('id');",
+                    "var serviceName = button.up('gonogoservices').getRecord().get('label');",
+                    "",
+                    "var gonogoName = mainNavView.down('gonogochecklistview').down('#navigationbar').getTitle().getTitle();",
+                    "",
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('checklistservices');",
+                    "//On efface tous les filtres existants",
+                    "sto.clearFilter();",
+                    "",
+                    "var previousTitleMainView = navBarMainView.getTitle();",
+                    "",
+                    "if (serviceName == localStorage.getItem('userservice')){",
+                    "    sto.filter('service', serviceNameId);",
+                    "",
+                    "    mainNavView.push({",
+                    "        title : previousTitleMainView,",
+                    "        xtype : 'checklistlist'",
+                    "    });",
+                    "",
+                    "    mainNavView.down('checklistlist').down('#navigationbar').setTitle(gonogoName+' - '+serviceName);",
+                    "    localStorage.setItem(\"gonogoMode\", \"edit\");",
+                    "",
+                    "    mainNavView.down('checklistlist').down('#savechecklist').show();",
+                    "}",
+                    "else {",
+                    "    alert('You don\\'t have the permissions for doing that...');",
+                    "}"
+                ],
+                "name": "tap"
+            },
+            "designerId": "13b76491-6240-48d2-b71f-27bfb1ed7213"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogochecklistview",
+                "selector": "gonogochecklistview"
+            },
+            "designerId": "16f69ebb-99c0-4fe9-b38b-88b8481c760b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "navigationbar",
+                "selector": "mainnav #navigationbar"
+            },
+            "designerId": "15c7faa1-7d62-469d-acb3-c47883b2fb5e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gonogoservices",
+                "selector": "gonogoservices"
+            },
+            "designerId": "fe790f08-dcae-4f96-a189-51e099d9cce3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "checklistview",
+                "selector": "checklistview"
+            },
+            "designerId": "66371489-b479-4fd8-8bb6-0b7ffb1af45c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "checklist",
+                "selector": "checklist"
+            },
+            "designerId": "3455cef5-6212-4735-a5f5-799280100349"
+        }
+    ]
+}

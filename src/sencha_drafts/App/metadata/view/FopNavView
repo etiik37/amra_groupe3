@@ -1,0 +1,175 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fopview",
+        "designer|userClassName": "FopNavView"
+    },
+    "designerId": "96d270f1-1c95-408b-8cb4-dd7392cf17e9",
+    "cn": [
+        {
+            "type": "grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": 1216,
+                "id": "fopmaingrid",
+                "store": "ItemFop",
+                "title": "FOPMainGrid"
+            },
+            "designerId": "8d6dba0f-8fba-4c03-9fd9-94c0dbf768fb",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "C",
+                        "text": "C",
+                        "width": 50
+                    },
+                    "designerId": "60fae04a-3b64-4b5a-a0b8-8d102d1f41c0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "T",
+                        "text": "T",
+                        "width": 50
+                    },
+                    "designerId": "5a14506e-3fa8-4753-a8e8-28d1e5316929"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Status",
+                        "text": "Status",
+                        "width": 110
+                    },
+                    "designerId": "23f4238f-7460-455d-9aca-63cdf1eba8ad"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "I",
+                        "text": "I",
+                        "width": 50
+                    },
+                    "designerId": "c3158e9b-543f-4cd4-b04c-21673112cc60"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Code",
+                        "text": "Code",
+                        "width": 110
+                    },
+                    "designerId": "752abb5e-2437-481c-bfcd-c320bb040650"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Label",
+                        "text": "Label",
+                        "width": 110
+                    },
+                    "designerId": "38956bab-46e4-4d74-846f-a7af52fd9ef5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Mode",
+                        "text": "Mode",
+                        "width": 110
+                    },
+                    "designerId": "19a781d4-8ab2-4b65-8ff3-11ac9aa04e18"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Start",
+                        "format": "MM/DD/YYYY",
+                        "text": "Start",
+                        "width": 110
+                    },
+                    "designerId": "421b50cc-0e47-4e01-962e-cb498a9db1aa"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "End",
+                        "format": "MM/DD/YYYY",
+                        "text": "End",
+                        "width": 110
+                    },
+                    "designerId": "0546da25-8c4e-4c92-8438-a9f8d10aed40"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Owner",
+                        "text": "Owner",
+                        "width": 110
+                    },
+                    "designerId": "3c839b2d-ba1d-49dc-9b31-77e26e820d61"
+                }
+            ]
+        }
+    ]
+}

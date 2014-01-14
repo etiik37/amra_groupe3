@@ -1,0 +1,39 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": false,
+        "designer|userAlias": "projectsolvingnav",
+        "designer|userClassName": "ProjectSolvingNav"
+    },
+    "designerId": "78af94ef-e094-4ece-84e4-f18ad8bf4742",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "b0fb4a03-d7ee-4a33-af17-77c14611be57",
+            "masterInstanceId": "910505bb-8e35-422f-aa22-4d7b05fdbcdf"
+        },
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "hidden": true
+            },
+            "designerId": "45229353-379d-4f31-a791-1868ab3e4f01"
+        }
+    ]
+}

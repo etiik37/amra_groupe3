@@ -93,11 +93,12 @@ Ext.application({
     launch: function() {
         //Pour la mise à jour des notifications
         var timerCheckForNotifications;
-
+        var timerFopDetail ;
         //Récupération du store
         var sto = Ext.getStore('itemsgonogo');
         //On affiche par défaut uniquement les GONOGO en cours
         sto.filter('finished', 'false');
+
         Ext.create('MyApp.view.AuthView', {fullscreen: true});
     }
 

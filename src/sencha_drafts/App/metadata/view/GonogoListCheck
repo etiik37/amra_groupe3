@@ -1,0 +1,31 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "gonogolistcheck",
+        "designer|userClassName": "GonogoListCheck",
+        "store": "listactionsgonogo"
+    },
+    "designerId": "fd95bcb2-8680-46df-8254-8ece86fbe2ff",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{label}</div>"
+                ]
+            },
+            "designerId": "ed997e3d-429e-4503-9ff9-a828d64140d3"
+        }
+    ]
+}

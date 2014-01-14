@@ -1,0 +1,282 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LogView"
+    },
+    "designerId": "b83923b3-9d72-4e7c-b585-bc781a2105bb",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "logview",
+                "selector": "logview"
+            },
+            "designerId": "591d952e-9781-48ad-90f6-3a3933cbae6d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "appfilter",
+                "selector": "filterview #filterbar #appfilter"
+            },
+            "designerId": "a7d961be-cf14-4d6c-a11c-ec73ffd1d4a2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#appfilter",
+                "designer|targetType": "Ext.field.Select",
+                "fn": "onSelectfieldChange",
+                "implHandler": [
+                    " //Récupération du store",
+                    "        var sto = Ext.getStore('logsstore');",
+                    "",
+                    "        //On efface tous les filtres existants",
+                    "        sto.clearFilter();",
+                    "        if (newValue === 'all_apps') {",
+                    "          //sto.clearFilter();",
+                    "           localStorage.setItem(\"appName\",'null');",
+                    "           if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "               sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "               sto.filter('date',localStorage.getItem(\"date\"));",
+                    "           } else if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null) {",
+                    "               sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "           } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "        }",
+                    "",
+                    "        if (newValue === 'go_no_go') {",
+                    "            if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null){",
+                    "                sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "            sto.filter('app', 'Go/No-go');",
+                    "            localStorage.setItem(\"appName\", 'Go/No-go');",
+                    "",
+                    "        }",
+                    "",
+                    "        if (newValue === 'tm_viewer') {",
+                    "            if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null){",
+                    "                sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "            sto.filter('app', 'TM Viewer');",
+                    "            localStorage.setItem(\"appName\", 'TM Viewer');",
+                    "",
+                    "        }",
+                    "         if (newValue === 'fop_viewer') {",
+                    "            if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "                 sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "                  sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null){",
+                    "               sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "            sto.filter('app', 'FOP Viewer');",
+                    "            localStorage.setItem(\"appName\", 'FOP Viewer');",
+                    "",
+                    "        }",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "change"
+            },
+            "designerId": "3498bfef-dc15-4218-81aa-2ff3be4d58e2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "logsstore",
+                "selector": "logsstore"
+            },
+            "designerId": "2b63a148-5e81-4312-b7e9-0545c101382d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#lvlfilter",
+                "designer|targetType": "Ext.field.Select",
+                "fn": "onSelectfieldChange1",
+                "implHandler": [
+                    " //Récupération du store",
+                    "        var sto = Ext.getStore('logsstore');",
+                    "        sto.clearFilter();",
+                    "        //On efface tous les filtres existants",
+                    "        if (newValue === 'all_levels') {",
+                    "           //sto.clearFilter();",
+                    "           localStorage.setItem(\"lvl\", 'null');",
+                    "            if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "        }",
+                    "",
+                    "        if (newValue === 'high') {",
+                    "            if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"appName\") !== null && localStorage.getItem(\"appName\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "            sto.filter('level', 'High');",
+                    "            localStorage.setItem(\"lvl\", 'High');",
+                    "",
+                    "        }",
+                    "",
+                    "        if (newValue === 'medium') {",
+                    "            if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "            sto.filter('level', 'Medium');",
+                    "            localStorage.setItem(\"lvl\", 'Medium');",
+                    "",
+                    "        }",
+                    "",
+                    "        if (newValue === 'low') {",
+                    "            if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null && localStorage.getItem(\"date\") !== null){",
+                    "            sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            } else if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null){",
+                    "                sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "            } else if (localStorage.getItem(\"date\") !== null){",
+                    "                sto.filter('date',localStorage.getItem(\"date\"));",
+                    "            }",
+                    "            sto.filter('level', 'Low');",
+                    "            localStorage.setItem(\"lvl\", 'Low');",
+                    "",
+                    "        }",
+                    ""
+                ],
+                "name": "change"
+            },
+            "designerId": "e3ee8055-b4f4-43b1-a98a-a10d107befac"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#begindatepicker",
+                "designer|targetType": "Ext.field.DatePicker",
+                "fn": "onDatepickerfieldChange",
+                "implHandler": [
+                    "var sto = Ext.getStore('logsstore');",
+                    "",
+                    "sto.filter('date',newDate);",
+                    "localStorage.setItem(\"date\", newDate);"
+                ],
+                "name": "change"
+            },
+            "designerId": "69c4fd46-d207-4c9b-81b4-4a3cd0929a65"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#fieldsearch",
+                "designer|targetType": "Ext.field.Search",
+                "fn": "onSearchfieldChange",
+                "implHandler": [
+                    "var sto = Ext.getStore('logsstore');",
+                    "if (newValue === \"\"){",
+                    "    sto.clearFilter();",
+                    "    if (localStorage.getItem(\"appName\") !== 'null' && localStorage.getItem(\"appName\") !== null){",
+                    "        sto.filter('app',localStorage.getItem(\"appName\"));",
+                    "    }",
+                    "    if (localStorage.getItem(\"lvl\") !== 'null' && localStorage.getItem(\"lvl\") !== null){",
+                    "        sto.filter('level',localStorage.getItem(\"lvl\"));",
+                    "    }",
+                    "    if (localStorage.getItem(\"date\") !== null){",
+                    "        sto.filter('date',localStorage.getItem(\"date\"));",
+                    "    }",
+                    "} else {",
+                    "    sto.filter('message',newValue,true,false);",
+                    "}"
+                ],
+                "name": "change"
+            },
+            "designerId": "11054f96-e9b6-4ec0-8a60-97adf98f073a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "logview",
+                "designer|targetType": "Ext.Container",
+                "fn": "onContainerShow",
+                "implHandler": [
+                    "localStorage.removeItem(\"appName\");",
+                    "localStorage.removeItem(\"lvl\");",
+                    "localStorage.removeItem(\"date\");",
+                    "var sto = Ext.getStore('logsstore');",
+                    "sto.clearFilter();"
+                ],
+                "name": "show"
+            },
+            "designerId": "91d234d7-de72-4607-8e45-2e214fdfd7fe"
+        }
+    ]
+}

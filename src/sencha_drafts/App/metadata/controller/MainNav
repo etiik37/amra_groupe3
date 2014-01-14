@@ -1,0 +1,322 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainNav"
+    },
+    "designerId": "5f48e3bd-92b3-47e9-865d-19647adb0c12",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mainnav",
+                "designer|targetType": "Ext.navigation.View",
+                "fn": "onNavigationviewShow",
+                "implHandler": [
+                    "Ext.getCmp('username').setValue(localStorage.getItem(\"username\"));",
+                    "Ext.getCmp('userservice').setValue(localStorage.getItem(\"userservice\"));"
+                ],
+                "name": "show"
+            },
+            "designerId": "cb9692d6-77bf-4503-bb3b-31e5cd0732a8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "menulist",
+                "selector": "menulist"
+            },
+            "designerId": "16ec161a-3bd7-449d-9441-7e05b0302567"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#menulist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "//On masque d'abord le menu",
+                    "var menuListOverlay = Ext.Viewport.getComponent('menulist');",
+                    "menuListOverlay.hide();",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "",
+                    "mainNavView.push({",
+                    "    title : record.get('label'),",
+                    "    xtype : record.get('id_view')",
+                    "});"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "74ca02a1-e635-41f3-971a-56f31dc9bd3b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "mainnav"
+            },
+            "designerId": "eabd0d8c-6eee-4cdf-b71f-28b30979ef0a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#preferencesbutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onPreferencesButtonTap",
+                "implHandler": [
+                    "//On masque d'abord le menu",
+                    "var menuListOverlay = Ext.Viewport.getComponent('menulist');",
+                    "menuListOverlay.hide();",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "",
+                    "mainNavView.push({",
+                    "    title : 'Preferences',",
+                    "    xtype : 'preferencesview'",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "designerId": "24d6b780-ef3b-422b-b82d-c613ce5005ed"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#logoutbutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onLogOutButtonTap",
+                "implHandler": [
+                    "//Fonction appelée lors d'un clic sur le bouton \"Log out\"",
+                    "",
+                    "//On masque d'abord le menu",
+                    "var menuListOverlay = Ext.Viewport.getComponent('menulist');",
+                    "menuListOverlay.hide();",
+                    "",
+                    "//Suppression de la variable de session",
+                    "localStorage.removeItem(\"authOK\");",
+                    "",
+                    "//Arrêt du timer pour la mise à jour des notifications",
+                    "clearInterval(timerCheckForNotifications);",
+                    "",
+                    "//Redirection vers la page d'authentification",
+                    "Ext.Viewport.setActiveItem(0);",
+                    "",
+                    "var mainNavView = this.getMainnav();",
+                    "Ext.Viewport.remove(mainNavView);"
+                ],
+                "name": "tap"
+            },
+            "designerId": "d32617f7-5aa0-4c70-b4f2-ecd324f7febd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "authview",
+                "selector": "authview"
+            },
+            "designerId": "563468f3-922f-4cd4-9a29-54a0cf0f0ee2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "menubutton",
+                "selector": "#menubutton"
+            },
+            "designerId": "e12946ac-6d82-4c08-b2da-4ad5686b2410"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "notificationsbutton",
+                "selector": "#notificationsbutton"
+            },
+            "designerId": "bf4ef0e7-f146-4631-8caa-305a06e30cdc"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "notificationslist",
+                "selector": "#notificationslist"
+            },
+            "designerId": "ddcf711b-7bd2-43ec-8e8b-39943f58b136"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#notificationsbutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onNotificationsButtonTap",
+                "implHandler": [
+                    "var newNotifNbToHighlight = localStorage.getItem('newNotifNb') - localStorage.getItem('previousNotifNb');",
+                    "",
+                    "var itemClass = Ext.get('notificationslist').dom.getElementsByClassName(\"x-list-item\");",
+                    "for (var i = 0; i < itemClass.length; i++) {",
+                    "    if(i < newNotifNbToHighlight){",
+                    "        itemClass[i].style.backgroundColor='#c7f3c7'; //change the color of the row",
+                    "    }",
+                    "    else {",
+                    "        itemClass[i].style.backgroundColor='#ffffff'; //change the color of the row",
+                    "    }",
+                    "}",
+                    "",
+                    "button.setBadgeText('');",
+                    "localStorage.setItem(\"previousNotifNb\", localStorage.getItem(\"newNotifNb\"));"
+                ],
+                "name": "tap"
+            },
+            "designerId": "273e2d9f-297c-4460-a730-14b008eaf109"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var MenuListView = Ext.create('MyApp.view.MenuList');",
+                    "var overlayMenuList = Ext.Viewport.add(MenuListView);",
+                    "",
+                    "var NotificationsListView = Ext.create('MyApp.view.NotificationsList');",
+                    "var overlayNotificationsList = Ext.Viewport.add(NotificationsListView);",
+                    "",
+                    "Ext.Viewport.on(",
+                    "    {",
+                    "        delegate: '#notificationsbutton',",
+                    "        tap: function(button) {",
+                    "            // When you tap on a button, we want to show the overlay by the button we just tapped.",
+                    "            overlayNotificationsList.showBy(button);",
+                    "        }",
+                    "    }",
+                    ");",
+                    "",
+                    "Ext.Viewport.on(",
+                    "    {",
+                    "        delegate: '#menubutton',",
+                    "        tap: function(button) {",
+                    "            // When you tap on a button, we want to show the overlay by the button we just tapped.",
+                    "            overlayMenuList.showBy(button);",
+                    "        }",
+                    "    }",
+                    ");",
+                    "",
+                    "//On enregistre le nombre de notifications",
+                    "var notificationsStore = Ext.getStore('notificationsstore');",
+                    "localStorage.setItem(\"previousNotifNb\", 0);",
+                    "",
+                    "//Démarrage du timer pour la mise à jour du store des notifications",
+                    "timerCheckForNotifications = setInterval(function checkForNotifications() {",
+                    "    notificationsStore.load();",
+                    "    localStorage.setItem(\"newNotifNb\", notificationsStore.getAllCount());",
+                    "    var newNotifNbToPrint = localStorage.getItem('newNotifNb') - localStorage.getItem('previousNotifNb');",
+                    "    if (newNotifNbToPrint !== 0) {",
+                    "        Ext.getCmp('notificationsbutton').setBadgeText(newNotifNbToPrint);",
+                    "        }",
+                    "},5000);"
+                ]
+            },
+            "designerId": "36ec1eca-ba1b-4be9-ba98-9f9340fa19d0"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeview",
+                "selector": "homeview"
+            },
+            "designerId": "8a037476-6343-4b31-833d-335c57f5c1b3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "username",
+                "selector": "#username"
+            },
+            "designerId": "36212fbf-d7aa-4575-83ac-6eeae9f63683"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "userservice",
+                "selector": "#userservice"
+            },
+            "designerId": "35f21170-c77c-4065-b1af-07f71c730320"
+        }
+    ]
+}

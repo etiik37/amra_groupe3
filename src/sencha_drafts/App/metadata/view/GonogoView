@@ -1,0 +1,111 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": false,
+        "container|animation": false,
+        "designer|userAlias": "gonogoview",
+        "designer|userClassName": "GonogoView",
+        "fullscreen": null,
+        "id": null
+    },
+    "designerId": "06104c25-4fc7-46d7-a069-c21d2560751e",
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "autoDestroy": false,
+                "container|align": "center",
+                "container|pack": "center",
+                "designer|createAlias": null,
+                "designer|displayName": "TabBarGonogo",
+                "docked": "top",
+                "hidden": false,
+                "id": null
+            },
+            "designerId": "a60177a2-ceb2-4d5c-8f5f-55b34a20c4b5"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": false,
+                "centered": false,
+                "designer|displayName": "InProgress",
+                "height": "100%",
+                "html": null,
+                "itemId": null,
+                "layout": "fit",
+                "scrollable": null,
+                "title": "In progress"
+            },
+            "designerId": "71aa368a-e720-4659-a97c-5392dd3004d0",
+            "cn": [
+                {
+                    "type": "Ext.dataview.DataView",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "defaultType": "gonogoitem",
+                        "disableSelection": false,
+                        "store": "itemsgonogo",
+                        "useComponents": true
+                    },
+                    "designerId": "a96b1dd0-82ec-4126-97f7-f1dc6640d1b8"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": false,
+                "docked": null,
+                "height": "100%",
+                "html": null,
+                "layout": "fit",
+                "scrollable": null,
+                "title": "History"
+            },
+            "designerId": "9fdefd0f-49e4-47b1-bcaa-532b8bc20cc0",
+            "cn": [
+                {
+                    "type": "Ext.dataview.DataView",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "defaultType": "gonogoitem",
+                        "disableSelection": false,
+                        "store": "itemsgonogo",
+                        "useComponents": true
+                    },
+                    "designerId": "cc716399-42ba-4895-aadb-5303f8310a96"
+                }
+            ]
+        }
+    ]
+}

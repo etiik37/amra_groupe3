@@ -44,6 +44,13 @@ Ext.define('MyApp.controller.FopNavView', {
 
     onGridItemDoubletap: function(dataview, index, target, record, e, eOpts) {
         alert(record.get('Status'));
+    },
+
+    launch: function() {
+        var fopStore = Ext.getStore('ItemFopDetail');
+        timerFop = setInterval(function checkForNotifications() {
+            fopStore.load();
+        },5000);
     }
 
 });

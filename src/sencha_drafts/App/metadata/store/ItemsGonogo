@@ -1,0 +1,94 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "ItemsGonogo",
+        "groupDir": "ASC",
+        "groupField": "finished",
+        "model": null,
+        "remoteGroup": null,
+        "storeId": "itemsgonogo"
+    },
+    "mockCfgs": [
+        "data"
+    ],
+    "designerId": "1d17ab0f-595f-483d-b213-0ffdc5d49fe0",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "type": "string"
+            },
+            "designerId": "677930c5-299f-40df-9b2c-de02a7354a87"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "2e859062-2fea-4356-b024-e7e5e4a6afde"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "finished",
+                "type": "string"
+            },
+            "designerId": "c3923b17-be0e-4f31-8248-9cce4c09d06e"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/gonogo/items_menu_gonogo.json"
+            },
+            "designerId": "2d5cca75-09d3-48b3-b466-914a537691f7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "cbb3a036-6a01-47ab-a149-3ce0e7b186ef"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "adbec1f8-0626-4890-84bf-8446f0733a60"
+                }
+            ]
+        }
+    ]
+}

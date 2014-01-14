@@ -1,0 +1,13 @@
+.x-list-item {
+    background-color: red;
+
+    -webkit-transition: background-color, color 150ms linear;
+    -webkit-transition-delay: 250ms;
+
+    &.x-item-pressed, &.x-item-selected {
+        color: #fff;
+        background-color: $list-active-color;
+        -webkit-transition: background-color, color 0ms linear;
+        -webkit-transition-delay: 0s;
+    }
+}!important

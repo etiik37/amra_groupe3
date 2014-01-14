@@ -1,0 +1,13 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "questionview",
+        "designer|userClassName": "QuestionView"
+    },
+    "designerId": "b8402be8-784f-41ad-a047-e379c0285710"
+}

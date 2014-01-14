@@ -1,0 +1,79 @@
+{
+    "type": "Ext.dataview.component.DataItem",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userAlias": "checklistitem",
+        "designer|userClassName": "CheckListItem",
+        "disabled": null,
+        "layout": "hbox",
+        "maxHeight": 70,
+        "modal": null,
+        "padding": 10,
+        "requires": [
+            "MyApp.store.CheckListsState"
+        ]
+    },
+    "designerId": "e7fedc8c-754e-472f-81a0-26c0b27833ec",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "updateRecord",
+                "implHandler": [
+                    "// Provide an implementation to update this container's child items",
+                    "var me = this;",
+                    "",
+                    "if ( localStorage.getItem(\"gonogoMode\") == \"view\"){",
+                    "    me.down('#stepchecklistbox').disable();",
+                    "}",
+                    "",
+                    "var checklistsstateStore = Ext.getStore('checklistsstate');",
+                    "checklistsstateStore.clearFilter();",
+                    "checklistsstateStore.filter('gonogo', 'Challenger 2013');",
+                    "",
+                    "me.down('#stepchecklistbox').uncheck();",
+                    "if(checklistsstateStore.getAt(record.get('id')).get('done')){",
+                    "    me.down('#stepchecklistbox').check();",
+                    "}",
+                    "",
+                    "me.down('#stepchecklistbox').setLabel(record.get('label'));",
+                    "",
+                    "me.callParent(arguments);",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "afb12224-1fe0-45a2-a38d-079cdf004099"
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "stepchecklistbox",
+                "label": "Field",
+                "labelWidth": "60%",
+                "width": "80%"
+            },
+            "designerId": "eb0e7592-9d08-4824-b810-8e8db25cc1e9"
+        }
+    ]
+}

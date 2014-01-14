@@ -1,0 +1,106 @@
+{
+    "type": "Ext.dataview.component.DataItem",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": null,
+        "container|align": null,
+        "container|pack": null,
+        "designer|userAlias": "gonogoitem",
+        "designer|userClassName": "GonogoItem",
+        "disabled": null,
+        "layout": "hbox",
+        "left": null,
+        "maxHeight": 70,
+        "modal": null,
+        "padding": 10,
+        "scrollable": null
+    },
+    "designerId": "e3dfbc22-3f44-4fa2-9ebb-c4c164c1973b",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "updateRecord",
+                "implHandler": [
+                    "// Provide an implementation to update this container's child items",
+                    "var me = this;",
+                    "",
+                    "me.down('#gonogoitemname').setHtml(record.get('label'));",
+                    "",
+                    "me.callParent(arguments);"
+                ]
+            },
+            "designerId": "757e2df6-401e-4079-a192-a06906a5a41d"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": null,
+                "centered": false,
+                "docked": null,
+                "height": 50,
+                "html": "<img src=\"resources/images/satellite_ico.png\" :>",
+                "layout": "fit",
+                "layout|flex": 1,
+                "maxHeight": null,
+                "maxWidth": 50,
+                "minWidth": 50,
+                "scrollable": null,
+                "width": 50
+            },
+            "designerId": "9b08437b-2951-4385-a29f-c8e799ccb12e"
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 50,
+                "id": null,
+                "itemId": "gonogoitemname",
+                "layout|flex": 1
+            },
+            "designerId": "d5920c89-6d49-449a-af2d-6ffbf45c6c6b"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": null,
+                "height": 50,
+                "itemId": "gonogobutton",
+                "layout|flex": 1,
+                "maxHeight": null,
+                "maxWidth": 70,
+                "minWidth": 70,
+                "text": "GO",
+                "width": 70
+            },
+            "designerId": "7de894b0-5874-482c-8896-154d6c05af04"
+        }
+    ]
+}

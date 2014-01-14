@@ -1,0 +1,165 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AuthView"
+    },
+    "designerId": "aa55eb96-de55-4df6-bde1-694037698fca",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainnav",
+                "selector": "mainnav"
+            },
+            "designerId": "6fc729de-4bae-4397-be41-bbe8a5bc7b63"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "authview",
+                "selector": "authview"
+            },
+            "designerId": "4fc33d83-f52f-4a84-a2b4-ec2dba906b38"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginbutton",
+                "selector": "#loginbutton"
+            },
+            "designerId": "deb21bc1-c198-42e9-a027-c7b692882df1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#loginbutton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onLoginTapButton",
+                "implHandler": [
+                    "var loginField = Ext.getCmp('loginfield');",
+                    "var passwordField = Ext.getCmp('passwordfield');",
+                    "var label = Ext.getCmp('errorauthtext');",
+                    "",
+                    "label.hide();",
+                    "",
+                    "var login = loginField.getValue();",
+                    "var password = passwordField.getValue();",
+                    "",
+                    "if (login != 'admin' || password != 'adminadmin') {",
+                    "    label.show();",
+                    "    localStorage.setItem(\"authOK\", \"false\");",
+                    "}",
+                    "else {",
+                    "    //Redirection vers la page d'accueil",
+                    "    Ext.Viewport.setActiveItem(Ext.create('MyApp.view.MainNav'));",
+                    "",
+                    "    //On enregistre que l'utilisateur est authentifié",
+                    "    localStorage.setItem(\"username\", \"admin\");",
+                    "    localStorage.setItem(\"authOK\", \"true\");",
+                    "    localStorage.setItem(\"userservice\", \"Service 1\");",
+                    "}",
+                    "",
+                    "loginField.setValue('');",
+                    "passwordField.setValue('');",
+                    "",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "b9d4a58d-4f06-46e6-895c-b4ca8cd79e6a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginfield",
+                "selector": "#loginfield"
+            },
+            "designerId": "d04f002b-fc38-4bb3-b4da-4ca92cd8c4d3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "passwordfield",
+                "selector": "#passwordfield"
+            },
+            "designerId": "9493f12f-b216-4e98-b578-53272303d384"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "errorauthtext",
+                "selector": "#errorauthtext"
+            },
+            "designerId": "d64a9f7e-1dba-46da-8a42-bd20984fcd3a"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "//Récupération de la variable de session",
+                    "var varAuthOK = localStorage.getItem(\"authOK\");",
+                    "",
+                    "var authView = Ext.Viewport.getActiveItem();",
+                    "",
+                    "//Si l'utilisateur est déjà authentifié, on redirige vers la page d'accueil",
+                    "if (varAuthOK !== null && varAuthOK == 'true') {",
+                    "    Ext.Viewport.setActiveItem(Ext.create('MyApp.view.MainNav'));",
+                    "}",
+                    "else {",
+                    "    Ext.Viewport.setActiveItem(authView);",
+                    "}"
+                ]
+            },
+            "designerId": "e894baa6-929c-499f-a740-e005f58dd3d8"
+        }
+    ]
+}

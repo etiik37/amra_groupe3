@@ -1,0 +1,66 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "GraphStore",
+        "model": null,
+        "storeId": "GraphStore"
+    },
+    "designerId": "3452d60f-404d-4843-b800-0e27b7eed9ec",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/viewer/tmviewer.json"
+            },
+            "designerId": "92b0e231-0167-404a-ab9f-a8f605a1331f",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "6f1a31f6-9200-4990-845d-a6d2f51daa94"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "x",
+                "type": null
+            },
+            "designerId": "f055462f-4ff2-4081-9a00-39da15ee90fc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "y",
+                "type": null
+            },
+            "designerId": "b047ef64-9fae-48a2-9cc8-981f2215eee5"
+        }
+    ]
+}

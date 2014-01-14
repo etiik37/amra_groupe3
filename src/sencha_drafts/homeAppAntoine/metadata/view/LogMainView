@@ -161,7 +161,7 @@
                 "designer|displayName": "logsGrid",
                 "layout|flex": 10,
                 "store": "logsstore",
-                "title": "Remove title bar"
+                "title": "Log Details"
             },
             "designerId": "7175ab36-3be4-4869-91eb-0c0c6dae8032",
             "cn": [

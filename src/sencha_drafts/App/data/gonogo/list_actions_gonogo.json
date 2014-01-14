@@ -1,0 +1,7 @@
+[
+	{ "label": "Check trajectory", "service": "Air Space", "done": "false" },
+	{ "label": "Check satellite", "service": "Control Center", "done": "false" },
+	{ "label": "Check options", "service": "Air Space", "done": "false" },
+	{ "label": "Check team", "service": "Control Center", "done": "false" },
+	{ "label": "Launch satellite", "service": "Control Center", "done": "false" }
+]

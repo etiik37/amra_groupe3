@@ -103,7 +103,7 @@ Ext.define('MyApp.view.LogMainView', {
                 xtype: 'grid',
                 flex: 10,
                 store: 'logsstore',
-                title: 'Remove title bar',
+                title: 'Log Details',
                 columns: [
                     {
                         xtype: 'column',

@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GoNoGo"
+    },
+    "designerId": "1a0bda57-e693-4fce-85c7-97bcb82f679e",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "type": "string"
+            },
+            "designerId": "0065970e-0392-4a66-9c11-beaeb56b5f71"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaultValue": null,
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "4ee20c80-d5e7-45a4-843a-3fa1b43ddec3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "finished",
+                "type": "string"
+            },
+            "designerId": "3d223faa-9311-4197-aadd-84c588cccd7d"
+        }
+    ]
+}

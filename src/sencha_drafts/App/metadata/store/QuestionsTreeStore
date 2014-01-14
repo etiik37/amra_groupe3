@@ -1,0 +1,44 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "defaultRootProperty": "items",
+        "designer|userClassName": "QuestionsTreeStore",
+        "model": "QuestionModel",
+        "root": [
+            "{text: 'Questions'}"
+        ],
+        "storeId": "QuestionsTreeStore"
+    },
+    "designerId": "8e2f27a0-f520-4621-9f3d-1993a844a487",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/problemsolving/items_question.json"
+            },
+            "designerId": "e76daeba-fcf7-4dbd-ab81-ee7013aa5818",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "115a386b-a4eb-4d0b-b250-4ae0431b8859"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": false,
+        "container|animation": false,
+        "designer|userAlias": "mainnav",
+        "designer|userClassName": "MainNav",
+        "id": null,
+        "itemId": "mainnav",
+        "useTitleForBackButtonText": null
+    },
+    "designerId": "b2acb95f-cf34-4fea-a689-bbafade179db",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": false,
+                "centered": false,
+                "container|align": null,
+                "container|pack": "center",
+                "designer|createAlias": null,
+                "designer|displayName": "NavigationBar",
+                "docked": "top",
+                "id": null,
+                "itemId": "navigationbar",
+                "tplWriteMode": null
+            },
+            "designerId": "8d95e0ef-45fd-410f-bec0-11984fbe3ab6",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "left",
+                        "iconCls": "list",
+                        "id": "menubutton",
+                        "itemId": "mybutton1",
+                        "text": null,
+                        "ui": "plain"
+                    },
+                    "designerId": "47896b81-c428-4739-807f-dfe205bbff36"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "autoEvent": null,
+                        "badgeText": null,
+                        "designer|displayName": null,
+                        "docked": "right",
+                        "icon": null,
+                        "iconAlign": "right",
+                        "iconCls": "info",
+                        "id": "notificationsbutton",
+                        "text": null,
+                        "ui": "plain"
+                    },
+                    "designerId": "ef52ff02-6124-4f61-a71c-515d29cf8365"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "SCC Portal"
+            },
+            "designerId": "420d2df5-a555-4e9e-8f0d-1e78ba63cb66",
+            "masterInstanceId": "513a1ef2-95a6-43ac-92eb-1c30a3245e45"
+        }
+    ]
+}

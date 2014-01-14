@@ -1,5 +1,5 @@
 [
 	{ "Line":"1","Action":"Wait 10 sec","Entity":"","Label":"test1","Time":"","Report":"","Status":"finished"},
-	{ "Line":"2","Action":"int $i >10","Entity":"","Label":"test 2","Time":"","Report":"","Status":"unfinished"},
+	{ "Line":"2","Action":"int $i >10","Entity":"","Label":"test 2","Time":"","Report":"","Status":"finished"},
 	{ "Line":"3","Action":"Wait 15 sec","Entity":"","Label":"test3","Time":"","Report":"","Status":"unfinished"}
 ]

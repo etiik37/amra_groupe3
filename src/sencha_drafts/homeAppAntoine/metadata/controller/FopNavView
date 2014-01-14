@@ -65,6 +65,24 @@
                 "name": "itemdoubletap"
             },
             "designerId": "ad349d71-0147-4e13-bbd6-8adc2e7052e2"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var fopStore = Ext.getStore('ItemFopDetail');",
+                    "timerFop = setInterval(function checkForNotifications() {",
+                    "    fopStore.load();",
+                    "},5000);"
+                ]
+            },
+            "designerId": "579e22b5-df5a-4994-bf9b-dd947884f427"
         }
     ]
 }

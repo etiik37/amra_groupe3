@@ -1,0 +1,117 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fopdetailview",
+        "designer|userClassName": "FopDetailView"
+    },
+    "designerId": "b98e93a4-5eb4-46ef-b36a-b0a3314a6b90",
+    "cn": [
+        {
+            "type": "grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": 1136,
+                "id": "fopdetailgrid",
+                "store": "ItemFopDetail",
+                "title": "FOPDetailGrid"
+            },
+            "designerId": "c23caf81-4834-4851-bbf3-b281cb79faa8",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Line",
+                        "text": "Line",
+                        "width": 110
+                    },
+                    "designerId": "be80aa86-d636-4d50-b695-d5201c87bdd5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Action",
+                        "text": "Action",
+                        "width": 170
+                    },
+                    "designerId": "af3cc7b5-608f-4c38-a33d-d577ecc61998"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Entity",
+                        "text": "Entity",
+                        "width": 130
+                    },
+                    "designerId": "28e6e1ab-923f-4fe9-ac01-0fb09bbd3d9c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Label",
+                        "text": "Label",
+                        "width": 130
+                    },
+                    "designerId": "4a4fb9fd-26b9-423d-8d3e-f15b22cc4f23"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Time",
+                        "text": "Time",
+                        "width": 130
+                    },
+                    "designerId": "cbeef2b4-7779-4e18-970c-1d54415a3418"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "Report",
+                        "text": "Report",
+                        "width": 160
+                    },
+                    "designerId": "db410f84-4e39-429d-a46e-bc1a46198d8d"
+                }
+            ]
+        }
+    ]
+}

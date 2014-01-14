@@ -44,7 +44,6 @@
             "GraphStore",
             "CheckListServices",
             "CheckListsState"
-            
         ],
         "views": [
             "HomeView",
@@ -87,11 +86,12 @@
                 "implHandler": [
                     "//Pour la mise à jour des notifications",
                     "var timerCheckForNotifications;",
-                    "",
+                    "var timerFopDetail ;",
                     "//Récupération du store",
                     "var sto = Ext.getStore('itemsgonogo');",
                     "//On affiche par défaut uniquement les GONOGO en cours",
-                    "sto.filter('finished', 'false');"
+                    "sto.filter('finished', 'false');",
+                    ""
                 ]
             },
             "designerId": "bd18622b-25d7-448e-ab0c-dc669b0d11a7"

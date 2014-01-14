@@ -1,0 +1,45 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PreferencesView"
+    },
+    "designerId": "ac87af15-f12a-4108-a135-b741e896f534",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "timezonefield",
+                "selector": "#timezonefield"
+            },
+            "designerId": "f39413c1-6d5f-4af6-b56d-bcb4d887031c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#timezonefield",
+                "designer|targetType": "Ext.field.Select",
+                "fn": "onSelectfieldChange",
+                "implHandler": [
+                    "localStorage.setItem(\"timeZone\", selectfield.getValue());"
+                ],
+                "name": "change"
+            },
+            "designerId": "7f00ddee-772d-444b-b98f-2061c0e421fd"
+        }
+    ]
+}

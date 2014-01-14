@@ -1,0 +1,100 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "GonogoView",
+            "AuthView",
+            "PreferencesView",
+            "ProjectSolvingNav",
+            "DownloadDocuments",
+            "QuestionNav",
+            "MainNav",
+            "TMView",
+            "LogView",
+            "FopNavView"
+        ],
+        "models": [
+            "QuestionModel",
+            "Services",
+            "CheckList"
+        ],
+        "name": "MyApp",
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "stores": [
+            "MenuStore",
+            "ProblemSolvingStore",
+            "TimeZoneStore",
+            "NotificationStore",
+            "LanguageStore",
+            "ItemsGonogo",
+            "ListActionsGonogo",
+            "ListDocumentsStore",
+            "QuestionsTreeStore",
+            "ServicesGonogo",
+            "LogsStore",
+            "ItemFop",
+            "ItemFopDetail",
+            "GraphStore",
+            "CheckListServices",
+            "CheckListsState"
+            
+        ],
+        "views": [
+            "HomeView",
+            "NotificationsList",
+            "GonogoView",
+            "PreferencesView",
+            "ProjectSolvingNav",
+            "MenuList",
+            "AuthView",
+            "GonogoList",
+            "GonogoItem",
+            "WikiView",
+            "ProjectSolvingList",
+            "DownloadDocumentsList",
+            "QuestionsNav",
+            "QuestionsNestedList",
+            "MainNav",
+            "GonogoCheckListView",
+            "GonogoServices",
+            "GonogoServicesList",
+            "LogMainView",
+            "FopDetailView",
+            "FopNavView",
+            "GraphicTM",
+            "CheckListItem",
+            "CheckListList"
+        ]
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "//Pour la mise à jour des notifications",
+                    "var timerCheckForNotifications;",
+                    "",
+                    "//Récupération du store",
+                    "var sto = Ext.getStore('itemsgonogo');",
+                    "//On affiche par défaut uniquement les GONOGO en cours",
+                    "sto.filter('finished', 'false');"
+                ]
+            },
+            "designerId": "bd18622b-25d7-448e-ab0c-dc669b0d11a7"
+        }
+    ]
+}

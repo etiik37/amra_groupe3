@@ -1,0 +1,72 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "ServicesGonogo",
+        "groupDir": "ASC",
+        "groupField": null,
+        "model": null,
+        "remoteGroup": null,
+        "storeId": "servicesgonogo"
+    },
+    "mockCfgs": [
+        "data"
+    ],
+    "designerId": "ae5f1604-4b0b-47a0-adce-220275881ac6",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "type": "string"
+            },
+            "designerId": "fbf6ff99-7119-49a7-9c9a-ee68a8165d32"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/gonogo/items_services.json"
+            },
+            "designerId": "bbbc0078-874f-432d-8e48-08f0ba68cf8a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "5d71ca50-4faa-4cdc-be34-19ee5acc0bcc"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "string"
+            },
+            "designerId": "4eabcd81-8632-4859-ad89-29484bef0e3a"
+        }
+    ]
+}

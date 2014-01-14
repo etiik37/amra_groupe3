@@ -1,0 +1,40 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "CheckListServices",
+        "model": "ActionsList",
+        "storeId": "checklistservices"
+    },
+    "designerId": "1f74c36c-42ba-4498-93de-a36a16feddd7",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/gonogo/list_actions_services.json"
+            },
+            "designerId": "48601b7d-3d07-4f4f-b92f-1187596487e5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "76971d72-ec66-4f39-9ab7-192a87b540b5"
+                }
+            ]
+        }
+    ]
+}

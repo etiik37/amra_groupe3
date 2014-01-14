@@ -1,0 +1,96 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoDestroy": false,
+        "centered": false,
+        "designer|userAlias": "preferencesview",
+        "designer|userClassName": "PreferencesView",
+        "width": null
+    },
+    "designerId": "c82cf8e6-ad7f-4298-95aa-cddda912446a",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "top",
+                "hidden": false,
+                "layout": "fit",
+                "right": null,
+                "width": "100%"
+            },
+            "designerId": "0fbacf9e-d743-4c16-b113-8525de0edb05",
+            "cn": [
+                {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "component": [
+                            "{\"type\":\"number\"}"
+                        ],
+                        "label": "Notifications Refresh Time (ms)",
+                        "labelWrap": true,
+                        "maxValue": 30000,
+                        "minValue": 0,
+                        "name": "notifRefreshTimeField",
+                        "value": [
+                            "5000"
+                        ]
+                    },
+                    "designerId": "e2041b0b-e18b-41ae-aad4-fc150d655764"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "name",
+                        "id": null,
+                        "label": "Time Zone",
+                        "labelWrap": true,
+                        "maxLength": null,
+                        "name": "timeZoneField",
+                        "store": "timezonestore"
+                    },
+                    "designerId": "0b42bbc8-15d2-47b0-8b1d-299186b7d487"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "label",
+                        "id": null,
+                        "label": "Language",
+                        "labelWrap": true,
+                        "maxLength": null,
+                        "name": "languageField",
+                        "store": "languageStore"
+                    },
+                    "designerId": "4f1efc67-bce5-4333-a417-bcf6b5829a4d"
+                }
+            ]
+        }
+    ]
+}

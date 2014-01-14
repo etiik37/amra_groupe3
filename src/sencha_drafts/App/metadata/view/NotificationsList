@@ -1,0 +1,46 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "baseCls": null,
+        "deselectOnContainerClick": false,
+        "designer|userAlias": "notificationslist",
+        "designer|userClassName": "NotificationsList",
+        "disableSelection": true,
+        "height": "80%",
+        "hideOnMaskTap": true,
+        "id": "notificationslist",
+        "itemCls": null,
+        "itemHeight": 20,
+        "modal": true,
+        "padding": 10,
+        "pinHeaders": false,
+        "scrollToTopOnRefresh": false,
+        "store": "notificationsstore",
+        "width": "25%"
+    },
+    "designerId": "2888c8e4-608e-479e-92ec-9b33502ba001",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "implHandler": [
+                    "<h1>{date:date('d/m/Y H:i:s')}</h1>",
+                    "<br />",
+                    "{criticity} - {label} - {description}"
+                ]
+            },
+            "designerId": "62ba83d0-1154-464d-b6ec-627957a08e5c"
+        }
+    ]
+}

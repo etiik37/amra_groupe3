@@ -1,0 +1,13 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "graphtm",
+        "designer|userClassName": "GraphTM"
+    },
+    "designerId": "26f0ff12-193d-4860-9c89-0bb3a69c5e82"
+}
